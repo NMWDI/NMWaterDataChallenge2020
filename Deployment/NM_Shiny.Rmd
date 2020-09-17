@@ -42,9 +42,9 @@ library(flexdashboard)
 library(leaflet)
 library(tidyverse)
 library(sf)
-library(spdep)
-library(tmaptools)
-library(plotly)
+# library(spdep)
+# library(tmaptools)
+# library(plotly)
 
 # reading all inputs
 # shp_path <- "C:/Users/wesch/OneDrive/WaterChallenge/Deployment/"
@@ -56,7 +56,10 @@ HDI_df <- readRDS("HDI_df.RDS")
 income_df <- readRDS("income.RDS")
 education_df <- readRDS("mean_education.RDS")
 life_exp_df <- readRDS("nm_life_expectancy.RDS")
+basic_count <- readRDS("basic_count.RDS")
 
+# joining basic_count to hdi_df
+HDI_df <- inner_join(HDI_df, basic_count[,c("id", "Total_Pop")])
 
 # joining hdi_df to census_tract_shp
 HDI_df <- HDI_df %>%
@@ -80,19 +83,27 @@ nm_disconnected_stream_summary_df <- nm_disconnected_stream_df %>%
   ungroup()
 
 # summarize nm_census_tracts 
-nm_census_tracts_summary_df <- nm_census_tracts_df %>%
-  ungroup() %>%
+county_level_weighted <- nm_census_tracts_df %>%
   group_by(county_name) %>%
-  summarize(life_exp = round(mean(`Life Expectancy`),1),
-            ed = round(mean(mean_years_ed), 1),
-            income = round(mean(income_per_capita))) %>%
-  ungroup()
+  mutate(County_Total_Pop = sum(Total_Pop)) %>%
+  ungroup() %>%
+  group_by(id) %>%
+  mutate(Pop_Weight = Total_Pop/County_Total_Pop,
+         weighted_HDI = Pop_Weight*HDI,
+         weighted_income = Pop_Weight*income_per_capita,
+         weighted_expectancy = Pop_Weight*`Life Expectancy`,
+         weighted_edn = Pop_Weight*mean_years_ed) %>%
+  group_by(county_name) %>%
+  summarise(weighted_income = round(sum(weighted_income)),
+            weighted_HDI = round(sum(weighted_HDI),3),
+            weighted_expectancy = round(sum(weighted_expectancy),2),
+            weighted_edn = round(sum(weighted_edn),2))
 
-# other summary statistics
-fivenum_hdi <- fivenum(HDI_df$HDI)
-fivenum_income <- fivenum(income_df$income_per_capita)
-fivenum_education <- fivenum(education_df$mean_years_ed)
-fivenum_expectancy <- fivenum(life_exp_df$`Life Expectancy`)
+# other county-level summary statistics weighted by population
+fivenum_hdi <- fivenum(county_level_weighted$weighted_HDI)
+fivenum_income <- fivenum(county_level_weighted$weighted_income)
+fivenum_education <- fivenum(county_level_weighted$weighted_edn)
+fivenum_expectancy <- fivenum(county_level_weighted$weighted_expectancy)
 fivenum_disconnected <- fivenum(nm_disconnected_stream_summary_df$LengthMI)
 ```
 
@@ -104,7 +115,7 @@ Column {data-width=200 .sidebar}
 ```{r}
 selectInput("county",
             "County:",
-            choices = nm_counties$NAMELSAD,
+            choices = sort(nm_counties$NAMELSAD),
             "Taos County")
 ```
 
@@ -151,30 +162,27 @@ disconnected_length <- reactive({
     unlist()})
 
 reactive_county_hdi <- reactive({
-    HDI_df %>%
-      ungroup() %>%
-      filter(county_name == input$county) %>%
-      select(HDI) %>%
-      unlist() %>%
-      mean() %>%
-      round(.,3)})
+    county_level_weighted %>% 
+    filter(county_name == input$county) %>% 
+    select(weighted_HDI) %>% 
+    unlist()})
 
 county_life_exp <- reactive({
-  nm_census_tracts_summary_df %>% 
+  county_level_weighted %>% 
     filter(county_name == input$county) %>% 
-    select(life_exp) %>% 
+    select(weighted_expectancy) %>% 
     unlist()})
 
 education_yrs <- reactive({
-  nm_census_tracts_summary_df %>% 
+  county_level_weighted %>% 
     filter(county_name == input$county) %>% 
-    select(ed) %>% 
+    select(weighted_edn) %>% 
     unlist()})
 
 income_pc <- reactive({
-  nm_census_tracts_summary_df %>% 
+  county_level_weighted %>% 
     filter(county_name == input$county) %>% 
-    select(income) %>% 
+    select(weighted_income) %>% 
     unlist()})
 
 comparison_plot_df_plot <- reactive({
@@ -195,8 +203,8 @@ comparison_plot_df_plot <- reactive({
     # scale_fill_manual(name = "Performance",
     #                   labels = c("Above Median", "Below Median"),
     #                   values = c("above" = "#00ba38", "below" = "#f8766d")) + 
-    labs(title = paste("Comparing", input$county, "Against State", sep = " "),
-         y = "% of State Median",
+    labs(title = paste("Comparing", input$county, "Against NM Median", sep = " "),
+         y = "% (Below [-ve] / Above [+ve]) State Median",
          x = "Metric") + 
     coord_flip()
 })
@@ -225,7 +233,7 @@ renderValueBox({
 ```{r}
 renderValueBox({
   valueBox(reactive_county_hdi(),
-           caption = "Mean HDI",
+           caption = "HDI",
            icon = 'fa-user',
            color = ifelse(reactive_county_hdi() > fivenum_hdi[3], "primary", 
                           ifelse(reactive_county_hdi() < fivenum_hdi[2], "danger", "warning"))
@@ -238,7 +246,7 @@ renderValueBox({
 ```{r}
 renderValueBox({
   valueBox(county_life_exp(),
-           caption = "Mean Life Expectancy",
+           caption = "Life Expectancy",
            icon = 'fa-heartbeat',
            color = ifelse(county_life_exp() > fivenum_expectancy[3], "primary", 
                           ifelse(county_life_exp() < fivenum_expectancy[2], "danger", "warning")))})
@@ -249,7 +257,7 @@ renderValueBox({
 ```{r}
 renderValueBox({
   valueBox(education_yrs(),
-           caption = "Mean Years of Education for Adults",
+           caption = "Years of Education for Adults",
            icon = 'fa-book',
            color = ifelse(education_yrs() > fivenum_education[3], "primary", 
                           ifelse(education_yrs() < fivenum_education[2], "danger", "warning")))})
@@ -260,7 +268,7 @@ renderValueBox({
 ```{r}
 renderValueBox({
   valueBox(income_pc(),
-           caption = "Mean Income per Capita ($)",
+           caption = "Income per Capita ($)",
            icon = 'fa-dollar-sign',
            color = ifelse(income_pc() > fivenum_income[3], "primary", 
                           ifelse(income_pc() < fivenum_income[2], "danger", "warning")))})
