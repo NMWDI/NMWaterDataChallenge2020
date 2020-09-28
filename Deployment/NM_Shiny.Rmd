@@ -8,20 +8,7 @@ resource_files:
 - HDI_df.RDS
 - income.RDS
 - mean_education.RDS
-- NHDHR_NM2019_Disconnected_County.cpg
-- NHDHR_NM2019_Disconnected_County.dbf
-- NHDHR_NM2019_Disconnected_County.prj
-- NHDHR_NM2019_Disconnected_County.shp
-- NHDHR_NM2019_Disconnected_County.shx
 - nm_life_expectancy.RDS
-- tl_2017_35_tract.cpg
-- tl_2017_35_tract.dbf
-- tl_2017_35_tract.shp
-- tl_2017_35_tract.prj
-- tl_2017_35_tract.shp.ea.iso.xml
-- tl_2017_35_tract.shp.iso.xml
-- tl_2017_35_tract.shp.xml
-- tl_2017_35_tract.shx
 - tl_2018_nm_county.cpg
 - tl_2018_nm_county.dbf
 - tl_2018_nm_county.prj
@@ -30,6 +17,23 @@ resource_files:
 - tl_2018_nm_county.shp
 - tl_2018_nm_county.shx
 - tl_2018_nm_county_FGDC.xml
+- NM_CD.dbf
+- NM_CD.prj
+- NM_CD.sbn
+- NM_CD.sbx
+- NM_CD.shx
+- NM_CD_Tract.cpg
+- NM_CD_Tract.dbf
+- NM_CD_Tract.prj
+- NM_CD_Tract.shx
+- NHDHR_NM2019_Disconnected_County_Simplified.cpg
+- NHDHR_NM2019_Disconnected_County_Simplified.dbf
+- NHDHR_NM2019_Disconnected_County_Simplified.prj
+- NHDHR_NM2019_Disconnected_County_Simplified.shx
+- NHDHR_NM2019_Disconnected_Congress_Simplified.cpg
+- NHDHR_NM2019_Disconnected_Congress_Simplified.dbf
+- NHDHR_NM2019_Disconnected_Congress_Simplified.prj
+- NHDHR_NM2019_Disconnected_Congress_Simplified.shx
 runtime: shiny
 output:
   flexdashboard::flex_dashboard:
@@ -42,21 +46,21 @@ library(flexdashboard)
 library(leaflet)
 library(tidyverse)
 library(sf)
-# library(spdep)
-# library(tmaptools)
-# library(plotly)
 
 # reading all inputs
-# shp_path <- "C:/Users/wesch/OneDrive/WaterChallenge/Deployment/"
 
 nm_counties <- st_read("tl_2018_nm_county.shp")
-nm_census_tracts <- st_read("tl_2017_35_tract.shp")
-nm_disconnected_stream <- st_read("NHDHR_NM2019_Disconnected_County.shp")
+nm_census_tracts <- st_read("NM_CD_Tract.shp")
+nm_disconnected_stream <- st_read("NHDHR_NM2019_Disconnected_County_Simplified.shp")
+nm_congress <- st_read("NM_CD.shp")
+nm_disconnected_stream_cd <- st_read("NHDHR_NM2019_Disconnected_Congress_Simplified.shp")
 HDI_df <- readRDS("HDI_df.RDS")
 income_df <- readRDS("income.RDS")
 education_df <- readRDS("mean_education.RDS")
 life_exp_df <- readRDS("nm_life_expectancy.RDS")
 basic_count <- readRDS("basic_count.RDS")
+nm_streams_summary_df <- readRDS("nm_streams_summary.RDS")
+domestic_water_use_df <- read_csv("domestic_water_use.csv")
 
 # joining basic_count to hdi_df
 HDI_df <- inner_join(HDI_df, basic_count[,c("id", "Total_Pop")])
@@ -105,7 +109,177 @@ fivenum_income <- fivenum(county_level_weighted$weighted_income)
 fivenum_education <- fivenum(county_level_weighted$weighted_edn)
 fivenum_expectancy <- fivenum(county_level_weighted$weighted_expectancy)
 fivenum_disconnected <- fivenum(nm_disconnected_stream_summary_df$LengthMI)
+
+# congressional districts
+congress_reps <- c("Deb Haaland", "Xochitl Torres Small", "Ben Ray Lujan")
+congress_reps_parties <- c("Dem", "Dem", "Dem")
+
+# water access vulnerability
+vulnerability <- inner_join(nm_streams_summary_df[,c("NAMELSAD", "pct_disconnected")], domestic_water_use_df[,c("county_nm", "Domestic Self Supplied Pct")], by = c("NAMELSAD" = "county_nm"))
 ```
+
+Statewide
+==================
+
+Column {data-width=200 .sidebar}
+-----------------------------------------------------------------------
+
+### New Mexico
+
+```{r}
+renderText(cat(paste("In this dashboard, you will find information on the how each county and congressional district is affected by changes in the Clean Water Act. These legislative changes means that some waterways will no longer be protected. Some places will be more affected than others. This dashboard will not only show where, but also the socio-economic characteristics of each of these places using the Human Development Index (HDI).", "The HDI is a statistic used by the United Nations to rank countries into tiers of human development. It looks at life expectancy, education, and per capita income. This has been modified to for use in New Mexico where it is to rank and evaluate each county in terms of its human development.", sep = "\n")))
+```
+
+Column {data-width=600 .tabset}
+-----------------------------------------------------------------------
+
+### Unprotected Waterways
+```{r}
+reactive_state <- reactive({
+    bins <- c(0.5, 0.6, 0.7, 0.8, 0.9)
+    pal <- colorBin("Blues", domain = nm_census_tracts$HDI, bins = bins)
+    leaflet() %>%
+      addProviderTiles(providers$CartoDB.Positron) %>%
+      # addPolygons(data = nm_counties, group = "County",  
+      #             fillOpacity = 0, weight = 1.5, color = "white") %>%
+      addPolygons(data = nm_census_tracts, label = ~round(HDI, 3), group = "HDI",
+                  fillColor = ~pal(HDI), fillOpacity = 0.75, weight = 0, opacity = 1, color = "white") %>%
+      addPolylines(data = st_zm(nm_disconnected_stream), label = ~GNIS_Name, group = "Disconnected Streams",
+                   color = "#fb6a4a", weight = 1.2) %>%
+      addLayersControl(overlayGroups = c("HDI", "Disconnected Streams"),
+                       options = layersControlOptions(collapsed = FALSE))
+      
+  })
+renderLeaflet({
+     reactive_state()
+   })
+```
+
+### Vulnerability
+```{r}
+renderPlot({
+  ggplot(vulnerability, aes(x = `Domestic Self Supplied Pct`, y = pct_disconnected)) + 
+    geom_point() + 
+    geom_text_repel(aes(label = NAMELSAD)) + 
+    labs(title = "At-Risk Counties", subtitle = "Counties with a higher percentage of its population relying on self-supplied water sources are more at risk when agreater percentage of waterways become unprotected.",
+         x = "Population with Self-Supplied Water (%)", y = "Unprotected Waterways (%) of County Total",
+         colour = "Vulnerability Score")
+   })
+```
+
+Column {data-width=200}
+-----------------------------------------------------------------------
+
+### Unprotected Waterways
+
+```{r}
+nm_disconnected_length <- reactive({
+  nm_disconnected_stream_summary_df %>% 
+    select(LengthMI) %>% 
+    unlist() %>%
+    sum()})
+
+renderValueBox({
+  valueBox(nm_disconnected_length(),
+           caption = "Unprotected Waterways (mi)",
+           icon = 'fa-tint-slash',
+           color = "primary")})
+```
+
+### State HDI
+
+```{r}
+reactive_nm_hdi <- reactive({
+    HDI_df %>%
+      ungroup() %>%
+      mutate(total_state_pop = sum(Total_Pop)) %>%
+      group_by(id) %>%
+      mutate(weight_pop = Total_Pop/total_state_pop,
+             weighted_HDI = weight_pop * HDI) %>%
+      ungroup() %>%
+      select(weighted_HDI) %>%
+      unlist() %>%
+      sum() %>%
+      round(.,3)})
+
+renderValueBox({
+  valueBox(reactive_nm_hdi(),
+           caption = "HDI",
+           icon = 'fa-user',
+           color = "primary")})
+```
+
+### Life Expectancy
+
+```{r}
+nm_life_exp <- reactive({
+  nm_census_tracts_df %>%
+    ungroup() %>%
+    mutate(total_state_pop = sum(Total_Pop)) %>%
+    group_by(id) %>%
+    mutate(weight_pop = Total_Pop/total_state_pop,
+           weighted_life_exp = weight_pop * `Life Expectancy`) %>%
+    ungroup() %>%
+    select(weighted_life_exp) %>% 
+    unlist() %>%
+    sum() %>%
+    round(., 1)})
+
+renderValueBox({
+  valueBox(nm_life_exp(),
+           caption = "Life Expectancy",
+           icon = 'fa-heartbeat',
+           color = "primary")})
+```
+
+### Years of Schooling
+
+```{r}
+nm_edn_yrs <- reactive({
+  nm_census_tracts_df %>%
+    ungroup() %>%
+    mutate(total_state_pop = sum(Total_Pop)) %>%
+    group_by(id) %>%
+    mutate(weight_pop = Total_Pop/total_state_pop,
+           weighted_years_ed = weight_pop * mean_years_ed) %>%
+    ungroup() %>%
+    select(weighted_years_ed) %>% 
+    unlist() %>%
+    sum() %>%
+    round(., 1)})
+
+renderValueBox({
+  valueBox(nm_edn_yrs(),
+           caption = "Years of Education for Adults",
+           icon = 'fa-book',
+           color = "primary")})
+```
+
+### Annual Income
+
+```{r}
+nm_income_pc <- reactive({
+  nm_census_tracts_df %>%
+    ungroup() %>%
+    mutate(total_state_pop = sum(Total_Pop)) %>%
+    group_by(id) %>%
+    mutate(weight_pop = Total_Pop/total_state_pop,
+           weighted_income_pc = weight_pop * income_per_capita) %>%
+    ungroup() %>%
+    select(weighted_income_pc) %>% 
+    unlist() %>%
+    sum() %>%
+    round()})
+
+renderValueBox({
+  valueBox(nm_income_pc(),
+           caption = "Mean Income per Capita ($)",
+           icon = 'fa-dollar-sign',
+           color = "primary")})
+```
+
+County
+==================
 
 Column {data-width=200 .sidebar}
 -----------------------------------------------------------------------
@@ -139,7 +313,7 @@ reactive_county <- reactive({
       addPolygons(data = nm_counties_filtered, group = "County",  
                   fillOpacity = 0, weight = 1.5, color = "black") %>%
       addPolygons(data = nm_census_tracts_filtered, label = ~round(HDI, 3), group = "HDI",
-                  fillColor = ~pal(HDI), fillOpacity = 0.5, weight = 2, opacity = 1, color = "white") %>%
+                  fillColor = ~pal(HDI), fillOpacity = 0.5, weight = 0.75, opacity = 1, color = "white") %>%
       addPolylines(data = st_zm(nm_streams_filtered), label = ~GNIS_Name, group = "Disconnected Streams",
                    color = "#fb6a4a", weight = 1.2) %>%
       addLayersControl(overlayGroups = c("County", "HDI", "Disconnected Streams"),
@@ -274,3 +448,81 @@ renderValueBox({
                           ifelse(income_pc() < fivenum_income[2], "danger", "warning")))})
 ```
 
+Congressional Districts  
+==================
+
+Column {data-width=200 .sidebar}
+-----------------------------------------------------------------------
+
+### New Mexico
+
+```{r}
+selectInput("congressional_district",
+            "Congressional District:",
+            choices = sort(nm_congress$District_N),
+            "1")
+```
+  
+Column {data-width=600 .tabset}
+-----------------------------------------------------------------------
+### Unprotected Waterways
+
+```{r}
+reactive_congress <- reactive({
+    nm_census_tracts_filtered <- nm_census_tracts %>%
+      filter(District_N == input$congressional_district)
+    bins <- c(0.5, 0.6, 0.7, 0.8, 0.9)
+    pal <- colorBin("Blues", domain = nm_census_tracts_filtered$HDI, bins = bins)
+    nm_congress_filtered <- nm_congress %>%
+      filter(District_N == input$congressional_district)
+    nm_streams_filtered <- nm_disconnected_stream_cd %>%
+      filter(District_N == input$congressional_district)
+    leaflet() %>%
+      addProviderTiles(providers$CartoDB.Positron) %>%
+      addPolygons(data = nm_congress_filtered, group = "District",
+                  fillOpacity = 0, weight = 1.5, color = "black") %>%
+      addPolygons(data = nm_census_tracts_filtered, label = ~round(HDI, 3), group = "HDI",
+                  fillColor = ~pal(HDI), fillOpacity = 0.5, weight = 0.5, opacity = 1, color = "white") %>%
+      addPolylines(data = st_zm(nm_streams_filtered), label = ~GNIS_Name, group = "Disconnected Streams",
+                   color = "#fb6a4a", weight = 1.2) %>%
+      addLayersControl(overlayGroups = c("District", "HDI", "Disconnected Streams"),
+                       options = layersControlOptions(collapsed = FALSE))
+
+  })
+renderLeaflet({
+     reactive_congress()
+   })
+```
+  
+Column {data-width=200}
+-----------------------------------------------------------------------
+
+### Representative
+
+```{r}
+rep <- reactive({
+  congress_reps[as.numeric(input$congressional_district)]
+  
+})
+
+renderValueBox({
+  valueBox(rep(),
+           caption = "Representative",
+           icon = 'fa-landmark',
+           color = "primary")})
+```
+
+### Party
+
+```{r}
+party <- reactive({
+  congress_reps_parties[as.numeric(input$congressional_district)]
+  
+})
+
+renderValueBox({
+  valueBox(party(),
+           caption = "Party",
+           icon = ifelse(party() == "Dem", "fa-democrat", "fa-republican"),
+           color = ifelse(party() == "Dem", "primary", "warning"))})
+```
