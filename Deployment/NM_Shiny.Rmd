@@ -45,6 +45,7 @@ library(ggrepel)
 nm_counties <- st_read("tl_2018_nm_county.shp")
 nm_census_tracts <- st_read("NM_CD_Tract.shp")
 nm_disconnected_stream <- st_read("NHDHR_NM2019_Disconnected_County_Simplified.shp")
+nm_connected_stream <- st_read("NHDHR_NM2019_Connected_County.shp")
 nm_congress <- st_read("NM_CD.shp")
 nm_disconnected_stream_cd <- st_read("NHDHR_NM2019_Disconnected_Congress_Simplified.shp")
 HDI_indicators <- readRDS("HDI_indicators.RDS")
@@ -109,9 +110,11 @@ renderLeaflet({
                   fillOpacity = 0, weight = 1.5, color = "white") %>%
       addPolygons(data = nm_census_tracts, label = ~round(HDI, 3), group = "HDI",
                   fillColor = ~pal(HDI), fillOpacity = 0.75, weight = 0, opacity = 1, color = "white") %>%
-      addPolylines(data = st_zm(nm_disconnected_stream), label = ~GNIS_Name, group = "Disconnected Streams",
+      addPolylines(data = st_zm(nm_disconnected_stream), label = ~GNIS_Name, group = "Unprotected Streams",
                    color = "#fb6a4a", weight = 1.2) %>%
-      addLayersControl(overlayGroups = c("County", "HDI", "Disconnected Streams"),
+      addPolylines(data = st_zm(nm_connected_stream), label = ~GNIS_Name, group = "Protected Streams",
+                   color = "#08519c", weight = 1.2) %>%
+      addLayersControl(overlayGroups = c("County", "HDI", "Unprotected Streams", "Protected Streams"),
                        options = layersControlOptions(collapsed = FALSE))
    })
 ```
@@ -263,6 +266,8 @@ reactive_county <- reactive({
       filter(NAMELSAD == input$county)
     nm_streams_filtered <- nm_disconnected_stream %>%
       filter(NAMELSAD == input$county)
+    nm_connected_streams_filtered <- nm_connected_stream %>%
+      filter(NAMELSAD == input$county)
     leaflet() %>%
       addTiles() %>%
       #addProviderTiles(providers$CartoDB.Positron) %>%
@@ -270,9 +275,11 @@ reactive_county <- reactive({
                   fillOpacity = 0, weight = 1.5, color = "black") %>%
       addPolygons(data = nm_census_tracts_filtered, label = ~round(HDI, 3), group = "HDI",
                   fillColor = ~pal(HDI), fillOpacity = 0.5, weight = 0.75, opacity = 1, color = "white") %>%
-      addPolylines(data = st_zm(nm_streams_filtered), label = ~GNIS_Name, group = "Disconnected Streams",
+      addPolylines(data = st_zm(nm_streams_filtered), label = ~GNIS_Name, group = "Unprotected Streams",
                    color = "#fb6a4a", weight = 1.2) %>%
-      addLayersControl(overlayGroups = c("County", "HDI", "Disconnected Streams"),
+      addPolylines(data = st_zm(nm_connected_streams_filtered), label = ~GNIS_Name, group = "Protected Streams",
+                   color = "#08519c", weight = 1.2) %>%
+      addLayersControl(overlayGroups = c("County", "HDI", "Unprotected Streams", "Protected Streams"),
                        options = layersControlOptions(collapsed = FALSE))
       
   })
