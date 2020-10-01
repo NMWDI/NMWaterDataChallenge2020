@@ -1,4 +1,4 @@
-# NMWaterDataChallenge2020
+# New Mexico Water Data Challenge 2020
 
 ## Overview
 This is a repository for the New Mexico Water Data Challenge 2020.  
