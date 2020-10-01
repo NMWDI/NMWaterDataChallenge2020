@@ -26,6 +26,10 @@ resource_files:
 - NHDHR_NM2019_Disconnected_Congress_Simplified.dbf
 - NHDHR_NM2019_Disconnected_Congress_Simplified.prj
 - NHDHR_NM2019_Disconnected_Congress_Simplified.shx
+- NHDHR_NM2019_Connected_County.cpg
+- NHDHR_NM2019_Connected_County.dbf
+- NHDHR_NM2019_Connected_County.prj
+- NHDHR_NM2019_Connected_County.shx
 runtime: shiny
 output:
   flexdashboard::flex_dashboard:
@@ -49,7 +53,7 @@ nm_connected_stream <- st_read("NHDHR_NM2019_Connected_County.shp")
 nm_congress <- st_read("NM_CD.shp")
 nm_disconnected_stream_cd <- st_read("NHDHR_NM2019_Disconnected_Congress_Simplified.shp")
 HDI_indicators <- readRDS("HDI_indicators.RDS")
-basic_count <- readRDS("basic_count.RDS")
+basic_count <- readRDS("basic_count_long.RDS")
 nm_streams_summary_df <- readRDS("nm_streams_summary.RDS")
 county_level_weighted <- readRDS("county_level_weighted.RDS")
 
@@ -117,6 +121,32 @@ renderLeaflet({
       addLayersControl(overlayGroups = c("County", "HDI", "Unprotected Streams", "Protected Streams"),
                        options = layersControlOptions(collapsed = FALSE))
    })
+```
+
+### Demographics
+```{r}
+total_basic_count <- basic_count %>%
+    select(Asian, Biracial, Black, Hispanic, Islander, Native, Other, White, Population) %>%
+    unique() %>%
+    summarize(Population = sum(Population),
+              Asian = round(100 * sum(Asian)/Population, 2),
+              Biracial = round(100 * sum(Biracial)/Population, 2),
+              Black = round(100 * sum(Black)/Population, 2),
+              Hispanic = round(100 * sum(Hispanic)/Population, 2),
+              Islander = round(100 * sum(Islander)/Population, 2),
+              Native = round(100 * sum(Native)/Population, 2),
+              Other = round(100 * sum(Other)/Population, 2),
+              White = round(100 * sum(White)/Population, 2)) %>%
+    select(Asian, Biracial, Black, Hispanic, Islander, Native, Other, White) %>%
+    pivot_longer(cols = c("Asian", "Biracial", "Black", "Hispanic", "Islander", "Native", "Other", "White"),"Race")
+
+ggplot(total_basic_count, aes(x = Race, y = value)) + 
+    geom_point(col = "#fc8d62") + 
+    geom_segment(aes(x = Race, xend = Race, y = 0, yend = value), col = "#969696") +
+    scale_x_discrete(labels = c("Asian", "Biracial", "Black", "Hispanic", "Pacific Islander", "Native American", "Other", "White")) + 
+    labs(x = "Race", y = "Est. % of State Totals", title = "Racial/Ethnic Composition of New Mexico") +
+    theme(panel.background = element_rect(fill = "white"), panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + 
+    coord_flip()
 ```
 
 ### Vulnerability
@@ -286,6 +316,24 @@ reactive_county <- reactive({
 renderLeaflet({
      reactive_county()
    })
+```
+
+### Demographics
+```{r}
+demographics <- reactive({
+  filtered_basic_count <- basic_count %>%
+    filter(county == input$county)
+  ggplot(filtered_basic_count, aes(x = Race, y = value)) + 
+    geom_point(col = "#fc8d62") + 
+    geom_segment(aes(x = Race, xend = Race, y = 0, yend = value), col = "#969696") +
+    scale_x_discrete(labels = c("Asian", "Biracial", "Black", "Hispanic", "Pacific Islander", "Native American", "Other", "White")) + 
+    labs(x = "Race", y = "Est. % of County Totals", title = paste("Population of", input$county, sep = " ")) +
+    theme(panel.background = element_rect(fill = "white"), panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + 
+    coord_flip()
+})
+renderPlot({
+  demographics()
+})
 ```
 
 
