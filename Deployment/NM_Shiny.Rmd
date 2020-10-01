@@ -1,14 +1,6 @@
 ---
 title: "Human Development and Water in New Mexico"
 resource_files:
-- RDS/HDI_df.RDS
-- RDS/income.RDS
-- RDS/mean_education.RDS
-- RDS/nm_life_expectancy.RDS
-- HDI_df.RDS
-- income.RDS
-- mean_education.RDS
-- nm_life_expectancy.RDS
 - tl_2018_nm_county.cpg
 - tl_2018_nm_county.dbf
 - tl_2018_nm_county.prj
@@ -58,46 +50,32 @@ nm_disconnected_stream_cd <- st_read("NHDHR_NM2019_Disconnected_Congress_Simplif
 HDI_indicators <- readRDS("HDI_indicators.RDS")
 basic_count <- readRDS("basic_count.RDS")
 nm_streams_summary_df <- readRDS("nm_streams_summary.RDS")
+county_level_weighted <- readRDS("county_level_weighted.RDS")
 
 # joining hdi_indicators to census_tract_shp
 nm_census_tracts <- inner_join(nm_census_tracts, HDI_indicators)
 
 
 # convert massive shp into df
-nm_disconnected_stream_df <- nm_disconnected_stream %>%
-    as.data.frame()
+# summarize nm_disconnected_stream
 nm_census_tracts_df <- nm_census_tracts %>%
     as.data.frame()
 
-# summarize nm_disconnected_stream
-nm_disconnected_stream_summary_df <- nm_disconnected_stream_df %>%
-  group_by(NAMELSAD) %>%
-  summarize(LengthMI = round(sum(LengthKM)/1.6, 2)) %>%
-  ungroup()
+nm_disconnected_stream_df <- nm_disconnected_stream %>%
+    as.data.frame()
+# nm_disconnected_stream_summary_df <- nm_disconnected_stream_df %>%
+#   group_by(NAMELSAD) %>%
+#   summarize(LengthMI = round(sum(LengthKM)/1.6, 2)) %>%
+#   ungroup()
 
-# summarize nm_census_tracts 
-county_level_weighted <- nm_census_tracts_df %>%
-  group_by(county_name) %>%
-  mutate(County_Total_Pop = sum(Total_Pop)) %>%
-  ungroup() %>%
-  group_by(id) %>%
-  mutate(Pop_Weight = Total_Pop/County_Total_Pop,
-         weighted_HDI = Pop_Weight*HDI,
-         weighted_income = Pop_Weight*income_per_capita,
-         weighted_expectancy = Pop_Weight*`Life Expectancy`,
-         weighted_edn = Pop_Weight*mean_years_ed) %>%
-  group_by(county_name) %>%
-  summarise(weighted_income = round(sum(weighted_income)),
-            weighted_HDI = round(sum(weighted_HDI),3),
-            weighted_expectancy = round(sum(weighted_expectancy),2),
-            weighted_edn = round(sum(weighted_edn),2))
 
 # other county-level summary statistics weighted by population
 fivenum_hdi <- fivenum(county_level_weighted$weighted_HDI)
 fivenum_income <- fivenum(county_level_weighted$weighted_income)
 fivenum_education <- fivenum(county_level_weighted$weighted_edn)
 fivenum_expectancy <- fivenum(county_level_weighted$weighted_expectancy)
-fivenum_disconnected <- fivenum(nm_disconnected_stream_summary_df$LengthMI)
+fivenum_disconnected <- fivenum(nm_streams_summary_df$type_stream_length)
+fivenum_disconnected_pct <- fivenum(nm_streams_summary_df$pct_disconnected)
 
 # congressional districts
 congress_reps <- c("Deb Haaland", "Xochitl Torres Small", "Ben Ray Lujan")
@@ -114,7 +92,7 @@ Column {data-width=200 .sidebar}
 ### New Mexico
 
 ```{r}
-renderText(cat(paste("In this dashboard, you will find information on the how each county and congressional district is affected by changes in the Clean Water Act. These legislative changes means that some waterways will no longer be protected. Some places will be more affected than others. This dashboard will not only show where, but also the socio-economic characteristics of each of these places using the Human Development Index (HDI).", "The HDI is a statistic used by the United Nations to rank countries into tiers of human development. It looks at life expectancy, education, and per capita income. This has been modified to for use in New Mexico where it is to rank and evaluate each county in terms of its human development.", sep = "\n")))
+renderText(paste("In this dashboard, you will find information on the how each county and congressional district is affected by changes in the Clean Water Act. These legislative changes means that some waterways will no longer be protected. Some places will be more affected than others. This dashboard will not only show where, but also the socio-economic characteristics of each of these places using the Human Development Index (HDI).", "The HDI is a statistic used by the United Nations to rank countries into tiers of human development. It looks at life expectancy, education, and per capita income. This has been modified to for use in New Mexico where it is to rank and evaluate each county in terms of its human development.", sep = "\n"))
 ```
 
 Column {data-width=600 .tabset}
@@ -122,24 +100,19 @@ Column {data-width=600 .tabset}
 
 ### Unprotected Waterways
 ```{r}
-reactive_state <- reactive({
+renderLeaflet({
     bins <- c(0.5, 0.6, 0.7, 0.8, 0.9)
     pal <- colorBin("Blues", domain = nm_census_tracts$HDI, bins = bins)
     leaflet() %>%
       addTiles() %>%
-      #addProviderTiles(providers$CartoDB.Positron) %>%
-      # addPolygons(data = nm_counties, group = "County",  
-      #             fillOpacity = 0, weight = 1.5, color = "white") %>%
+      addPolygons(data = nm_counties, group = "County",  
+                  fillOpacity = 0, weight = 1.5, color = "white") %>%
       addPolygons(data = nm_census_tracts, label = ~round(HDI, 3), group = "HDI",
                   fillColor = ~pal(HDI), fillOpacity = 0.75, weight = 0, opacity = 1, color = "white") %>%
       addPolylines(data = st_zm(nm_disconnected_stream), label = ~GNIS_Name, group = "Disconnected Streams",
                    color = "#fb6a4a", weight = 1.2) %>%
-      addLayersControl(overlayGroups = c("HDI", "Disconnected Streams"),
+      addLayersControl(overlayGroups = c("County", "HDI", "Disconnected Streams"),
                        options = layersControlOptions(collapsed = FALSE))
-      
-  })
-renderLeaflet({
-     reactive_state()
    })
 ```
 
@@ -161,14 +134,12 @@ Column {data-width=200}
 ### Unprotected Waterways
 
 ```{r}
-nm_disconnected_length <- reactive({
-  nm_disconnected_stream_summary_df %>% 
-    select(LengthMI) %>% 
-    unlist() %>%
-    sum()})
+nm_disconnected_length <- nm_streams_summary_df$type_stream_length %>%
+  unlist() %>%
+  sum()
 
 renderValueBox({
-  valueBox(nm_disconnected_length(),
+  valueBox(nm_disconnected_length,
            caption = "Unprotected Waterways (mi)",
            icon = 'fa-tint-slash',
            color = "primary")})
@@ -177,21 +148,20 @@ renderValueBox({
 ### State HDI
 
 ```{r}
-reactive_nm_hdi <- reactive({
-    HDI_indicators %>%
-      ungroup() %>%
-      mutate(total_state_pop = sum(Total_Pop)) %>%
-      group_by(id) %>%
-      mutate(weight_pop = Total_Pop/total_state_pop,
-             weighted_HDI = weight_pop * HDI) %>%
-      ungroup() %>%
-      select(weighted_HDI) %>%
-      unlist() %>%
-      sum() %>%
-      round(.,3)})
+nm_hdi <- HDI_indicators %>%
+  ungroup() %>%
+  mutate(total_state_pop = sum(Total_Pop)) %>%
+  group_by(id) %>%
+  mutate(weight_pop = Total_Pop/total_state_pop,
+         weighted_HDI = weight_pop * HDI) %>%
+  ungroup() %>%
+  select(weighted_HDI) %>%
+  unlist() %>%
+  sum() %>%
+  round(.,3)
 
 renderValueBox({
-  valueBox(reactive_nm_hdi(),
+  valueBox(nm_hdi,
            caption = "HDI",
            icon = 'fa-user',
            color = "primary")})
@@ -200,21 +170,20 @@ renderValueBox({
 ### Life Expectancy
 
 ```{r}
-nm_life_exp <- reactive({
-  nm_census_tracts_df %>%
-    ungroup() %>%
-    mutate(total_state_pop = sum(Total_Pop)) %>%
-    group_by(id) %>%
-    mutate(weight_pop = Total_Pop/total_state_pop,
-           weighted_life_exp = weight_pop * `Life Expectancy`) %>%
-    ungroup() %>%
-    select(weighted_life_exp) %>% 
-    unlist() %>%
-    sum() %>%
-    round(., 1)})
+nm_life_exp <- nm_census_tracts_df %>%
+  ungroup() %>%
+  mutate(total_state_pop = sum(Total_Pop)) %>%
+  group_by(id) %>%
+  mutate(weight_pop = Total_Pop/total_state_pop,
+         weighted_life_exp = weight_pop * `Life Expectancy`) %>%
+  ungroup() %>%
+  select(weighted_life_exp) %>% 
+  unlist() %>%
+  sum() %>%
+  round(., 1)
 
 renderValueBox({
-  valueBox(nm_life_exp(),
+  valueBox(nm_life_exp,
            caption = "Life Expectancy",
            icon = 'fa-heartbeat',
            color = "primary")})
@@ -223,21 +192,20 @@ renderValueBox({
 ### Years of Schooling
 
 ```{r}
-nm_edn_yrs <- reactive({
-  nm_census_tracts_df %>%
-    ungroup() %>%
-    mutate(total_state_pop = sum(Total_Pop)) %>%
-    group_by(id) %>%
-    mutate(weight_pop = Total_Pop/total_state_pop,
-           weighted_years_ed = weight_pop * mean_years_ed) %>%
-    ungroup() %>%
-    select(weighted_years_ed) %>% 
-    unlist() %>%
-    sum() %>%
-    round(., 1)})
+nm_edn_yrs <- nm_census_tracts_df %>%
+  ungroup() %>%
+  mutate(total_state_pop = sum(Total_Pop)) %>%
+  group_by(id) %>%
+  mutate(weight_pop = Total_Pop/total_state_pop,
+         weighted_years_ed = weight_pop * mean_years_ed) %>%
+  ungroup() %>%
+  select(weighted_years_ed) %>% 
+  unlist() %>%
+  sum() %>%
+  round(., 1)
 
 renderValueBox({
-  valueBox(nm_edn_yrs(),
+  valueBox(nm_edn_yrs,
            caption = "Years of Education for Adults",
            icon = 'fa-book',
            color = "primary")})
@@ -246,21 +214,20 @@ renderValueBox({
 ### Annual Income
 
 ```{r}
-nm_income_pc <- reactive({
-  nm_census_tracts_df %>%
-    ungroup() %>%
-    mutate(total_state_pop = sum(Total_Pop)) %>%
-    group_by(id) %>%
-    mutate(weight_pop = Total_Pop/total_state_pop,
-           weighted_income_pc = weight_pop * income_per_capita) %>%
-    ungroup() %>%
-    select(weighted_income_pc) %>% 
-    unlist() %>%
-    sum() %>%
-    round()})
+nm_income_pc <- nm_census_tracts_df %>%
+  ungroup() %>%
+  mutate(total_state_pop = sum(Total_Pop)) %>%
+  group_by(id) %>%
+  mutate(weight_pop = Total_Pop/total_state_pop,
+         weighted_income_pc = weight_pop * income_per_capita) %>%
+  ungroup() %>%
+  select(weighted_income_pc) %>% 
+  unlist() %>%
+  sum() %>%
+  round()
 
 renderValueBox({
-  valueBox(nm_income_pc(),
+  valueBox(nm_income_pc,
            caption = "Mean Income per Capita ($)",
            icon = 'fa-dollar-sign',
            color = "primary")})
@@ -289,7 +256,7 @@ Column {data-width=600 .tabset}
 ```{r}
 reactive_county <- reactive({
     nm_census_tracts_filtered <- nm_census_tracts %>%
-      filter(county_name == input$county)
+      filter(county == input$county)
     bins <- c(0.5, 0.6, 0.7, 0.8, 0.9)
     pal <- colorBin("Blues", domain = nm_census_tracts_filtered$HDI, bins = bins)
     nm_counties_filtered <- nm_counties %>%
@@ -319,9 +286,9 @@ renderLeaflet({
 
 ```{r}
 disconnected_length <- reactive({
-  nm_disconnected_stream_summary_df %>% 
+  nm_streams_summary_df %>% 
     filter(NAMELSAD == input$county) %>% 
-    select(LengthMI) %>% 
+    select(type_stream_length) %>% 
     unlist()})
 
 reactive_county_hdi <- reactive({
