@@ -46,6 +46,7 @@ library(flexdashboard)
 library(leaflet)
 library(tidyverse)
 library(sf)
+library(ggrepel)
 
 # reading all inputs
 
@@ -54,25 +55,13 @@ nm_census_tracts <- st_read("NM_CD_Tract.shp")
 nm_disconnected_stream <- st_read("NHDHR_NM2019_Disconnected_County_Simplified.shp")
 nm_congress <- st_read("NM_CD.shp")
 nm_disconnected_stream_cd <- st_read("NHDHR_NM2019_Disconnected_Congress_Simplified.shp")
-HDI_df <- readRDS("HDI_df.RDS")
-income_df <- readRDS("income.RDS")
-education_df <- readRDS("mean_education.RDS")
-life_exp_df <- readRDS("nm_life_expectancy.RDS")
+HDI_indicators <- readRDS("HDI_indicators.RDS")
 basic_count <- readRDS("basic_count.RDS")
 nm_streams_summary_df <- readRDS("nm_streams_summary.RDS")
-domestic_water_use_df <- read_csv("domestic_water_use.csv")
 
-# joining basic_count to hdi_df
-HDI_df <- inner_join(HDI_df, basic_count[,c("id", "Total_Pop")])
+# joining hdi_indicators to census_tract_shp
+nm_census_tracts <- inner_join(nm_census_tracts, HDI_indicators)
 
-# joining hdi_df to census_tract_shp
-HDI_df <- HDI_df %>%
-  group_by(id) %>%
-  mutate(GEOID = substr(id, 10, 20))
-nm_census_tracts <- inner_join(nm_census_tracts, HDI_df)
-nm_census_tracts <- inner_join(nm_census_tracts, education_df[,c("id", "mean_years_ed")])
-nm_census_tracts <- inner_join(nm_census_tracts, income_df[,c("id", "income_per_capita")])
-nm_census_tracts <- inner_join(nm_census_tracts, life_exp_df[,c("id", "Life Expectancy")])
 
 # convert massive shp into df
 nm_disconnected_stream_df <- nm_disconnected_stream %>%
@@ -114,8 +103,6 @@ fivenum_disconnected <- fivenum(nm_disconnected_stream_summary_df$LengthMI)
 congress_reps <- c("Deb Haaland", "Xochitl Torres Small", "Ben Ray Lujan")
 congress_reps_parties <- c("Dem", "Dem", "Dem")
 
-# water access vulnerability
-vulnerability <- inner_join(nm_streams_summary_df[,c("NAMELSAD", "pct_disconnected")], domestic_water_use_df[,c("county_nm", "Domestic Self Supplied Pct")], by = c("NAMELSAD" = "county_nm"))
 ```
 
 Statewide
@@ -139,7 +126,8 @@ reactive_state <- reactive({
     bins <- c(0.5, 0.6, 0.7, 0.8, 0.9)
     pal <- colorBin("Blues", domain = nm_census_tracts$HDI, bins = bins)
     leaflet() %>%
-      addProviderTiles(providers$CartoDB.Positron) %>%
+      addTiles() %>%
+      #addProviderTiles(providers$CartoDB.Positron) %>%
       # addPolygons(data = nm_counties, group = "County",  
       #             fillOpacity = 0, weight = 1.5, color = "white") %>%
       addPolygons(data = nm_census_tracts, label = ~round(HDI, 3), group = "HDI",
@@ -158,7 +146,7 @@ renderLeaflet({
 ### Vulnerability
 ```{r}
 renderPlot({
-  ggplot(vulnerability, aes(x = `Domestic Self Supplied Pct`, y = pct_disconnected)) + 
+  ggplot(nm_streams_summary_df, aes(x = `Domestic Self Supplied Pct`, y = pct_disconnected)) + 
     geom_point() + 
     geom_text_repel(aes(label = NAMELSAD)) + 
     labs(title = "At-Risk Counties", subtitle = "Counties with a higher percentage of its population relying on self-supplied water sources are more at risk when agreater percentage of waterways become unprotected.",
@@ -190,7 +178,7 @@ renderValueBox({
 
 ```{r}
 reactive_nm_hdi <- reactive({
-    HDI_df %>%
+    HDI_indicators %>%
       ungroup() %>%
       mutate(total_state_pop = sum(Total_Pop)) %>%
       group_by(id) %>%
@@ -309,7 +297,8 @@ reactive_county <- reactive({
     nm_streams_filtered <- nm_disconnected_stream %>%
       filter(NAMELSAD == input$county)
     leaflet() %>%
-      addProviderTiles(providers$CartoDB.Positron) %>%
+      addTiles() %>%
+      #addProviderTiles(providers$CartoDB.Positron) %>%
       addPolygons(data = nm_counties_filtered, group = "County",  
                   fillOpacity = 0, weight = 1.5, color = "black") %>%
       addPolygons(data = nm_census_tracts_filtered, label = ~round(HDI, 3), group = "HDI",
@@ -337,25 +326,25 @@ disconnected_length <- reactive({
 
 reactive_county_hdi <- reactive({
     county_level_weighted %>% 
-    filter(county_name == input$county) %>% 
+    filter(county == input$county) %>% 
     select(weighted_HDI) %>% 
     unlist()})
 
 county_life_exp <- reactive({
   county_level_weighted %>% 
-    filter(county_name == input$county) %>% 
+    filter(county == input$county) %>% 
     select(weighted_expectancy) %>% 
     unlist()})
 
 education_yrs <- reactive({
   county_level_weighted %>% 
-    filter(county_name == input$county) %>% 
+    filter(county == input$county) %>% 
     select(weighted_edn) %>% 
     unlist()})
 
 income_pc <- reactive({
   county_level_weighted %>% 
-    filter(county_name == input$county) %>% 
+    filter(county == input$county) %>% 
     select(weighted_income) %>% 
     unlist()})
 
