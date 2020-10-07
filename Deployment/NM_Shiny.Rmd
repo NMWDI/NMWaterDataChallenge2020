@@ -89,8 +89,8 @@ fivenum_hdi <- fivenum(county_level_weighted$weighted_HDI)
 fivenum_income <- fivenum(county_level_weighted$weighted_income)
 fivenum_education <- fivenum(county_level_weighted$weighted_edn)
 fivenum_expectancy <- fivenum(county_level_weighted$weighted_expectancy)
-fivenum_disconnected <- fivenum(nm_streams_summary_df$type_stream_length)
-fivenum_disconnected_pct <- fivenum(nm_streams_summary_df$pct_disconnected)
+fivenum_disconnected <- fivenum(nm_streams_summary_df$length_unprotected)
+fivenum_disconnected_pct <- fivenum(nm_streams_summary_df$pct_unprotected)
 
 # congressional districts
 congress_reps <- c("Deb Haaland", "Xochitl Torres Small", "Ben Ray Lujan")
@@ -119,11 +119,11 @@ renderLeaflet({
     bins <- c(0.5, 0.6, 0.7, 0.8, 0.9)
     pal <- colorBin("Blues", domain = nm_census_tracts$HDI, bins = bins)
     leaflet() %>%
-      addTiles() %>%
+      addProviderTiles(providers$Stamen.Toner) %>%
       addPolygons(data = nm_counties, group = "County",  
                   fillOpacity = 0, weight = 1.5, color = "white") %>%
       addPolygons(data = nm_census_tracts, label = ~round(HDI, 3), group = "HDI",
-                  fillColor = ~pal(HDI), fillOpacity = 0.75, weight = 0, opacity = 1, color = "white") %>%
+                  fillColor = ~pal(HDI), fillOpacity = 0.75, weight = 0, opacity = 0, color = "white") %>%
       addPolylines(data = st_zm(nm_disconnected_stream), label = ~GNIS_Name, group = "Unprotected Streams",
                    color = "#fb6a4a", weight = 1.2) %>%
       addPolylines(data = st_zm(nm_connected_stream), label = ~GNIS_Name, group = "Protected Streams",
@@ -164,10 +164,10 @@ ggplot(total_basic_count, aes(x = Race, y = value)) +
 ### Vulnerability
 ```{r}
 renderPlot({
-  ggplot(nm_streams_summary_df, aes(x = `Domestic Self Supplied Pct`, y = pct_disconnected)) + 
+  ggplot(nm_streams_summary_df, aes(x = `Domestic Self Supplied Pct`, y = pct_unprotected)) + 
     geom_point() + 
-    geom_text_repel(aes(label = NAMELSAD)) + 
-    labs(title = "At-Risk Counties", subtitle = "Counties with a higher percentage of its population relying on self-supplied water sources are more at risk when agreater percentage of waterways become unprotected.",
+    geom_text_repel(aes(label = NAMELSAD), size = 2.0) + 
+    labs(title = "At-Risk Counties", subtitle = "Counties are vulnerable when more of its population rely on (unprotected) self-supplied water sources.",
          x = "Population with Self-Supplied Water (%)", y = "Unprotected Waterways (%) of County Total",
          colour = "Vulnerability Score")
    })
@@ -179,7 +179,7 @@ Column {data-width=200}
 ### Unprotected Waterways
 
 ```{r}
-nm_disconnected_length <- nm_streams_summary_df$type_stream_length %>%
+nm_disconnected_length <- nm_streams_summary_df$length_unprotected %>%
   unlist() %>%
   sum()
 
@@ -311,7 +311,7 @@ reactive_county <- reactive({
     nm_connected_streams_filtered <- nm_connected_stream %>%
       filter(NAMELSAD == input$county)
     leaflet() %>%
-      addTiles() %>%
+      addProviderTiles(providers$Stamen.Toner) %>%
       #addProviderTiles(providers$CartoDB.Positron) %>%
       addPolygons(data = nm_counties_filtered, group = "County",  
                   fillOpacity = 0, weight = 1.5, color = "black") %>%
@@ -354,8 +354,9 @@ renderPlot({
 ```{r}
 disconnected_length <- reactive({
   nm_streams_summary_df %>% 
+    ungroup() %>%
     filter(NAMELSAD == input$county) %>% 
-    select(type_stream_length) %>% 
+    select(length_unprotected) %>% 
     unlist()})
 
 reactive_county_hdi <- reactive({
@@ -423,6 +424,24 @@ renderValueBox({
            icon = 'fa-tint-slash',
            color = ifelse(disconnected_length() < fivenum_disconnected[3], "primary", 
                           ifelse(disconnected_length() > fivenum_disconnected[4], "danger", "warning")))})
+```
+
+### Unprotected Waterways_pct
+
+```{r}
+disconnected_pct <- reactive({
+  nm_streams_summary_df %>% 
+    ungroup() %>%
+    filter(NAMELSAD == input$county) %>% 
+    select(pct_unprotected) %>% 
+    unlist()})
+
+renderValueBox({
+  valueBox(disconnected_pct(),
+           caption = "Unprotected Waterways (% of Total)",
+           icon = 'fa-tint-slash',
+           color = ifelse(disconnected_pct() < fivenum_disconnected_pct[3], "primary", 
+                          ifelse(disconnected_pct() > fivenum_disconnected_pct[4], "danger", "warning")))})
 ```
 
 ### County HDI
