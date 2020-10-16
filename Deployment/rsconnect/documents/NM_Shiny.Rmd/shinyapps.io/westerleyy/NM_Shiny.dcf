@@ -5,8 +5,10 @@ account: westerleyy
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2798751
-bundleId: 3710994
+bundleId: 3748939
 url: https://westerleyy.shinyapps.io/NM_Shiny/
-when: 1602038430.39458
+when: 1602856893.12667
 asMultiple: FALSE
 asStatic: FALSE
+additionalFiles: nm_census_tracts.RDS|nm_connected_stream.RDS|nm_county.RDS|nm_disconnected_stream.RDS|nm_npdes.RDS
+ignoredFiles: nm_county.RDS|nm_census_tracts.RDS|nm_disconnected_stream.RDS|nm_connected_stream.RDS|nm_npdes.RDS

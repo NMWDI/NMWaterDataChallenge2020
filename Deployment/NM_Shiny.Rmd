@@ -1,43 +1,12 @@
 ---
 title: "Human Development and Water in New Mexico"
 resource_files:
-- tl_2018_nm_county.cpg
-- tl_2018_nm_county.dbf
-- tl_2018_nm_county.prj
-- tl_2018_nm_county.sbn
-- tl_2018_nm_county.sbx
-- tl_2018_nm_county.shp
-- tl_2018_nm_county.shx
-- tl_2018_nm_county_FGDC.xml
-- NM_CD.dbf
-- NM_CD.prj
-- NM_CD.sbn
-- NM_CD.sbx
-- NM_CD.shx
-- NM_CD_Tract.cpg
-- NM_CD_Tract.dbf
-- NM_CD_Tract.prj
-- NM_CD_Tract.shx
-- NHDHR_NM2019_Disconnected_County_Simplified.cpg
-- NHDHR_NM2019_Disconnected_County_Simplified.dbf
-- NHDHR_NM2019_Disconnected_County_Simplified.prj
-- NHDHR_NM2019_Disconnected_County_Simplified.shx
-- NHDHR_NM2019_Disconnected_Congress_Simplified.cpg
-- NHDHR_NM2019_Disconnected_Congress_Simplified.dbf
-- NHDHR_NM2019_Disconnected_Congress_Simplified.prj
-- NHDHR_NM2019_Disconnected_Congress_Simplified.shx
-- NHDHR_NM2019_Connected_County.cpg
-- NHDHR_NM2019_Connected_County.dbf
-- NHDHR_NM2019_Connected_County.prj
-- NHDHR_NM2019_Connected_County.shx
 - basic_count_long.RDS
-- NM_NPDES_Permits_ACTIVE.shx
-- NM_NPDES_Permits_ACTIVE.shp.xml
-- NM_NPDES_Permits_ACTIVE.sbx
-- NM_NPDES_Permits_ACTIVE.sbn
-- NM_NPDES_Permits_ACTIVE.prj
-- NM_NPDES_Permits_ACTIVE.dbf
-- NM_NPDES_Permits_ACTIVE.CPG
+- nm_census_tracts.RDS
+- nm_connected_stream.RDS
+- nm_county.RDS
+- nm_disconnected_stream.RDS
+- nm_npdes.RDS
 runtime: shiny
 output:
   flexdashboard::flex_dashboard:
@@ -54,17 +23,17 @@ library(ggrepel)
 
 # reading all inputs
 
-nm_counties <- st_read("tl_2018_nm_county.shp")
-nm_census_tracts <- st_read("NM_CD_Tract.shp")
-nm_disconnected_stream <- st_read("NHDHR_NM2019_Disconnected_County_Simplified.shp")
-nm_connected_stream <- st_read("NHDHR_NM2019_Connected_County.shp")
-nm_congress <- st_read("NM_CD.shp")
-nm_disconnected_stream_cd <- st_read("NHDHR_NM2019_Disconnected_Congress_Simplified.shp")
+# nm_disconnected_stream_cd <- readRDS("nm_disconnected_stream_cd.RDS")
+nm_counties <- readRDS("nm_county.RDS")
+nm_census_tracts <- readRDS("nm_census_tracts.RDS")
+nm_disconnected_stream <- readRDS("nm_disconnected_stream.RDS")
+nm_connected_stream <- readRDS("nm_connected_stream.RDS")
+# nm_congress <- readRDS("nm_congress.RDS")
 HDI_indicators <- readRDS("HDI_indicators.RDS")
 basic_count <- readRDS("basic_count_long.RDS")
 nm_streams_summary_df <- readRDS("nm_streams_summary.RDS")
 county_level_weighted <- readRDS("county_level_weighted.RDS")
-nm_npdes <- st_read("NM_NPDES_Permits_ACTIVE.shp")
+nm_npdes <- readRDS("nm_npdes.RDS")
 
 
 # joining hdi_indicators to census_tract_shp
@@ -72,16 +41,11 @@ nm_census_tracts <- inner_join(nm_census_tracts, HDI_indicators)
 
 
 # convert massive shp into df
-# summarize nm_disconnected_stream
 nm_census_tracts_df <- nm_census_tracts %>%
     as.data.frame()
 
 nm_disconnected_stream_df <- nm_disconnected_stream %>%
     as.data.frame()
-# nm_disconnected_stream_summary_df <- nm_disconnected_stream_df %>%
-#   group_by(NAMELSAD) %>%
-#   summarize(LengthMI = round(sum(LengthKM)/1.6, 2)) %>%
-#   ungroup()
 
 
 # other county-level summary statistics weighted by population
@@ -93,8 +57,8 @@ fivenum_disconnected <- fivenum(nm_streams_summary_df$length_unprotected)
 fivenum_disconnected_pct <- fivenum(nm_streams_summary_df$pct_unprotected)
 
 # congressional districts
-congress_reps <- c("Deb Haaland", "Xochitl Torres Small", "Ben Ray Lujan")
-congress_reps_parties <- c("Dem", "Dem", "Dem")
+# congress_reps <- c("Deb Haaland", "Xochitl Torres Small", "Ben Ray Lujan")
+# congress_reps_parties <- c("Dem", "Dem", "Dem")
 
 ```
 
@@ -393,14 +357,10 @@ comparison_plot_df_plot <- reactive({
   values <- c(hdi_val, disconnected_val, life_exp_val, education_val, income_val)
   comparison_df <- cbind(metric, values) %>%
     as.data.frame()
-  #comparison_df$values_type <- ifelse(comparison_df$values < 0, "below", "above")
   comparison_df <- comparison_df[order(comparison_df$values),]
   comparison_df$metric <- factor(comparison_df$metric, levels = comparison_df$metric)
   ggplot(comparison_df, aes(x = metric, y = as.numeric(values), label = values)) +
     geom_bar(stat = "identity", width = 0.5) + 
-    # scale_fill_manual(name = "Performance",
-    #                   labels = c("Above Median", "Below Median"),
-    #                   values = c("above" = "#00ba38", "below" = "#f8766d")) + 
     labs(title = paste("Comparing", input$county, "Against NM Median", sep = " "),
          y = "% (Below [-ve] / Above [+ve]) State Median",
          x = "Metric") + 
@@ -488,83 +448,4 @@ renderValueBox({
            icon = 'fa-dollar-sign',
            color = ifelse(income_pc() > fivenum_income[3], "primary", 
                           ifelse(income_pc() < fivenum_income[2], "danger", "warning")))})
-```
-
-Congressional Districts  
-==================
-
-Column {data-width=200 .sidebar}
------------------------------------------------------------------------
-
-### New Mexico
-
-```{r}
-selectInput("congressional_district",
-            "Congressional District:",
-            choices = sort(nm_congress$District_N),
-            "1")
-```
-  
-Column {data-width=600 .tabset}
------------------------------------------------------------------------
-### Unprotected Waterways
-
-```{r}
-reactive_congress <- reactive({
-    nm_census_tracts_filtered <- nm_census_tracts %>%
-      filter(District_N == input$congressional_district)
-    bins <- c(0.5, 0.6, 0.7, 0.8, 0.9)
-    pal <- colorBin("Blues", domain = nm_census_tracts_filtered$HDI, bins = bins)
-    nm_congress_filtered <- nm_congress %>%
-      filter(District_N == input$congressional_district)
-    nm_streams_filtered <- nm_disconnected_stream_cd %>%
-      filter(District_N == input$congressional_district)
-    leaflet() %>%
-      addProviderTiles(providers$CartoDB.Positron) %>%
-      addPolygons(data = nm_congress_filtered, group = "District",
-                  fillOpacity = 0, weight = 1.5, color = "black") %>%
-      addPolygons(data = nm_census_tracts_filtered, label = ~round(HDI, 3), group = "HDI",
-                  fillColor = ~pal(HDI), fillOpacity = 0.5, weight = 0.5, opacity = 1, color = "white") %>%
-      addPolylines(data = st_zm(nm_streams_filtered), label = ~GNIS_Name, group = "Disconnected Streams",
-                   color = "#fb6a4a", weight = 1.2) %>%
-      addLayersControl(overlayGroups = c("District", "HDI", "Disconnected Streams"),
-                       options = layersControlOptions(collapsed = FALSE))
-
-  })
-renderLeaflet({
-     reactive_congress()
-   })
-```
-  
-Column {data-width=200}
------------------------------------------------------------------------
-
-### Representative
-
-```{r}
-rep <- reactive({
-  congress_reps[as.numeric(input$congressional_district)]
-  
-})
-
-renderValueBox({
-  valueBox(rep(),
-           caption = "Representative",
-           icon = 'fa-landmark',
-           color = "primary")})
-```
-
-### Party
-
-```{r}
-party <- reactive({
-  congress_reps_parties[as.numeric(input$congressional_district)]
-  
-})
-
-renderValueBox({
-  valueBox(party(),
-           caption = "Party",
-           icon = ifelse(party() == "Dem", "fa-democrat", "fa-republican"),
-           color = ifelse(party() == "Dem", "primary", "warning"))})
 ```
