@@ -23,30 +23,21 @@ library(ggrepel)
 
 # reading all inputs
 
-# nm_disconnected_stream_cd <- readRDS("nm_disconnected_stream_cd.RDS")
 nm_counties <- readRDS("nm_county.RDS")
 nm_census_tracts <- readRDS("nm_census_tracts.RDS")
 nm_disconnected_stream <- readRDS("nm_disconnected_stream.RDS")
 nm_connected_stream <- readRDS("nm_connected_stream.RDS")
-# nm_congress <- readRDS("nm_congress.RDS")
 HDI_indicators <- readRDS("HDI_indicators.RDS")
 basic_count <- readRDS("basic_count_long.RDS")
 nm_streams_summary_df <- readRDS("nm_streams_summary.RDS")
 county_level_weighted <- readRDS("county_level_weighted.RDS")
 nm_npdes <- readRDS("nm_npdes.RDS")
-
+total_basic_count <- readRDS("state_total_basic_count.RDS")
+nm_census_tracts_df <- readRDS("nm_census_tracts_df.RDS")
 
 # joining hdi_indicators to census_tract_shp
 nm_census_tracts <- inner_join(nm_census_tracts, HDI_indicators)
-
-
-# convert massive shp into df
-nm_census_tracts_df <- nm_census_tracts %>%
-    as.data.frame()
-
-nm_disconnected_stream_df <- nm_disconnected_stream %>%
-    as.data.frame()
-
+ 
 
 # other county-level summary statistics weighted by population
 fivenum_hdi <- fivenum(county_level_weighted$weighted_HDI)
@@ -56,10 +47,8 @@ fivenum_expectancy <- fivenum(county_level_weighted$weighted_expectancy)
 fivenum_disconnected <- fivenum(nm_streams_summary_df$length_unprotected)
 fivenum_disconnected_pct <- fivenum(nm_streams_summary_df$pct_unprotected)
 
-# congressional districts
-# congress_reps <- c("Deb Haaland", "Xochitl Torres Small", "Ben Ray Lujan")
-# congress_reps_parties <- c("Dem", "Dem", "Dem")
-
+# color bins
+bins <- c(0.5, 0.6, 0.7, 0.8, 0.9)
 ```
 
 Statewide
@@ -80,10 +69,10 @@ Column {data-width=600 .tabset}
 ### Unprotected Waterways
 ```{r}
 renderLeaflet({
-    bins <- c(0.5, 0.6, 0.7, 0.8, 0.9)
     pal <- colorBin("Blues", domain = nm_census_tracts$HDI, bins = bins)
     leaflet() %>%
-      addProviderTiles(providers$Stamen.Toner) %>%
+      addProviderTiles(providers$Stamen.Toner, options = providerTileOptions(zIndex = 7)) %>%
+      setView(lng = -105.87, lat = 34.52, zoom = 7) %>%
       addPolygons(data = nm_counties, group = "County",  
                   fillOpacity = 0, weight = 1.5, color = "white") %>%
       addPolygons(data = nm_census_tracts, label = ~round(HDI, 3), group = "HDI",
@@ -93,29 +82,17 @@ renderLeaflet({
       addPolylines(data = st_zm(nm_connected_stream), label = ~GNIS_Name, group = "Protected Streams",
                    color = "#08519c", weight = 1.2) %>%
       addCircleMarkers(data = nm_npdes, label = ~FACILITYNA, group = "Pollutant Sources", 
-                       color = "#e41a1c", radius = 6, stroke = F, fillOpacity = 0.5) %>%
+                       color = "#e41a1c", radius = 6, stroke = F, fillOpacity = 0.5, clusterOptions = markerClusterOptions()) %>%
       addLayersControl(overlayGroups = c("County", "HDI", "Unprotected Streams", "Protected Streams", "Pollutant Sources"),
-                       options = layersControlOptions(collapsed = FALSE))
+                       options = layersControlOptions(collapsed = FALSE)) %>%
+      hideGroup(c("Unprotected Streams", "Protected Streams", "Pollutant Sources", "County")) %>%
+      # setMaxBounds(lng1 = -108, lng2 = -103, lat1 = 32, lat2 = 36) %>%
+      addLegend("bottomright", pal = pal, values = nm_census_tracts$HDI, title = "HDI", opacity = 0.7)
    })
 ```
 
 ### Demographics
 ```{r}
-total_basic_count <- basic_count %>%
-    select(Asian, Biracial, Black, Hispanic, Islander, Native, Other, White, Population) %>%
-    unique() %>%
-    summarize(Population = sum(Population),
-              Asian = round(100 * sum(Asian)/Population, 2),
-              Biracial = round(100 * sum(Biracial)/Population, 2),
-              Black = round(100 * sum(Black)/Population, 2),
-              Hispanic = round(100 * sum(Hispanic)/Population, 2),
-              Islander = round(100 * sum(Islander)/Population, 2),
-              Native = round(100 * sum(Native)/Population, 2),
-              Other = round(100 * sum(Other)/Population, 2),
-              White = round(100 * sum(White)/Population, 2)) %>%
-    select(Asian, Biracial, Black, Hispanic, Islander, Native, Other, White) %>%
-    pivot_longer(cols = c("Asian", "Biracial", "Black", "Hispanic", "Islander", "Native", "Other", "White"),"Race")
-
 ggplot(total_basic_count, aes(x = Race, y = value)) + 
     geom_point(col = "#fc8d62") + 
     geom_segment(aes(x = Race, xend = Race, y = 0, yend = value), col = "#969696") +
@@ -266,7 +243,6 @@ Column {data-width=600 .tabset}
 reactive_county <- reactive({
     nm_census_tracts_filtered <- nm_census_tracts %>%
       filter(county == input$county)
-    bins <- c(0.5, 0.6, 0.7, 0.8, 0.9)
     pal <- colorBin("Blues", domain = nm_census_tracts_filtered$HDI, bins = bins)
     nm_counties_filtered <- nm_counties %>%
       filter(NAMELSAD == input$county)
@@ -276,7 +252,6 @@ reactive_county <- reactive({
       filter(NAMELSAD == input$county)
     leaflet() %>%
       addProviderTiles(providers$Stamen.Toner) %>%
-      #addProviderTiles(providers$CartoDB.Positron) %>%
       addPolygons(data = nm_counties_filtered, group = "County",  
                   fillOpacity = 0, weight = 1.5, color = "black") %>%
       addPolygons(data = nm_census_tracts_filtered, label = ~round(HDI, 3), group = "HDI",
@@ -286,8 +261,9 @@ reactive_county <- reactive({
       addPolylines(data = st_zm(nm_connected_streams_filtered), label = ~GNIS_Name, group = "Protected Streams",
                    color = "#08519c", weight = 1.2) %>%
       addLayersControl(overlayGroups = c("County", "HDI", "Unprotected Streams", "Protected Streams"),
-                       options = layersControlOptions(collapsed = FALSE))
-      
+                       options = layersControlOptions(collapsed = FALSE)) %>%
+      hideGroup(c("Unprotected Streams", "Protected Streams", "County")) %>%
+      addLegend("bottomright", pal = pal, values = nm_census_tracts_filtered$HDI, title = "HDI", opacity = 0.7)
   })
 renderLeaflet({
      reactive_county()
