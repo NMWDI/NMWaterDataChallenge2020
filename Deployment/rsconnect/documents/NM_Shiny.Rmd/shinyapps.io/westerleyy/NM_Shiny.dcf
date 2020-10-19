@@ -5,8 +5,9 @@ account: westerleyy
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2798751
-bundleId: 3753784
+bundleId: 3758866
 url: https://westerleyy.shinyapps.io/NM_Shiny/
-when: 1602996371.79396
+when: 1603122412.3655
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: nm_county.RDS
