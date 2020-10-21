@@ -108,11 +108,11 @@ ggplot(total_basic_count, aes(x = Race, y = value)) +
 ### Vulnerability
 ```{r}
 renderPlot({
-  ggplot(nm_streams_summary_df, aes(x = `Domestic Self Supplied Pct`, y = pct_unprotected)) + 
+  ggplot(nm_streams_summary_df, aes(x = `Public_Surface_Water_Pct`, y = pct_unprotected)) + 
     geom_point() + 
-    geom_text_repel(aes(label = NAMELSAD), size = 2.0) + 
+    geom_text_repel(aes(label = county_trunc), size = 2.0) + 
     labs(title = "At-Risk Counties", subtitle = "Counties are vulnerable when more of its population rely on (unprotected) self-supplied water sources.",
-         x = "Population with Self-Supplied Water (%)", y = "Unprotected Waterways (%) of County Total",
+         x = "Population using  Surface Water (%)", y = "Unprotected Waterways (%) of County Total",
          colour = "Vulnerability Score")
    })
 ```
