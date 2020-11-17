@@ -20,6 +20,7 @@ library(leaflet)
 library(tidyverse)
 library(sf)
 library(ggrepel)
+library(RColorBrewer)
 
 # reading all inputs
 
@@ -35,6 +36,7 @@ nm_npdes <- readRDS("nm_npdes.RDS")
 total_basic_count <- readRDS("state_total_basic_count.RDS")
 nm_census_tracts_df <- readRDS("nm_census_tracts_df.RDS")
 nm_surface_water_intake <- readRDS("nm_surface_water_intake.RDS")
+nm_pws_merged <- readRDS("nm_pws_merged.RDS")
 
 # joining hdi_indicators to census_tract_shp
 nm_census_tracts <- inner_join(nm_census_tracts, HDI_indicators)
@@ -105,17 +107,40 @@ ggplot(total_basic_count, aes(x = Race, y = value)) +
     coord_flip()
 ```
 
-### Vulnerability
+### Vulnerability Map
+```{r}
+nm_pws_merged_complete_cases <- nm_pws_merged[complete.cases(nm_pws_merged$Index),]
+
+renderLeaflet({
+  vul_pal <- colorBin("Reds", domain = nm_pws_merged_complete_cases$Index, bins = c(2,4,6,8))
+    leaflet() %>%
+      addProviderTiles(providers$Stamen.Toner, options = providerTileOptions(zIndex = 7)) %>%
+      setView(lng = -105.87, lat = 34.52, zoom = 7) %>%
+      # addPolygons(data = nm_counties, group = "County",  
+      #             fillOpacity = 0, weight = 1.5, color = "white") %>%
+      addPolygons(data = nm_pws_merged_complete_cases, label = nm_pws_merged_complete_cases$PublicSyst.y, group = "Water System",
+                  fillColor = ~vul_pal(Index), fillOpacity = 0.75, weight = 0, opacity = 0, color = "white") %>%
+      addCircleMarkers(data = nm_surface_water_intake, label = ~SYSTEM_NAM, group = "Public Water Sources",
+                       color = "#525252", radius = 4, stroke = F, fillOpacity = 0.7, clusterOptions = markerClusterOptions()) %>%
+      addLayersControl(overlayGroups = c("Water System", "Public Water Sources"),
+                       options = layersControlOptions(collapsed = FALSE)) %>%
+      hideGroup("Public Water Sources") %>%
+      addLegend("bottomright", pal = vul_pal, values = nm_pws_merged_complete_cases$Index, title = "Vulnerability Index", opacity = 0.7)
+    })
+```
+  
+### Vulnerability Plot
 ```{r}
 renderPlot({
-  ggplot(nm_streams_summary_df, aes(x = `Public_Surface_Water_Pct`, y = pct_unprotected)) + 
-    geom_point() + 
-    geom_text_repel(aes(label = county_trunc), size = 2.0) + 
-    labs(title = "At-Risk Counties", subtitle = "Counties are vulnerable when more of its population rely on (unprotected) self-supplied water sources.",
-         x = "Population using  Surface Water (%)", y = "Unprotected Waterways (%) of County Total",
-         colour = "Vulnerability Score")
+  ggplot(nm_pws_merged_complete_cases, aes(x = Population, y = as.numeric(MedianIncome))) + 
+    geom_point(aes(color = Index)) +
+    scale_color_gradient(low = "#fee0d2", high = "#de2d26") + 
+    geom_text_repel(aes(label = PublicSyst.y), size = 2.0) + 
+    labs(title = "At-Risk Public Water Systems", subtitle = "Public Water Systems are most vulnerable when median household incomes are low, population sizes are huge, and vulnerability scores high.",
+         x = "Population Size", y = "Median Household Income ($)",
+         colour = "Vulnerability \nIndex")
    })
-```
+``` 
 
 Column {data-width=200}
 -----------------------------------------------------------------------
@@ -247,23 +272,25 @@ reactive_county <- reactive({
     nm_census_tracts_filtered <- nm_census_tracts %>%
       filter(county == input$county)
     pal <- colorBin("Blues", domain = nm_census_tracts_filtered$HDI, bins = bins)
-    # nm_counties_filtered <- nm_counties %>%
-    #   filter(NAMELSAD == input$county)
+    # vul_pal <- colorBin("Reds", domain = nm_pws_merged_complete_cases$Index, bins = c(2,4,6,8))
+    # nm_pws_county_filtered <- nm_pws_merged_complete_cases %>%
+    #   filter(County == str_to_upper(input$county))
     nm_streams_filtered <- nm_disconnected_stream %>%
       filter(NAMELSAD == input$county)
     nm_connected_streams_filtered <- nm_connected_stream %>%
       filter(NAMELSAD == input$county)
     leaflet() %>%
       addProviderTiles(providers$Stamen.Toner) %>%
-      # addPolygons(data = nm_counties_filtered, group = "County",  
-      #             fillOpacity = 0, weight = 1.5, color = "black") %>%
+      addPolygons(data = nm_pws_merged_complete_cases, label = paste(nm_pws_merged_complete_cases$PublicSyst.y,
+                                                                     nm_pws_merged_complete_cases$Index, sep = ": "), 
+                  group = "Water System", fillColor = "white", fillOpacity = 0, weight = 1, opacity = 1, color = "black") %>%
       addPolygons(data = nm_census_tracts_filtered, label = ~round(HDI, 3), group = "HDI",
                   fillColor = ~pal(HDI), fillOpacity = 0.5, weight = 0.75, opacity = 1, color = "white") %>%
       addPolylines(data = st_zm(nm_streams_filtered), label = ~GNIS_Name, group = "Unprotected Streams",
                    color = "#fb6a4a", weight = 1.2) %>%
       addPolylines(data = st_zm(nm_connected_streams_filtered), label = ~GNIS_Name, group = "Protected Streams",
                    color = "#08519c", weight = 1.2) %>%
-      addLayersControl(overlayGroups = c("HDI", "Unprotected Streams", "Protected Streams"),
+      addLayersControl(overlayGroups = c("HDI", "Water System", "Unprotected Streams", "Protected Streams"),
                        options = layersControlOptions(collapsed = FALSE)) %>%
       hideGroup(c("Unprotected Streams", "Protected Streams")) %>%
       addLegend("bottomright", pal = pal, values = nm_census_tracts_filtered$HDI, title = "HDI", opacity = 0.7)
