@@ -33,3 +33,23 @@ Ad adjustment will have to be made for the income dimension as documented in the
 In order to aggregate the three dimensions to form the HDI:  
   
 <img src="https://render.githubusercontent.com/render/math?math=HDI = (I^{income}*I^{education}*I^{life exp.})^{1/3}">  
+  
+### Unprotected Waterbodies, Pollutants, and Water Intakes  
+In order to map these data points out on a Leaflet engine, geospatial data in the form of shapefiles had to be obtained from the New Mexico Water Data Initiative's [data catalog](https://catalog.newmexicowaterdata.org/). They were then processed and reduced in size to facilitate web-mapping.  
+  
+The dataset that had to be reduced in size most drastically was that of the waterbodies in New Mexico. Due to the geomorphology and climate of New Mexico, there are a lot of ephemeral and intermittent streams that are prone to disconnection from perennial streams due periods of low precipitation. Under the new Clean Water Act rules, these would be excluded from protection.  
+  
+To quantify the impact, the stream lengths of these unprotected streams were tabulated at the scale of each county by clipping a shapefile of NM's counties over the [New Mexico NHD High Resolution Stream segments and Waterbodies](https://catalog.newmexicowaterdata.org/dataset/nm-nhs-stream) dataset. However, given the sheer number of waterbodies, it is impossible to plot all of them onto the dashboard. Thus, only those that are classed as "Disconnected" are shown, even though Ephemeral and Disconnected waterbodies will not be protected under the new rules. Furthermore, the polylines of the streams were simplified geometrically to further reduce file size and enhance performance. A secondary consideration was to avoid pinpointing streams that are now unprotected from users who might take advantage of the lack of legal protection.  
+  
+### Drinking Water Vulnerability Index  
+The WOTUS 2020 Drinking Water Vulnerability Index index measures the risk to a Community Water System (CWS)’s population’s drinking water due to ephemeral and disconnected streams’ loss of protection due to the change in WOTUS definition.  
+  
+The index is an ordinal measure of the risk to the CWS that takes 10 values, 1-10. Note that the fact that it is an ordinal index means that increasing by one the index does not necessarily have the same impact at different levels of the index, i.e. the danger posed to a CWS’s water intakes by moving from 2 to 3 does not imply the same increase in risk to drinking water sources when moving from 9 to 10. This index can be refined to have more levels of impact, one of the most relevant variables to incorporate to the index is the size of the CWS (population served). This parameter influences considerably the resources, economic and technical, available to the water system to circumvent a contamination event to their water sources.  
+  
+The risk to a CWS is based on three areas: the loss of protection of streams very near the CWS’s water intake, the intensity of the impact to the CWS water intakes and the financial vulnerability of the communities’ served by the water system (i.e. a community’s affordability to finance a potential contamination incident).  
+  
+We consider a CWS is impacted if any of their surface water intakes (SW) or ground water intakes under direct influence of surface water (GU) are within a .5 mile from an Ephemeral or Disconnected stream. Potential contamination to one of the intakes will impact all the water stored in the CWS.  
+  
+The intensity of the impact to drinking water source takes into account the percentage of the surface water intakes that are impacted and the CWS’s access to alternative water supplies.  
+  
+Finally, not all CWS have the same resources to fund any potential damages to their water sources as a product of the WOTUS definition change. In order to identify a community’s ability to pay for these damages, we use the affordability criteria used by the New Mexico Finance Authority (NMFA) when extending programs to assist disadvantaged communities. 
