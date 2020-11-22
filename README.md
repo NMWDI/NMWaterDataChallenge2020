@@ -24,11 +24,11 @@ As mentioned, the Human Development Index comprises of three dimensions: life ex
 
 The dimension value for each metric is calculated as:  
   
-<img src="https://render.githubusercontent.com/render/math?math=Dimension = frac{actual-minimum}{maximum-minimum}">  
+<img src="https://render.githubusercontent.com/render/math?math=Dimension = \frac{actual-minimum}{maximum-minimum}">  
   
 Ad adjustment will have to be made for the income dimension as documented in the [HDI Training Report](http://hdr.undp.org/sites/default/files/hdi_training.pdf) produced by the UN Development Program. Natural logarithm (ln) has to be taken for all entries.  
   
-<img src="https://render.githubusercontent.com/render/math?math=Income Dimension = frac{ln(actual)-ln(minimum)}{ln(maximum)-ln(minimum)}">  
+<img src="https://render.githubusercontent.com/render/math?math=Income Dimension = \frac{ln(actual)-ln(minimum)}{ln(maximum)-ln(minimum)}">  
 
 In order to aggregate the three dimensions to form the HDI:  
   
