@@ -21,6 +21,9 @@ library(tidyverse)
 library(sf)
 library(ggrepel)
 library(RColorBrewer)
+library(DT)
+
+options(scipen = 999)
 
 # reading all inputs
 
@@ -37,6 +40,7 @@ total_basic_count <- readRDS("state_total_basic_count.RDS")
 nm_census_tracts_df <- readRDS("nm_census_tracts_df.RDS")
 nm_surface_water_intake <- readRDS("nm_surface_water_intake.RDS")
 nm_pws_merged <- readRDS("nm_pws_merged.RDS")
+dwv_index_table <- readRDS("dwv_index_table.RDS")
 
 # joining hdi_indicators to census_tract_shp
 nm_census_tracts <- inner_join(nm_census_tracts, HDI_indicators)
@@ -63,7 +67,7 @@ Column {data-width=200 .sidebar}
 ### New Mexico
 
 ```{r}
-renderText(paste("In this dashboard, you will find information on the how each county and congressional district is affected by changes in the Clean Water Act. These legislative changes means that some waterways will no longer be protected. Some places will be more affected than others. This dashboard will not only show where, but also the socio-economic characteristics of each of these places using the Human Development Index (HDI).", "The HDI is a statistic used by the United Nations to rank countries into tiers of human development. It looks at life expectancy, education, and per capita income. This has been modified to for use in New Mexico where it is to rank and evaluate each county in terms of its human development.", sep = "\n"))
+HTML(paste("In this dashboard, you will find information on the how each county is affected by changes in the Clean Water Act. These legislative changes means that some waterways will no longer be protected. Some places and public water systems will be more affected than others. This dashboard will not only show where, but also the socio-economic characteristics of each of these places using the Human Development Index (HDI) and Drinking Water Vulnerability Index.", "The HDI is a statistic used by the United Nations to rank countries into tiers of human development. It looks at life expectancy, education, and per capita income. This has been modified to for use in New Mexico where it is to rank and evaluate each county in terms of its human development.", "The Drinking Water Vulnerability Index evaluates how public water systems are impacted and economically disadvantaged, on a scale of 1 to 10, with 10 being the worst. Broadly speaking, it takes into consideration household income, degree to which the system is impacted, and the availability of alternative sources of water.", sep = "<br/>"))
 ```
 
 Column {data-width=600 .tabset}
@@ -109,39 +113,43 @@ ggplot(total_basic_count, aes(x = Race, y = value)) +
 
 ### Vulnerability Map
 ```{r}
-nm_pws_merged_complete_cases <- nm_pws_merged[complete.cases(nm_pws_merged$Index),]
+# nm_pws_merged_complete_cases <- nm_pws_merged[complete.cases(nm_pws_merged$Index),]
 
 renderLeaflet({
-  vul_pal <- colorBin("Reds", domain = nm_pws_merged_complete_cases$Index, bins = c(2,4,6,8))
+  vul_pal <- colorBin("Reds", domain = nm_pws_merged$Index, bins = c(2,4,6,8))
     leaflet() %>%
       addProviderTiles(providers$Stamen.Toner, options = providerTileOptions(zIndex = 7)) %>%
       setView(lng = -105.87, lat = 34.52, zoom = 7) %>%
-      # addPolygons(data = nm_counties, group = "County",  
-      #             fillOpacity = 0, weight = 1.5, color = "white") %>%
-      addPolygons(data = nm_pws_merged_complete_cases, label = nm_pws_merged_complete_cases$PublicSyst.y, group = "Water System",
+      addPolygons(data = nm_pws_merged, label = nm_pws_merged$PublicSyst.y, group = "Water System",
                   fillColor = ~vul_pal(Index), fillOpacity = 0.75, weight = 0, opacity = 0, color = "white") %>%
       addCircleMarkers(data = nm_surface_water_intake, label = ~SYSTEM_NAM, group = "Public Water Sources",
                        color = "#525252", radius = 4, stroke = F, fillOpacity = 0.7, clusterOptions = markerClusterOptions()) %>%
       addLayersControl(overlayGroups = c("Water System", "Public Water Sources"),
                        options = layersControlOptions(collapsed = FALSE)) %>%
       hideGroup("Public Water Sources") %>%
-      addLegend("bottomright", pal = vul_pal, values = nm_pws_merged_complete_cases$Index, title = "Vulnerability Index", opacity = 0.7)
+      addLegend("bottomright", pal = vul_pal, values = nm_pws_merged$Index, title = "Vulnerability Index", opacity = 0.7)
     })
 ```
   
 ### Vulnerability Plot
 ```{r}
 renderPlot({
-  ggplot(nm_pws_merged_complete_cases, aes(x = Population, y = as.numeric(MedianIncome))) + 
+  ggplot(nm_pws_merged, aes(x = Population, y = as.numeric(MedianIncome))) + 
     geom_point(aes(color = Index)) +
     scale_color_gradient(low = "#fee0d2", high = "#de2d26") + 
-    geom_text_repel(aes(label = PublicSyst.y), size = 2.0) + 
+    geom_text_repel(aes(label = PublicSyst.y), size = 4.0) + 
     labs(title = "At-Risk Public Water Systems", subtitle = "Public Water Systems are most vulnerable when median household incomes are low, population sizes are huge, and vulnerability scores high.",
          x = "Population Size", y = "Median Household Income ($)",
          colour = "Vulnerability \nIndex")
    })
 ``` 
+  
+### Public Water Systems  
+```{r}
+renderDataTable({dwv_index_table})
+```
 
+  
 Column {data-width=200}
 -----------------------------------------------------------------------
 
@@ -259,7 +267,12 @@ Column {data-width=200 .sidebar}
 selectInput("county",
             "County:",
             choices = sort(unique(nm_census_tracts$county)),
-            "Taos County")
+            "Bernalillo County")
+
+selectInput("pws", 
+            "Water System:",
+            choices = sort(nm_pws_merged$PublicSyst.y),
+            "ALBUQUERQUE WATER SYSTEM")
 ```
 
 
@@ -271,18 +284,17 @@ Column {data-width=600 .tabset}
 reactive_county <- reactive({
     nm_census_tracts_filtered <- nm_census_tracts %>%
       filter(county == input$county)
+    nm_pws_merged_filtered <- nm_pws_merged %>%
+      filter(PublicSyst.y == input$pws)
     pal <- colorBin("Blues", domain = nm_census_tracts_filtered$HDI, bins = bins)
-    # vul_pal <- colorBin("Reds", domain = nm_pws_merged_complete_cases$Index, bins = c(2,4,6,8))
-    # nm_pws_county_filtered <- nm_pws_merged_complete_cases %>%
-    #   filter(County == str_to_upper(input$county))
     nm_streams_filtered <- nm_disconnected_stream %>%
       filter(NAMELSAD == input$county)
     nm_connected_streams_filtered <- nm_connected_stream %>%
       filter(NAMELSAD == input$county)
     leaflet() %>%
       addProviderTiles(providers$Stamen.Toner) %>%
-      addPolygons(data = nm_pws_merged_complete_cases, label = paste(nm_pws_merged_complete_cases$PublicSyst.y,
-                                                                     nm_pws_merged_complete_cases$Index, sep = ": "), 
+      addPolygons(data = nm_pws_merged_filtered, label = paste(nm_pws_merged_filtered$PublicSyst.y,
+                                                               nm_pws_merged_filtered$Index, sep = ": "), 
                   group = "Water System", fillColor = "white", fillOpacity = 0, weight = 1, opacity = 1, color = "black") %>%
       addPolygons(data = nm_census_tracts_filtered, label = ~round(HDI, 3), group = "HDI",
                   fillColor = ~pal(HDI), fillOpacity = 0.5, weight = 0.75, opacity = 1, color = "white") %>%
