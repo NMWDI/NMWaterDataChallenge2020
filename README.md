@@ -53,3 +53,5 @@ We consider a CWS is impacted if any of their surface water intakes (SW) or grou
 The intensity of the impact to drinking water source takes into account the percentage of the surface water intakes that are impacted and the CWS’s access to alternative water supplies.  
   
 Finally, not all CWS have the same resources to fund any potential damages to their water sources as a product of the WOTUS definition change. In order to identify a community’s ability to pay for these damages, we use the affordability criteria used by the New Mexico Finance Authority (NMFA) when extending programs to assist disadvantaged communities. 
+  
+![DWV Flowchart](https://github.com/westerleyy/NMWaterDataChallenge2020/blob/master/DWV_Flowchart/flowchart.jpg)  
