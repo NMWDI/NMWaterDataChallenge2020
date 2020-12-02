@@ -14,6 +14,12 @@ output:
     vertical_layout: fill
 ---
 
+<style>
+  .datatables{
+    overflow:auto;
+  }
+</style>
+
 ```{r setup, include=FALSE}
 library(flexdashboard)
 library(leaflet)
@@ -24,6 +30,8 @@ library(RColorBrewer)
 library(DT)
 
 options(scipen = 999)
+## following fix is screen and resolution specific. therefore only use as last resort
+#options(DT.options = list(scrollY = "600px", scrollX = "300px", pageLength = 100))
 
 # reading all inputs
 
