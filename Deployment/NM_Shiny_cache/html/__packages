@@ -1,0 +1,17 @@
+base
+shiny
+flexdashboard
+leaflet
+tidyverse
+ggplot2
+tibble
+tidyr
+readr
+purrr
+dplyr
+stringr
+forcats
+sf
+ggrepel
+RColorBrewer
+DT
