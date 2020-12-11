@@ -35,7 +35,6 @@ options(scipen = 999)
 
 # reading all inputs
 
-# nm_counties <- readRDS("nm_county.RDS")
 nm_census_tracts <- readRDS("nm_census_tracts.RDS")
 nm_disconnected_stream <- readRDS("nm_disconnected_stream.RDS")
 nm_connected_stream <- readRDS("nm_connected_stream.RDS")
