@@ -1,5 +1,5 @@
 ---
-title: "Human Development and Water in New Mexico"
+title: "Clean Water Act Rule Changes: Impacts to New Mexico"
 resource_files:
 - basic_count_long.RDS
 - nm_census_tracts.RDS
@@ -20,7 +20,7 @@ output:
   }
 </style>
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, context = "data"}
 library(flexdashboard)
 library(leaflet)
 library(tidyverse)
@@ -35,7 +35,6 @@ options(scipen = 999)
 
 # reading all inputs
 
-# nm_counties <- readRDS("nm_county.RDS")
 nm_census_tracts <- readRDS("nm_census_tracts.RDS")
 nm_disconnected_stream <- readRDS("nm_disconnected_stream.RDS")
 nm_connected_stream <- readRDS("nm_connected_stream.RDS")
@@ -69,75 +68,45 @@ bins <- c(0.5, 0.6, 0.7, 0.8, 0.9)
 Statewide
 ==================
 
-Column {data-width=200 .sidebar}
+Column {data-width=300 .sidebar}
 -----------------------------------------------------------------------
 
 ### New Mexico
 
-```{r}
-HTML(paste("In this dashboard, you will find information on how New Mexico is affected by changes in the interpretation of the Clean Water Act's scope. These changes means that most of New Mexico's streams and rivers will no longer be protected. Some places and public water systems (PWS) will be more affected than others. This dashboard shows both the places and the socio-economic characteristics of each of these places using the Human Development Index (HDI) and Drinking Water Vulnerability Index.", "The HDI is a statistic used by the United Nations to rank countries into tiers of human development. It looks at life expectancy, education, and per capita income. This has been modified to for use in New Mexico where it is to rank and evaluate each county in terms of its human development.", "The Drinking Water Vulnerability Index measures for New Mexican public water systems, the degree of exposure of surface water sources and the community served by the PWS's ability to circumvent a potential contamination or negative impact to their drinking water. The index is on a scale of 1 to 10, with 10 being the most vulnerable. The index takes into consideration household income, degree of impact to the PWS surface water intakes, and the availability of alternative sources of water.", sep = "<br/>"))
+```{r, cache = TRUE}
+HTML(paste("In this dashboard, you will find a variety of information on how New Mexico may be affected by changes in the definition of Waters of the United States, under the Clean Water Act. These changes mean that most of New Mexico's streams and rivers will no longer be protected. This dashboard is intended to show socio-economic impacts using the Human Development Index (HDI) and provide Drinking Water Vulnerability Index.", " ", "The HDI is a statistic used by the United Nations to rank countries into tiers of human development. It looks at life expectancy, education, and per capita income. This has been modified for use in New Mexico where each county and census tract is evaluated.", " ", "The Drinking Water Vulnerability Index evaluates the vulnerability of public water systems (PWS). It estimates the degree of exposure of surface water sources and the community's ability to circumvent a potential contamination or negative impact to their drinking water. The index takes into consideration household income, degree of impact to the PWS surface water intakes, and the availability of alternative sources of water. The index is on a scale of 1 to 10, with 10 being the most vulnerable.", sep = "<br/>"))
 ```
 
-Column {data-width=600 .tabset}
+Column {data-width=500 .tabset}
 -----------------------------------------------------------------------
 
 ### Unprotected Waterways
 ```{r}
 renderLeaflet({
-    pal <- colorBin("Blues", domain = nm_census_tracts$HDI, bins = bins)
-    leaflet() %>%
-      addProviderTiles(providers$Stamen.Toner, options = providerTileOptions(zIndex = 7)) %>%
-      setView(lng = -105.87, lat = 34.52, zoom = 7) %>%
-      # addPolygons(data = nm_counties, group = "County",  
-      #             fillOpacity = 0, weight = 1.5, color = "white") %>%
-      addPolygons(data = nm_census_tracts, label = ~round(HDI, 3), group = "HDI",
-                  fillColor = ~pal(HDI), fillOpacity = 0.75, weight = 0, opacity = 0, color = "white") %>%
-      addPolylines(data = st_zm(nm_disconnected_stream), label = ~GNIS_Name, group = "Unprotected Streams",
-                   color = "#fb6a4a", weight = 1.2) %>%
-      addPolylines(data = st_zm(nm_connected_stream), label = ~GNIS_Name, group = "Protected Streams",
-                   color = "#08519c", weight = 1.2) %>%
-      addCircleMarkers(data = nm_npdes, label = ~FACILITYNA, group = "Pollutant Sources", 
-                       color = "#e41a1c", radius = 6, stroke = F, fillOpacity = 0.5, clusterOptions = markerClusterOptions()) %>%
-      addCircleMarkers(data = nm_surface_water_intake, label = ~SYSTEM_NAM, group = "Public Water Sources",
-                       color = "#525252", radius = 4, stroke = F, fillOpacity = 0.7, clusterOptions = markerClusterOptions()) %>%
-      addLayersControl(overlayGroups = c("HDI", "Unprotected Streams", "Protected Streams", 
-                                         "Pollutant Sources", "Public Water Sources"),
-                       options = layersControlOptions(collapsed = FALSE)) %>%
-      hideGroup(c("Unprotected Streams", "Protected Streams", "Pollutant Sources", "Public Water Sources")) %>%
-      addLegend("bottomright", pal = pal, values = nm_census_tracts$HDI, title = "Human Development Index", opacity = 0.7)
+  pal <- colorBin("Blues", domain = nm_census_tracts$HDI, bins = bins)
+  vul_pal <- colorBin("Reds", domain = nm_pws_merged$Index, bins = c(2,4,6,8))
+  leaflet() %>%
+    addProviderTiles(providers$Stamen.Toner, options = providerTileOptions(zIndex = 7)) %>%
+    setView(lng = -105.87, lat = 34.52, zoom = 8) %>%
+    addPolygons(data = nm_census_tracts, label = ~round(HDI, 3), group = "HDI",
+                fillColor = ~pal(HDI), fillOpacity = 0.75, weight = 0, opacity = 0, color = "white") %>%
+    addPolygons(data = nm_pws_merged, label = nm_pws_merged$PublicSyst.y, group = "Water System",
+                fillColor = ~vul_pal(Index), fillOpacity = 0.75, weight = 0, opacity = 0, color = "white") %>%
+    addPolylines(data = st_zm(nm_disconnected_stream), label = ~GNIS_Name, group = "Unprotected Streams",
+                 color = "#fb6a4a", weight = 1.2) %>%
+    addPolylines(data = st_zm(nm_connected_stream), label = ~GNIS_Name, group = "Protected Streams",
+                 color = "#08519c", weight = 1.2) %>%
+    addCircleMarkers(data = nm_npdes, label = ~FACILITYNA, group = "Pollutant Sources", 
+                     color = "#e41a1c", radius = 6, stroke = F, fillOpacity = 0.5, clusterOptions = markerClusterOptions()) %>%
+    addLayersControl(overlayGroups = c("HDI", "Unprotected Streams", "Protected Streams", "Water System", "Pollutant Sources"),
+                     options = layersControlOptions(collapsed = FALSE)) %>%
+    hideGroup(c("Unprotected Streams", "Protected Streams", "Pollutant Sources", "Water System")) %>%
+    addLegend("bottomright", pal = pal, values = nm_census_tracts$HDI, title = "Human Development Index", opacity = 0.7) %>%
+    addLegend("bottomleft", pal = vul_pal, values = nm_pws_merged$Index, title = "Vulnerability Index", opacity = 0.7)
    })
 ```
 
-### Demographics
-```{r}
-ggplot(total_basic_count, aes(x = Race, y = value)) + 
-    geom_point(col = "#fc8d62") + 
-    geom_segment(aes(x = Race, xend = Race, y = 0, yend = value), col = "#969696") +
-    scale_x_discrete(labels = c("Asian", "Biracial", "Black", "Hispanic", "Pacific Islander", "Native American", "Other", "White")) + 
-    labs(x = "Race", y = "Est. % of State Totals", title = "Racial/Ethnic Composition of New Mexico") +
-    theme(panel.background = element_rect(fill = "white"), panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + 
-    coord_flip()
-```
 
-### Vulnerability Map
-```{r}
-# nm_pws_merged_complete_cases <- nm_pws_merged[complete.cases(nm_pws_merged$Index),]
-
-renderLeaflet({
-  vul_pal <- colorBin("Reds", domain = nm_pws_merged$Index, bins = c(2,4,6,8))
-    leaflet() %>%
-      addProviderTiles(providers$Stamen.Toner, options = providerTileOptions(zIndex = 7)) %>%
-      setView(lng = -105.87, lat = 34.52, zoom = 7) %>%
-      addPolygons(data = nm_pws_merged, label = nm_pws_merged$PublicSyst.y, group = "Water System",
-                  fillColor = ~vul_pal(Index), fillOpacity = 0.75, weight = 0, opacity = 0, color = "white") %>%
-      addCircleMarkers(data = nm_surface_water_intake, label = ~SYSTEM_NAM, group = "Public Water Sources",
-                       color = "#525252", radius = 4, stroke = F, fillOpacity = 0.7, clusterOptions = markerClusterOptions()) %>%
-      addLayersControl(overlayGroups = c("Water System", "Public Water Sources"),
-                       options = layersControlOptions(collapsed = FALSE)) %>%
-      hideGroup("Public Water Sources") %>%
-      addLegend("bottomright", pal = vul_pal, values = nm_pws_merged$Index, title = "Vulnerability Index", opacity = 0.7)
-    })
-```
   
 ### Vulnerability Plot
 ```{r}
@@ -158,111 +127,76 @@ renderDataTable({dwv_index_table})
 ```
 
   
-Column {data-width=200}
+Column {data-width=200, .no-padding}
 -----------------------------------------------------------------------
 
-### Unprotected Waterways
+### Statewide Waterways Status
 
-```{r}
-nm_disconnected_length <- nm_streams_summary_df$length_unprotected %>%
+```{r, cache = TRUE}
+nm_protected_stream_length <- nm_streams_summary_df %>%
+  mutate(length_protected = ifelse(pct_unprotected == 100, 0, length_unprotected/pct_unprotected*(100-pct_unprotected))) %>%
+  ungroup() %>%
+  select(length_protected) %>%
   unlist() %>%
   sum()
 
-renderValueBox({
-  valueBox(nm_disconnected_length,
-           caption = "Unprotected Waterways (mi)",
-           icon = 'fa-tint-slash',
-           color = "primary")})
-```
-
-### State HDI
-
-```{r}
-nm_hdi <- HDI_indicators %>%
+nm_unprotected_stream_length <- nm_streams_summary_df %>%
   ungroup() %>%
-  mutate(total_state_pop = sum(Total_Pop)) %>%
-  group_by(id) %>%
-  mutate(weight_pop = Total_Pop/total_state_pop,
-         weighted_HDI = weight_pop * HDI) %>%
-  ungroup() %>%
-  select(weighted_HDI) %>%
+  select(length_unprotected) %>%
   unlist() %>%
-  sum() %>%
-  round(.,3)
+  sum()
 
-renderValueBox({
-  valueBox(nm_hdi,
-           caption = "HDI",
-           icon = 'fa-user',
-           color = "primary")})
+state_stream_df <- data.frame(
+  category = c("Protected", "Unprotected"),
+  length = c(nm_protected_stream_length, nm_unprotected_stream_length)) 
+state_stream_df$frac <- state_stream_df$length/sum(state_stream_df$length)
+state_stream_df$ymax <- cumsum(state_stream_df$frac)
+state_stream_df$ymin <- c(0, head(state_stream_df$ymax, n=-1))
+state_stream_df$labelPosition <- (state_stream_df$ymax + state_stream_df$ymin)/2
+state_stream_df$label <- paste0(state_stream_df$category, ": ", round(100*state_stream_df$frac), "%")
+
+ggplot(state_stream_df, aes(ymax = ymax, ymin = ymin, xmax = 4, xmin = 3, fill = category)) + 
+  geom_rect() +
+  geom_text(x = 2, aes(y = labelPosition, label = label, color = category), size = 5.5) + 
+  scale_fill_manual(values = c("#80b1d3", "#fb8072")) + 
+  scale_color_manual(values = c("#80b1d3", "#fb8072")) + 
+  coord_polar(theta = "y") + 
+  xlim(c(-1, 4)) + 
+  theme_void() + 
+  theme(legend.position = "none")
 ```
 
-### Life Expectancy
+### Statewide HDI Breakdown
 
-```{r}
-nm_life_exp <- nm_census_tracts_df %>%
-  ungroup() %>%
-  mutate(total_state_pop = sum(Total_Pop)) %>%
-  group_by(id) %>%
-  mutate(weight_pop = Total_Pop/total_state_pop,
-         weighted_life_exp = weight_pop * `Life Expectancy`) %>%
-  ungroup() %>%
-  select(weighted_life_exp) %>% 
-  unlist() %>%
-  sum() %>%
-  round(., 1)
-
-renderValueBox({
-  valueBox(nm_life_exp,
-           caption = "Life Expectancy",
-           icon = 'fa-heartbeat',
-           color = "primary")})
+```{r cache = TRUE}
+ggplot(HDI_indicators, aes(HDI)) + 
+  geom_histogram(binwidth = 0.01) + 
+  labs(y = "No. Census Tracts", x = "Human Development Index") + 
+  scale_x_continuous(breaks = seq(0.5, 0.9, 0.05)) + 
+  theme_classic() + 
+  theme(axis.text.x = element_text(face = "bold", size = 11),
+        axis.text.y = element_text(face = "bold", size = 11),
+        axis.title.x = element_text(face = "bold"),
+        axis.title.y = element_text(face = "bold"))
+```
+  
+### Statewide Racial/Ethnic Breakdown  
+  
+```{r cache = TRUE}
+ggplot(total_basic_count, aes(x = Race, y = value)) + 
+    geom_point(col = "#fc8d62", size = 5) + 
+    geom_segment(aes(x = Race, xend = Race, y = 0, yend = value), col = "#969696", size = 2) +
+    scale_x_discrete(labels = c("Asian", "Biracial", "Black", "Hispanic", "Pacific Islander", "Native American", "Other", "White")) + 
+    labs(x = "Race", y = "Est. % of State Totals") +
+    theme(panel.background = element_rect(fill = "white"), 
+          panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+          axis.text.x = element_text(angle = 45, face = "bold", size = 11),
+          axis.text.y = element_text(face = "bold", size = 11),
+          axis.title.x = element_text(face = "bold"),
+          axis.title.y = element_text(face = "bold"))
 ```
 
-### Years of Schooling
-
-```{r}
-nm_edn_yrs <- nm_census_tracts_df %>%
-  ungroup() %>%
-  mutate(total_state_pop = sum(Total_Pop)) %>%
-  group_by(id) %>%
-  mutate(weight_pop = Total_Pop/total_state_pop,
-         weighted_years_ed = weight_pop * mean_years_ed) %>%
-  ungroup() %>%
-  select(weighted_years_ed) %>% 
-  unlist() %>%
-  sum() %>%
-  round(., 1)
-
-renderValueBox({
-  valueBox(nm_edn_yrs,
-           caption = "Years of Education for Adults",
-           icon = 'fa-book',
-           color = "primary")})
-```
-
-### Annual Income
-
-```{r}
-nm_income_pc <- nm_census_tracts_df %>%
-  ungroup() %>%
-  mutate(total_state_pop = sum(Total_Pop)) %>%
-  group_by(id) %>%
-  mutate(weight_pop = Total_Pop/total_state_pop,
-         weighted_income_pc = weight_pop * income_per_capita) %>%
-  ungroup() %>%
-  select(weighted_income_pc) %>% 
-  unlist() %>%
-  sum() %>%
-  round()
-
-renderValueBox({
-  valueBox(nm_income_pc,
-           caption = "Mean Income per Capita ($)",
-           icon = 'fa-dollar-sign',
-           color = "primary")})
-```
-
+    
 County
 ==================
 
@@ -299,22 +233,41 @@ reactive_county <- reactive({
       filter(NAMELSAD == input$county)
     nm_connected_streams_filtered <- nm_connected_stream %>%
       filter(NAMELSAD == input$county)
+    if(nrow(nm_connected_streams_filtered) > 0){
     leaflet() %>%
       addProviderTiles(providers$Stamen.Toner) %>%
       addPolygons(data = nm_pws_merged_filtered, label = paste(nm_pws_merged_filtered$PublicSyst.y,
                                                                nm_pws_merged_filtered$Index, sep = ": "), 
                   group = "Water System", fillColor = "white", fillOpacity = 0, weight = 1, opacity = 1, color = "black") %>%
       addPolygons(data = nm_census_tracts_filtered, label = ~round(HDI, 3), group = "HDI",
-                  fillColor = ~pal(HDI), fillOpacity = 0.5, weight = 0.75, opacity = 1, color = "white") %>%
+                 fillColor = ~pal(HDI), fillOpacity = 0.5, weight = 0.75, opacity = 1, color = "white") %>%
       addPolylines(data = st_zm(nm_streams_filtered), label = ~GNIS_Name, group = "Unprotected Streams",
-                   color = "#fb6a4a", weight = 1.2) %>%
+                  color = "#fb6a4a", weight = 1.2) %>%
       addPolylines(data = st_zm(nm_connected_streams_filtered), label = ~GNIS_Name, group = "Protected Streams",
-                   color = "#08519c", weight = 1.2) %>%
+                  color = "#08519c", weight = 1.2) %>%
       addLayersControl(overlayGroups = c("HDI", "Water System", "Unprotected Streams", "Protected Streams"),
                        options = layersControlOptions(collapsed = FALSE)) %>%
       hideGroup(c("Unprotected Streams", "Protected Streams")) %>%
       addLegend("bottomright", pal = pal, values = nm_census_tracts_filtered$HDI, title = "HDI", opacity = 0.7)
-  })
+    }
+    else{
+    leaflet() %>%
+      addProviderTiles(providers$Stamen.Toner) %>%
+      addPolygons(data = nm_pws_merged_filtered, label = paste(nm_pws_merged_filtered$PublicSyst.y,
+                                                               nm_pws_merged_filtered$Index, sep = ": "), 
+                  group = "Water System", fillColor = "white", fillOpacity = 0, weight = 1, opacity = 1, color = "black") %>%
+      addPolygons(data = nm_census_tracts_filtered, label = ~round(HDI, 3), group = "HDI",
+                 fillColor = ~pal(HDI), fillOpacity = 0.5, weight = 0.75, opacity = 1, color = "white") %>%
+      addPolylines(data = st_zm(nm_streams_filtered), label = ~GNIS_Name, group = "Unprotected Streams",
+                  color = "#fb6a4a", weight = 1.2) %>%
+      addLayersControl(overlayGroups = c("HDI", "Water System", "Unprotected Streams", "Protected Streams"),
+                       options = layersControlOptions(collapsed = FALSE)) %>%
+      hideGroup(c("Unprotected Streams", "Protected Streams")) %>%
+      addLegend("bottomright", pal = pal, values = nm_census_tracts_filtered$HDI, title = "HDI", opacity = 0.7)  
+    }
+    })
+    
+    
 renderLeaflet({
      reactive_county()
    })
