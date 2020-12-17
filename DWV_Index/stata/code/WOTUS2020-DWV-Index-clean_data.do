@@ -46,7 +46,7 @@ set more off
 
     *Aggregating active surface water systems information to have one entry per surface water system
 		use rawdata/active_surface_water_systems.dta, clear
-
+		gen has_nmdwb_data="Yes"
 		* Creating an indicator to select only one observation per system
 		bysort number0: gen unique_pws=_n==1
 
@@ -70,13 +70,13 @@ set more off
 		gen has_gu_facilities_ind=1 if num_gu_facilities>=1 &  num_sw_facilities<.
 		replace has_gu_facilities_ind=0 if num_gu_facilities==0 
 		keep if unique_pws==1
-		keep number0 system_nam owner_type d_prin_cit d_prin_cnt d_fed_prim d_populati d_ttl_stor d_pws_fed_ num_sw_gu_facilities num_sw_facilities num_gu_facilities has_sw_facilities_ind has_gu_facilities_ind
+		keep has_nmdwb_data number0 system_nam owner_type d_prin_cit d_prin_cnt d_fed_prim d_populati d_ttl_stor d_pws_fed_ num_sw_gu_facilities num_sw_facilities num_gu_facilities has_sw_facilities_ind has_gu_facilities_ind
 		sort number0
 		save data/systems_surface.dta, replace
 
 	*Aggregating active ground water systems information to have one entry per surface water system
 		use rawdata/active_ground_water_systems.dta, clear
-
+		gen has_nmdwb_data="Yes"
 		* Creating an indicator to select only one observation per system
 		bysort number0: gen unique_pws=_n==1
 
@@ -98,7 +98,7 @@ set more off
 		gen has_gw_facilities_ind=1 if num_gw_facilities>=1 &  num_gw_facilities<.
 		replace has_gw_facilities_ind=0 if num_gw_facilities==0 
 		keep if unique_pws==1
-		keep number0 system_nam owner_type d_prin_cit d_prin_cnt d_fed_prim d_populati d_ttl_stor d_pws_fed_ num_gw_facilities has_gw_facilities_ind
+		keep has_nmdwb_data number0 system_nam owner_type d_prin_cit d_prin_cnt d_fed_prim d_populati d_ttl_stor d_pws_fed_ num_gw_facilities has_gw_facilities_ind
 		sort number0
 		save data/systems_ground.dta, replace
 
@@ -128,6 +128,7 @@ set more off
 	merge 1:1 number0 using data/source_ratio_surface_pws.dta
 	replace surface_pws=0 if surface_pws==.
 	gen has_source_ratio_surface_pws=(_merge!=2)
+	replace has_nmdwb_data="No" if _merge==2 & has_nmdwb_data==""
 	drop _merge
 	save data/pws.dta, replace
 	
@@ -150,7 +151,7 @@ set more off
 
 	gen has_drinking_water_data="Yes" if _merge==3 | _merge==1
 	replace has_drinking_water_data="No" if _merge==2 
-
+	replace has_nmdwb_data="No" if _merge==2 & has_nmdwb_data==""
 	drop _merge
 	gen ratio_pws_mhi_over_state_mhi=mhi_2010/48059
 
