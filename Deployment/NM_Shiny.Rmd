@@ -113,14 +113,16 @@ renderLeaflet({
 ### Vulnerability Plot
 ```{r}
 renderPlot({
-  ggplot(nm_pws_merged, aes(x = Population, y = as.numeric(MedianIncome))) + 
+  nm_pws_merged_at_risk <- nm_pws_merged %>%
+    filter(Index > 4)
+  ggplot(nm_pws_merged_at_risk, aes(x = `Pop. Served`, y = as.numeric(MedianIncome))) + 
     geom_point(aes(color = Index)) +
-    scale_color_gradient(low = "#fee0d2", high = "#de2d26") + 
+    scale_color_gradient(low = "#fc9272", high = "#de2d26") + 
     geom_text_repel(aes(label = `Water System Name`), size = 4.0) + 
-    labs(title = "At-Risk Public Water Systems", subtitle = "Public Water Systems are most vulnerable when median household incomes are low, population sizes are huge, and vulnerability scores high.",
+    labs(title = "High Risk Public Water Systems", subtitle = "Public Water Systems are most vulnerable when median household incomes are low, population sizes are huge, and vulnerability scores high.",
          x = "Population Size", y = "Median Household Income ($)",
          colour = "Vulnerability \nIndex")
-   })
+  })
 ``` 
   
 ### Public Water Systems  
