@@ -87,7 +87,7 @@ renderLeaflet({
   vul_pal <- colorBin("Reds", domain = nm_pws_merged$Index, bins = c(2,4,6,8))
   leaflet() %>%
     addProviderTiles(providers$Stamen.Toner, options = providerTileOptions(zIndex = 7)) %>%
-    setView(lng = -105.87, lat = 34.52, zoom = 8) %>%
+    setView(lng = -105.87, lat = 34.52, zoom = 7) %>%
     addPolygons(data = nm_census_tracts, label = ~round(HDI, 3), group = "HDI",
                 fillColor = ~pal(HDI), fillOpacity = 0.75, weight = 0, opacity = 0, color = "white") %>%
     addPolygons(data = nm_pws_merged, label = nm_pws_merged$`Water System Name`, group = "Water System",
@@ -104,7 +104,7 @@ renderLeaflet({
               title = "Human Development Index", group = "HDI", opacity = 0.7) %>%
     addLegend("bottomleft", pal = vul_pal, values = nm_pws_merged$Index, 
               title = "Drinking Water Vulnerability Index",  group = "Water System", opacity = 0.7) %>%
-    hideGroup(c("Unprotected Streams", "Protected Streams", "Pollutant Sources", "Water System"))
+    hideGroup(c("HDI", "Pollutant Sources", "Water System"))
    })
 ```
 
