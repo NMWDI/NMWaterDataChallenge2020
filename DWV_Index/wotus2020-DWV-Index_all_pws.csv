@@ -1,0 +1,1077 @@
+number0,system_nam,owner_type,d_prin_cit,d_prin_cnt,d_fed_prim,d_populati,d_ttl_stor,d_pws_fed_,has_nmdwb_data,num_gw_facilities,has_gw_facilities_ind,num_sw_gu_facilities,num_sw_facilities,num_gu_facilities,has_sw_facilities_ind,has_gu_facilities_ind,surface_ground_facility_type,surf_wtr_ratio_if_spws,surf_wtr_pur_ratio_if_spws,grnd_wtr_udi_ratio_if_spws,grnd_wtr_udi_purch_if_spws,surface_pws,surface_ratio_if_spws,has_source_ratio_surface_pws,mhi_2010,has_mhi_data,has_drinking_water_data,ratio_pws_mhi_over_state_mhi,disadvantage_status_type,total_intakes,sw_intakes,gw_intakes,gu_intakes,total_gu_sw_intakes,alternative_intakes,impacted_sw_intakes,impacted_gu_intakes,impacted_gu_sw_water_intakes,ratio_impacted_gu_sw_over_all,ratio_gu_sw_impacted_over_gu_sw,has_surface_intake_geo_info,seller_number0_1,seller_system_name_1,seller_pop_1,seller_number0_2,seller_system_name_2,seller_pop_2,surfacepurchaser_status,has_surfacepurchase_data,wotus2020_dwv_index,seller_wotus2020_dwv_index_1,seller_wotus2020_dwv_index_2,index_summary
+NM3507029,RANCHOS DE TAOS MDWCA,L,RANCHOS DE TAOS,TAOS,GW,750,100000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,39005.2,Yes,Yes,.8116107,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3553401,CORONADO VILLAGE COUNTRY CLUB,P,ALBUQUERQUE,BERNALILLO,GW,842,104500,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,45599,Yes,Yes,.9488129,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580121,RIO ARRIBA COUNTY DETENTION CENTER,L,TIERRA AMARILLA,RIO ARRIBA,GW,128,20000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3513607,LOWER RIO GRANDE PWWA VALLE DEL RIO,P,LA MESA,DONA ANA,GW,243,52000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3549408,CARLSBAD CAVERNS NATIONAL PARK,F,CARLSBAD,EDDY,GW,2500,550000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3549801,"LA MESA VILLA MOBILE HOME PARK, LLC",P,ALBUQUERQUE,BERNALILLO,GW,90,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,47895,Yes,Yes,.99658751,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3504926,RIO CHIQUITO MDWCA,L,CHIMAYO,SANTA FE,GW,122,15000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,36048.6,Yes,Yes,.75009054,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510624,UPPER LA PLATA WATER USERS ASSOCIATION,L,LA PLATA,SAN JUAN,SWP,2265,890000,C,Yes,0,0,1,1,0,1,0,Surface,,,,,0,,1,54375,Yes,Yes,1.1314218,Non-Disadvantaged,,,,,,,,,,,,0,NM3510324,LOWER VALLEY WATER USERS ASSOCIATION,8647,,,,A,Yes,8,8,,Direct Impact with No Alternative Sources of Water
+NM3591621,ECHO AMPHITHEATER USFS CARSON,F,,RIO ARRIBA,GW,205,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3596514,ALLSUPS 130,P,HONDO,LINCOLN,GW,350,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3531524,BLANCO MDWCA,L,BLANCO,SAN JUAN,SWP,1140,380000,C,Yes,0,0,1,1,0,1,0,Surface,,,,,0,,1,52989.7,Yes,Yes,1.1025968,Non-Disadvantaged,,,,,,,,,,,,0,NM3510124,BLOOMFIELD WATER SUPPLY SYSTEM,7090,,,,A,Yes,8,8,,Direct Impact with No Alternative Sources of Water
+NM3522329,EL SALTO MDWCA AND SA,L,ARROYO SECO,TAOS,GW,232,40000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,37994.5,Yes,Yes,.79058033,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591821,ABIQUIU INN,P,ABIQUIU,RIO ARRIBA,GW,191,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502007,VISTA DEL REY ESTATES MDWCA,L,VADO,DONA ANA,GW,42,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,28711.1,Yes,Yes,.5974136,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510124,BLOOMFIELD WATER SUPPLY SYSTEM,L,BLOOMFIELD,SAN JUAN,SW,7090,3100000,C,Yes,0,0,2,2,0,1,0,Surface,100,0,0,0,1,100,1,55805.3,Yes,Yes,1.1611831,Non-Disadvantaged,2,2,0,0,2,0,2,0,2,1,1,1,,,,,,,,No,8,,,Direct Impact with No Alternative Sources of Water
+NM3526704,CITY OF RATON/RATON WATER WORKS,L,RATON,COLFAX,SW,9733,7410000,C,Yes,0,0,3,3,0,1,0,Surface,100,0,0,0,1,100,1,31784.5,Yes,Yes,.66136414,Severely Disadvantaged,5,5,0,0,5,0,5,0,5,1,1,1,,,,,,,,No,10,,,Direct Impact with No Alternative Sources of Water
+NM3500502,QUEMADO LAKE RECREATION AREA - USFS,F,QUEMADO,CATRON,GW,25,1800,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591419,PINE SPRINGS SUMMER CAMP,P,SACRAMENTO,OTERO,GW,250,20000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3558214,CEDAR CREEK CABIN OWNERS ASSOCIATION,P,RUIDOSO,LINCOLN,GW,554,100000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,50313,Yes,Yes,1.0469006,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3521408,WHITES CITY WATER SYSTEM,P,WHITES CITY,EDDY,GW,67,210000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,72135,Yes,Yes,1.5009675,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500619,OASIS ENTERPRISES INC.,P,ALAMOGORDO,OTERO,SWP,100,0,NC,Yes,0,0,3,3,0,1,0,Surface,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,NM3513319,ALAMOGORDO DOMESTIC WATER SYSTEM,35629,,,,A,Yes,3,3,,Direct Impact Non-Community Water System
+NM3524830,EDGEWOOD MEADOWS WATER CORP.,P,EDGEWOOD,TORRANCE,GW,93,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,38533,Yes,Yes,.80178529,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591307,FORT SELDEN HISTORIC SITE,S,RADIUM SPRINGS,DONA ANA,GW,60,1200,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3520014,TWIN SPRUCE CAMPGROUND,P,RUIDOSO,LINCOLN,GW,200,100000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3505326,TESUQUE MDWCA,L,TESUQUE,SANTA FE,GW,258,50000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,50290.2,Yes,Yes,1.0464263,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593532,BELEN MOOSE LODGE 1680,P,BELEN,VALENCIA,GW,60,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590530,RATTLESNAKE DRAW REST AREA,S,CLINES CORNERS,TORRANCE,GW,1000,10000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591209,CAMP THUNDERBIRD,P,MIMBRES,GRANT,GW,25,5000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581926,MINE SHAFT TAVERN,P,,SANTA FE,GW,150,1700,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3519703,DEXTER MUNICIPAL WATER SYSTEM,L,DEXTER,CHAVES,GW,1554,1150000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,40598,Yes,Yes,.84475332,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3511601,SANDIA CHURCH OF THE NAZARENE,P,ALBUQUERQUE,BERNALILLO,GW,150,2500,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3546930,INDIAN HILLS WATER COMPANY,P,MORIARTY,TORRANCE,GW,704,103000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,38533,Yes,Yes,.80178529,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3584129,RIO BRAVO CAMPGROUND (BLM),F,PILAR,TAOS,GW,20,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3507729,TRES PIEDRAS MDWCA,L,TRES PIEDRAS,TAOS,GW,205,64000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3574826,JUNIPER HILLS RANCH,P,SANTA FE,SANTA FE,GW,65,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,70208,Yes,Yes,1.460871,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3559316,PECAN PARK MDWCA,L,DEMING,LUNA,GW,113,32000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,27836,Yes,Yes,.57920474,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3576623,HOFHEINS/MARCEL THOMAS ASSOC COOP INC,P,JEMEZ SPRINGS,SANDOVAL,GW,70,28000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,41510,Yes,Yes,.86373001,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3522509,NORTH HURLEY MDWCA,L,HURLEY,GRANT,GWP,296,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,32728,Yes,Yes,.6809963,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502219,DOLLAR GENERAL LA LUZ,P,LA LUZ,OTERO,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3546419,TIMBERON W AND SD,L,TIMBERON,OTERO,SW,941,1032500,C,Yes,3,1,5,4,1,1,1,Surface and Ground,60,0,0,0,1,60,1,19334,Yes,Yes,.40229717,Severely Disadvantaged,14,4,9,1,5,1,4,1,5,.35714287,1,1,,,,,,,,No,4,,,Direct Impact with Alternative Sources of Water
+NM3581701,HIDDEN VALLEY RESORT ON ROUTE 66,P,TIJERAS,BERNALILLO,GW,252,6000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581904,PHILMONT SCOUT RANCH - FISH CAMP OUTCAMP,P,CIMARRON,COLFAX,GW,150,2200,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3524430,PUNTA DE AGUA MDWCA,L,MOUNTAINAIR,TORRANCE,GW,45,28000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,43625,Yes,Yes,.90773839,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501304,PHILMONT SCOUT RANCH - RAYADO RIDGE OC,P,CIMARRON,COLFAX,GW,99,5875,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3521308,OTIS MDWCA,L,CARLSBAD,EDDY,GW,4592,1650000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,65683.2,Yes,Yes,1.3667201,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581923,COTTONWOOD MONTESSORI,P,CORRALES,SANDOVAL,GW,85,170,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3584229,PILAR CAMPGROUND (BLM),F,PILAR,TAOS,GW,20,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510027,CABALLO LAKE MDWCA,L,CABALLO,SIERRA,GW,115,900,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,32482,Yes,Yes,.67587757,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3563619,MOUNTAIN ORCHARD MDWCA,L,HIGH ROLLS,OTERO,GW,102,43000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,53979,Yes,Yes,1.1231819,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501332,SPA AND CUISINE,P,LOS LUNAS,VALENCIA,GW,45,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3520708,HAPPY VALLEY COOPERATIVE WATER WORKS,P,CARLSBAD,EDDY,GW,638,210000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,62113,Yes,Yes,1.2924322,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510329,ENCHANTED MOBILE HOME PARK,P,TAOS,TAOS,GW,150,0,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,34894,Yes,Yes,.72606587,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592717,T & R MARKET WATER SUPPLY,P,YATAHEY,MCKINLEY,GW,100,3000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3550201,HOMESTEAD MOBILE HOME COMMUNITY,P,ALBUQUERQUE,BERNALILLO,GW,137,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,82586,Yes,Yes,1.7184294,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500732,MAEZ WATER SOURCES & DRILLING,P,PERALTA,VALENCIA,GW,50,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3511207,ANTHONY W&SD,L,ANTHONY,DONA ANA,GW,10965,2200000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,26498.2,Yes,Yes,.55136812,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3584429,ST BERNARD CONDOMINIUMS,P,TAOS SKI VALLEY,TAOS,GW,75,5000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3511201,SIERRA VISTA SOUTH WATER COOP,P,CEDAR CREST,BERNALILLO,GW,128,60000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,75116,Yes,Yes,1.5629954,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3595130,MOUNTAIN VIEW ELEMENTARY SCHOOL,L,MORIARTY,TORRANCE,GW,100,40000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580129,TAOS INN,P,TAOS,TAOS,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502726,ARROYO SECO TEEN CENTER,L,SANTA FE,SANTA FE,GW,50,40000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3582901,TURQUOISE TRAIL CAMPGROUND,P,CEDAR CREST,BERNALILLO,GW,167,1550,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502319,DOLLAR GENERAL #18864,P,ALAMOGORDO,OTERO,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591025,FIELD TRACT CAMPGROUND USFS SNF,F,PECOS,SAN MIGUEL,GW,53,9400,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501404,PHILMONT SCOUT RANCH - METCALF STATION,P,CIMARRON,COLFAX,GW,80,2250,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3599129,TAOS EAST CONDOMINIUMS,P,TAOS,TAOS,GW,50,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3599229,AMIZETTE INN,P,TAOS SKI VALLEY,TAOS,GW,28,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3594326,EL GANCHO,P,SANTA FE,SANTA FE,GW,300,10000,NC,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500217,ST WILLIAMS MOBILE HOME PARK,P,MENTMORE,MCKINLEY,GW,84,3160,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,38640,Yes,Yes,.80401176,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3531804,VILLAGE OF EAGLE NEST,L,EAGLE NEST,COLFAX,GW,568,200000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,41074,Yes,Yes,.85465783,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510119,PONDEROSA PINES PROPERTY OWNERS ASSOC,P,CLOUDCROFT,OTERO,GW,130,81500,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,36970.2,Yes,Yes,.76926696,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580509,LAKE ROBERTS WATER USERS ASSOCIATION,L,SILVER CITY,GRANT,GW,51,14800,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,46698,Yes,Yes,.97168064,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3520027,DESERTAIRE WATER COMPANY,P,TRUTH OR CONSEQUENCES,SIERRA,GW,48,130,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,43669,Yes,Yes,.90865397,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3553501,OLD SANDIA PARK SERVICE CO-OP,P,CEDAR CREST,BERNALILLO,GW,200,27000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,67999.2,Yes,Yes,1.4149108,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3572126,POJOAQUE TERRACES MHP,P,POJOAQUE,SANTA FE,GW,160,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,52260,Yes,Yes,1.0874134,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590427,PERCHA DAM STATE PARK,S,CABALLO,SIERRA,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501629,EL PUEBLO LODGE,P,TAOS,TAOS,GW,100,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500125,ILFELD MDWCA,L,ILFELD,SAN MIGUEL,GW,400,25000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,34956,Yes,Yes,.72735596,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592125,EL PORVENIR CHRISTIAN CAMP,P,MONTEZUMA,SAN MIGUEL,GW,175,27000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500327,ROCK CANYON RECREATION AREA-STATE PARKS,S,ELEPHANT BUTTE,SIERRA,GW,33,119,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3599026,SILVER SADDLE MOTEL,P,SANTA FE,SANTA FE,GW,75,5000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3514810,PUERTO DE LUNA MDWCA,L,PUERTO DE LUNA,GUADALUPE,GWP,426,250000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,24085,Yes,Yes,.50115484,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3563019,CLOUD COUNTRY ESTATES WUA,L,MAYHILL,OTERO,GW,337,221536,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,53979,Yes,Yes,1.1231819,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510104,MAXWELL COOPERATIVE WATER USERS ASSOC,P,MAXWELL,COLFAX,GW,274,120000,C,Yes,5,1,0,0,0,0,0,Ground,,,,,0,,1,41001.1,Yes,Yes,.85314095,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500403,GENERATIONS OF LEARNING,P,ROSWELL,CHAVES,GW,140,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590732,ADELINO HEADSTART SCHOOL,P,TOME,VALENCIA,GW,150,250,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500817,EL SABINO STORE,P,GALLUP,MCKINLEY,GW,150,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3524626,ENTRANOSA WATER AND WASTEWATER COOP,P,EDGEWOOD,BERNALILLO,GW,8500,3467000,C,Yes,7,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590115,PAJARITO MOUNTAIN SKI AREA,P,LOS ALAMOS,LOS ALAMOS,GW,350,70000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580907,DRIPPING SPRINGS,F,LAS CRUCES,DONA ANA,GW,250,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501729,"TAOS TENNIS RANCH, LLC",P,TAOS,TAOS,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3507129,RED RIVER WATER SYSTEM,L,RED RIVER,TAOS,GW,679,1270000,C,Yes,5,1,0,0,0,0,0,Ground,,,,,0,,1,37996,Yes,Yes,.79061157,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501001,SUNSET HILLS ESTATES HOA,P,ALBUQUERQUE,BERNALILLO,GW,76,42500,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,114385,Yes,Yes,2.3800952,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590829,PILAR YACHT CLUB & CAFE,P,EMBUDO,RIO ARRIBA,GW,50,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590210,ANTON CHICO REST AREA  WEST BOUND,S,SANTA ROSA,GUADALUPE,GW,450,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3564219,ROLLING HILLS WUA,P,LA LUZ,OTERO,GW,35,850,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,53979,Yes,Yes,1.1231819,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3519903,HAGERMAN WATER SYSTEM,L,HAGERMAN,CHAVES,GW,1533,780000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,41312.3,Yes,Yes,.85961628,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3559014,FAWN RIDGE PROPERTY OWNERS ASSOCIATION,P,RUIDOSO,LINCOLN,GW,193,6000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,50313,Yes,Yes,1.0469006,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592825,VALLEY ELEMENTARY AND MIDDLE SCHOOL,S,RIBERA,SAN MIGUEL,GW,130,26000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3575501,UNIVERSITY OF NEW MEXICO,S,ALBUQUERQUE,BERNALILLO,GW,35000,1200000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581329,RIO GRANDE GORGE VISITOR CENTER (BLM),F,PILAR,TAOS,GW,109,6000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3528122,CAUSEY  WATER SYSTEM,L,CAUSEY,ROOSEVELT,GW,90,38700,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,50174,Yes,Yes,1.0440084,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3516825,EL CORUCO MDWCA,L,RIBERA,SAN MIGUEL,GW,93,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,31134,Yes,Yes,.6478287,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3512714,CORONA WATER SYSTEM,L,CORONA,LINCOLN,GW,341,275000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,35501.9,Yes,Yes,.73871493,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3522409,FREEPORT MCMORAN CHINO MINES,P,HURLEY,GRANT,GW,1050,2414000,C,Yes,28,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510204,LEISURE ESTATES HOMEOWNERS ASSOCIATION,P,EAGLE NEST,COLFAX,GW,56,4000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3597501,LOS PADILLAS ELEMENTARY SCHOOL,L,ALBUQUERQUE,BERNALILLO,GW,350,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3562719,HOLLOMAN AIR FORCE BASE,F,HOLLOMAN AIR FORCE BASE,OTERO,GW,13000,3750000,C,Yes,12,1,0,0,0,0,0,Ground,,,,,0,,1,46418.6,Yes,Yes,.96586698,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580414,FORT LONE TREE,M,CAPITAN,LINCOLN,GW,150,9000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592629,CASA VALDEZ,P,TAOS,TAOS,GW,45,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3513307,MADRID MHP,P,LAS CRUCES,DONA ANA,GW,64,357,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,60711,Yes,Yes,1.2632598,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3594507,WHITE SANDS MID RANGE FACILITIES- FF,F,WHITE SANDS MISSILE RANG,DONA ANA,GW,100,232500,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3520203,ROSWELL MUNICIPAL WATER SYSTEM,L,ROSWELL,CHAVES,GW,53892,24100000,C,Yes,20,1,0,0,0,0,0,Ground,,,,,0,,1,45037.7,Yes,Yes,.93713355,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500507,DESERT AIRE MDW AND SWA,L,CHAPARRAL,DONA ANA,GW,868,243282,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,32045.9,Yes,Yes,.6668033,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500509,FAYWOOD HOT SPRINGS,P,FAYWOOD,GRANT,GW,25,17000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3582504,PHILMONT SCOUT RANCH - PHILLIPS JUNCTN,P,,COLFAX,GW,150,2250,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500721,RIO EMBUDO MDWCA,L,DIXON,RIO ARRIBA,GW,172,45000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,26250,Yes,Yes,.54620361,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580526,WILD AND WOOLEY TRAILER RANCH,P,SANTA FE,SANTA FE,GW,59,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,82000,Yes,Yes,1.7062361,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3528322,ELIDA WATER SYSTEM,L,ELIDA,ROOSEVELT,GW,330,177000,C,Yes,5,1,0,0,0,0,0,Ground,,,,,0,,1,48566.4,Yes,Yes,1.0105579,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3523102,ARAGON MDWCA,L,ARAGON,CATRON,GW,33,20000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,42480,Yes,Yes,.88391352,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3598401,POLK MIDDLE SCHOOL,L,ALBUQUERQUE,BERNALILLO,GW,505,2520,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591018,MORA VALLEY COMMUNITY HEALTH CLINIC,P,MORA,MORA,GW,70,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3518225,NORTH SAN YSIDRO MDWCA,L,SAN YSIDRO,SAN MIGUEL,GW,110,20000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,35019,Yes,Yes,.72866684,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591319,"SACRAMENTO CAMP CONFERENCE CENTER, INC",P,SACRAMENTO,OTERO,GW,200,74000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3597029,TRES PIEDRAS HEADQUARTER USFS CARSON,F,TRES PIEDRAS,TAOS,GW,25,16800,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580309,LA TIENDA DEL SOL,P,SAN LORENZO,GRANT,GW,25,85,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3503401,PAJARITO MESA MDWCA,L,ALBUQUERQUE,BERNALILLO,SWP,175,0,C,Yes,0,0,1,1,0,1,0,Surface,,,,,0,,1,64304.7,Yes,Yes,1.3380365,Non-Disadvantaged,,,,,,,,,,,,0,NM3510701,ALBUQUERQUE WATER SYSTEM,659736,,,,A,Yes,2,2,,Direct Impact with Alternative Sources of Water
+NM3580729,JUNEBUG CAMPGROUND - USFS -,F,,TAOS,GWP,50,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3503221,DURANES Y GAVILAN MDWCA,L,OJO CALIENTE,TAOS,GW,215,59000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,37192,Yes,Yes,.77388209,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3518025,LAS VEGAS (CITY OF),L,LAS VEGAS,SAN MIGUEL,SW,18044,8100000,C,Yes,2,1,3,3,0,1,0,Surface and Ground,100,0,0,0,1,100,1,28681,Yes,Yes,.59678727,Severely Disadvantaged,16,9,6,1,10,1,9,1,10,.625,1,1,,,,,,,,No,4,,,Direct Impact with Alternative Sources of Water
+NM3590109,SAN LORENZO ELEMENTARY SCHOOL,L,SAN LORENZO,GRANT,GW,77,1040,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3521108,LOVING WATER SYSTEM,L,LOVING,EDDY,GW,1872,1043100,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,43438,Yes,Yes,.90384734,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3504201,BERNALILLO COUNTY SERENITY MESA,L,ALBUQUERQUE,BERNALILLO,GW,26,400,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500907,ARDOVINOS DESERT CROSSING,P,SUNLAND PARK,DONA ANA,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3511001,SANDIA KNOLLS WATER SYSTEM,P,CEDAR CREST,BERNALILLO,GW,1024,199000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,95194,Yes,Yes,1.9807737,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500529,SANCHEZ MOBILE HOME PARK,P,EL PRADO,TAOS,GW,80,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,37996,Yes,Yes,.79061157,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501013,URENCO USA,P,EUNICE,LEA,GWP,400,50000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3523528,MAGDALENA VILLAGE OF,L,MAGDALENA,SOCORRO,GW,1491,400000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,38224,Yes,Yes,.79535574,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501129,LA LAMA MDWCA,L,QUESTA,TAOS,GW,45,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,37677.6,Yes,Yes,.78398633,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500725,TRES LAGUNAS HOME OWNERS ASSOCIATION,P,PECOS,SAN MIGUEL,GU,52,11250,NC,Yes,0,0,2,0,2,0,1,Surface,0,0,100,0,1,100,1,35019,Yes,Yes,.72866684,Severely Disadvantaged,2,0,0,2,2,0,0,2,2,1,1,1,,,,,,,,No,10,,,Direct Impact Non-Community Water System
+NM3510018,OJO FELIZ MDWCA,L,OJO FELIZ,MORA,GW,60,18000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,26968,Yes,Yes,.56114358,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3517725,LA PASADA MDWCA,L,PECOS,SAN MIGUEL,GW,191,30000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,35019,Yes,Yes,.72866684,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3548901,NORTH COURT MOBILE HOME PARK,P,ALBUQUERQUE,BERNALILLO,GW,127,10086,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,51029,Yes,Yes,1.061799,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3554107,COUNTRY MOBILE MANOR,P,LAS CRUCES,DONA ANA,GW,220,4300,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,43882,Yes,Yes,.913086,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3522109,BAYARD MUNICIPAL WATER SYSTEM,L,BAYARD,GRANT,GW,2591,1375000,C,Yes,6,1,0,0,0,0,0,Ground,,,,,0,,1,33899.8,Yes,Yes,.70537883,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3511607,HATCH WATER SUPPLY SYSTEM,L,HATCH,DONA ANA,GW,2437,925000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,21667,Yes,Yes,.45084167,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500629,EL RANCHO MHP TAOS,P,EL PRADO,TAOS,GW,72,0,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,36764,Yes,Yes,.76497638,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3520003,LAKE ARTHUR WATER DEPARTMENT,L,LAKE ARTHUR,CHAVES,GW,743,100000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,41327,Yes,Yes,.85992217,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3504001,BERNALILLO COUNTY 911 COMMAND CENTER,L,ALBUQUERQUE,BERNALILLO,GW,50,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510801,CHILILI WATER USERS ASSN,L,TIJERAS,BERNALILLO,GW,170,30000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,62539,Yes,Yes,1.3012964,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3522609,SILVER CITY WATER SYSTEM,L,SILVER CITY,GRANT,GW,16852,8529482,C,Yes,9,1,0,0,0,0,0,Ground,,,,,0,,1,40966.8,Yes,Yes,.85242724,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3506729,PENASCO MDWCA,L,PENASCO,TAOS,GW,549,250000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,32111,Yes,Yes,.66815788,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592708,SKP RV PARK,P,LAKEWOOD,EDDY,GW,230,6000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3535223,CANON MDWCA,L,CANON,SANDOVAL,GW,320,125000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,41005,Yes,Yes,.85322207,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3574229,CERRO MDWC&SW,L,CERRO,TAOS,GW,232,50000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,30712,Yes,Yes,.63904786,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581826,SANTA CRUZ RECREATION AREA,F,CUNDIYO,SANTA FE,GW,200,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590426,EDGEWOOD ELEMENTARY SCHOOL,L,EDGEWOOD,SANTA FE,GW,464,150000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3525033,BLUEWATER WATER AND SANITATION DISTRICT,L,BLUEWATER,CIBOLA,GW,736,125000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,51175,Yes,Yes,1.064837,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593621,EL VADO LAKE STATE PARK,S,RUTHERON,RIO ARRIBA,SW,100,4000,NC,Yes,0,0,1,1,0,1,0,Surface,100,0,0,0,1,100,1,,No,Yes,,,1,1,0,0,1,0,1,0,1,1,1,1,,,,,,,,No,9,,,Direct Impact Non-Community Water System
+NM3577432,TRAILS END MHP,P,LOS LUNAS,VALENCIA,GW,120,225,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,43363,Yes,Yes,.90228677,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3557813,TRIPLE J MHP,P,HOBBS,LEA,GW,192,0,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,67565,Yes,Yes,1.4058762,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3536907,ALTO DE LAS FLORES MDWCA,L,SAN MIGUEL,DONA ANA,GW,800,75132,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,32222,Yes,Yes,.67046756,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3503926,AGUA FRIA WATER ASSOCIATION,L,SANTA FE,SANTA FE,GW,611,116000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,40986.2,Yes,Yes,.85283089,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3523628,SAN ACACIA MDWCA,L,SAN ACACIA,SOCORRO,GW,294,100000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,42181,Yes,Yes,.87769198,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3512814,FORT STANTON FACILITY,S,FORT STANTON,LINCOLN,GW,135,325000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,42896,Yes,Yes,.89256954,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501401,FOREST MEADOW BAPTIST CHURCH,P,TIJERAS,BERNALILLO,GW,150,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502019,BOOTHILL RV PARK,P,ALAMOGORDO,OTERO,GW,128,5000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593329,FA YUN PRAJNA MONASTERY,P,VADITO,TAOS,GW,25,10500,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3512007,LOWER RIO GRANDE PWWA EAST MESA,L,ORGAN,DONA ANA,GW,2021,995000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3566510,RIVERAS MDWUA,L,SANTA ROSA,GUADALUPE,GWP,60,0,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,24085,Yes,Yes,.50115484,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501926,SANTA FE GIRLS SCHOOL,P,SANTA FE,SANTA FE,GW,55,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3515032,TRINITY MOBILE HOME PARK,P,PERALTA,VALENCIA,GW,50,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,50227,Yes,Yes,1.0451112,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3529007,GARFIELD MDWCA,L,GARFIELD,DONA ANA,GW,2519,830000,C,Yes,5,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581204,PHILMONT SCOUT RANCH - CIMARRONCITO OC,P,,COLFAX,GW,150,10150,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580116,LOW HI RV RANCH,P,DEMING,LUNA,GW,25,205,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,27836,Yes,Yes,.57920474,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3595025,GRIEGOS MARKET,P,PECOS,SAN MIGUEL,GW,125,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500930,CARLOS LUCERO SUBDIVISION,P,,TORRANCE,GW,70,2900,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,35757,Yes,Yes,.74402297,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3504121,ANCONES MDWWCA,L,LA MADERA,RIO ARRIBA,GW,60,50000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,35585,Yes,Yes,.74044406,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3503321,TIERRA AMARILLA MDWCA,L,TIERRA AMARILLA,RIO ARRIBA,GW,470,66000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,30585,Yes,Yes,.63640523,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580723,JEMEZ FALLS CAMPGROUND USFS SNF,F,JEMEZ SPRINGS,SANDOVAL,GW,260,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3508129,LAS HACIENDAS HOMEOWNERS WUA,P,TAOS,TAOS,GW,72,0,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,34894,Yes,Yes,.72606587,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3504101,HIGH DESERT RV PARK,P,ALBUQUERQUE,BERNALILLO,GW,78,30000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593821,NAVAJO LAKE STATE PARK - SIMS MESA,S,NAVAJO DAM,RIO ARRIBA,SW,110,200000,NC,Yes,0,0,1,1,0,1,0,Surface,100,0,0,0,1,100,1,,No,Yes,,,1,1,0,0,1,0,0,0,0,0,0,1,,,,,,,,No,1,,,No Direct Impact
+NM3513719,LA LUZ MDWCA,L,LA LUZ,OTERO,SW,2500,537000,C,Yes,4,1,1,1,0,1,0,Surface and Ground,0,0,0,0,1,0,1,47614.5,Yes,Yes,.99075097,Disadvantaged,6,1,5,0,1,1,1,0,1,.16666667,1,1,,,,,,,,No,3,,,Direct Impact with Alternative Sources of Water
+NM3590904,CIMARRON CANYON ST PARK - TOLBY CG,S,CIMARRON,COLFAX,GW,50,535,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3594008,CARC WASHINGTON RANCH,P,CARLSBAD,EDDY,GW,250,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500803,LEPRINO FOODS,P,ROSWELL,CHAVES,GW,150,480000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3522812,LORDSBURG WATER SUPPLY SYSTEM,L,LORDSBURG,HIDALGO,GW,3028,4050000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,37016.4,Yes,Yes,.77022827,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591929,TAOS VALLEY RV PARK,P,TAOS,TAOS,GW,40,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3582626,POJOAQUE VALLEY LITTLE LEAGUE FIELD,S,POJOAQUE,SANTA FE,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3560617,MANUELITO NAVAJO CHILDRENS HOME,P,GALLUP,MCKINLEY,GW,45,1800,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,38640,Yes,Yes,.80401176,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3520023,PUEBLO LOS CERROS,P,CORRALES,SANDOVAL,GW,180,100000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,78152,Yes,Yes,1.6261679,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591414,HONDO VALLEY SCHOOL,L,HONDO,LINCOLN,GW,200,136000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500801,OAKLAND HEIGHTS HOMEOWNERS ASSOCIATION,P,ALBUQUERQUE,BERNALILLO,GW,26,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,109127,Yes,Yes,2.2706881,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3562919,LABORCITA WATER USERS ASSOCIATION,L,LA LUZ,OTERO,GW,70,27000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,53979,Yes,Yes,1.1231819,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3505629,CANON MDWCA,L,CANON,TAOS,GW,200,65000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,41005,Yes,Yes,.85322207,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3528422,FLOYD WS VILLAGE OF,L,FLOYD,ROOSEVELT,GW,109,169000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,48500,Yes,Yes,1.0091763,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3559417,CEDAR RIDGE TRAILER PARK,P,GALLUP,MCKINLEY,GW,76,5000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,29347,Yes,Yes,.61064523,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593823,HORSESHOE SPRINGS ASSOCIATION INC.,P,JEMEZ SPRINGS,SANDOVAL,GW,100,12760,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,41510,Yes,Yes,.86373001,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592229,TAOS MOTEL AND RV PARK,P,RANCHOS DE TAOS,TAOS,GW,57,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3582404,PHILMONT SCOUT RANCH - MIRANDA OUTCAMP,P,,COLFAX,GW,75,1250,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590527,LAKEVIEW RV PARK,P,CABALLO,SIERRA,GW,66,0,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3507329,RODARTE MDWCA,L,RODARTE,TAOS,GW,115,22500,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,42622.9,Yes,Yes,.88688695,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591019,SIVELLS BAPTIST CAMP,P,CLOUDCROFT,OTERO,GW,25,9000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3528222,DORA WATER SYSTEM,L,DORA,ROOSEVELT,GW,161,98940,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,50174,Yes,Yes,1.0440084,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3519025,SENA MDWCA,L,SENA,SAN MIGUEL,GW,180,20000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,31134,Yes,Yes,.6478287,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3521208,MALAGA MDWC  SWA,L,MALAGA,EDDY,GW,783,500000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,43438,Yes,Yes,.90384734,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590218,COYOTE CREEK STATE PARK,S,GUADALUPITA,MORA,GW,50,13000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3576723,PLACITAS TRAILS WATER COOP,P,PLACITAS,SANDOVAL,GW,355,60000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,67857,Yes,Yes,1.411952,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3574125,PENDARIES MDWCA,L,ROCIADA,SAN MIGUEL,GW,500,459000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,35758,Yes,Yes,.74404377,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501227,NATIONAL RCS TEST FACILITY,F,TULAROSA,SIERRA,GW,33,5000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502801,THE VILLAGE AT BELLA VISTA,P,CEDAR CREST,BERNALILLO,GWP,600,200000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3595201,BURGER BOY,P,ALBUQUERQUE,BERNALILLO,GW,50,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501421,DIXON MDWCA,L,DIXON,RIO ARRIBA,GW,500,150000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,26250,Yes,Yes,.54620361,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3521813,LOVINGTON MUNICIPAL WATER SUPPLY,L,LOVINGTON,LEA,GW,13231,5810000,C,Yes,19,1,0,0,0,0,0,Ground,,,,,0,,1,53532.3,Yes,Yes,1.1138871,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590619,CAMP WEHINAHPAY,P,SACRAMENTO,OTERO,SW,139,43000,NC,Yes,0,0,1,1,0,1,0,Surface,100,0,0,0,1,100,1,,No,Yes,,,2,1,1,0,1,1,1,0,1,.5,1,1,,,,,,,,No,3,,,Direct Impact Non-Community Water System
+NM3594521,MCCURDY SCHOOL,P,ESPANOLA,RIO ARRIBA,GW,62,0,NTNC,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580217,GALLUP PORT OF ENTRY,S,GALLUP,MCKINLEY,GW,1500,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3513414,ALTO NORTH WATER COOP,P,ALTO,LINCOLN,GW,200,36900,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,41794,Yes,Yes,.8696394,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3532617,TOP OF THE WORLD WATER ASSOCIATION CORP,P,CONTINENTAL DIVIDE,MCKINLEY,GW,150,24000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,66280,Yes,Yes,1.3791381,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590805,LOVES TRAVEL CENTER AND COOKS RESTAURANT,P,CLOVIS,CURRY,GW,335,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580726,SANTA FE WALDORF SCHOOL,P,SANTA FE,SANTA FE,GW,225,0,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3526911,ROY (VILLAGE OF),L,ROY,HARDING,GW,463,150000,C,Yes,5,1,0,0,0,0,0,Ground,,,,,0,,1,30875,Yes,Yes,.64243948,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3526133,GRANTS DOMESTIC WATER SYSTEM,L,GRANTS,CIBOLA,GW,8700,6500000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,35949.2,Yes,Yes,.7480222,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580513,DCP MIDSTREAM  LINAM PLANT,P,OIL CENTER,LEA,GW,160,100000,NTNC,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3535518,UPPER HOLMAN MDWCA,L,HOLMAN,MORA,GW,325,50000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,26968,Yes,Yes,.56114358,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580923,VISTA LINDA CAMPGROUND USFS SNF,F,JEMEZ SPRINGS,SANDOVAL,GW,35,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3526404,MAXWELL WATER SYSTEM,L,MAXWELL,COLFAX,GW,354,865000,C,Yes,6,1,0,0,0,0,0,Ground,,,,,0,,1,41001.1,Yes,Yes,.85314095,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3521008,CAPROCK WATER COMPANY,P,ARTESIA,EDDY,GWP,212,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,64673,Yes,Yes,1.3457,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500919,OROGRANDE BASE CAMP,F,OROGRANDE,OTERO,GWP,10,401700,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502423,SANDIA VIEW CHRISTIAN SCHOOL,P,CORRALES,SANDOVAL,GW,175,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593225,CONCHAS DAM STATE PARK NORTHSIDE,S,CONCHAS DAM,SAN MIGUEL,SW,450,75000,NC,Yes,0,0,1,1,0,1,0,Surface,100,0,0,0,1,100,1,,No,Yes,,,1,1,0,0,1,0,0,0,0,0,0,1,,,,,,,,No,1,,,No Direct Impact
+NM3575029,UPPER DES MONTES MDWCA,L,DES MONTES,TAOS,GW,222,50000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,37996,Yes,Yes,.79061157,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510517,WHISPERING CEDARS WATER ASSOCIATION,P,JAMESTOWN,MCKINLEY,GW,425,150000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,66250.89999999991,Yes,Yes,1.3785326,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3504226,CUNDIYO MDWCA,L,CUNDIYO,SANTA FE,GW,58,70000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,36218,Yes,Yes,.75361532,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3514127,HILLSBORO MDWCA,L,HILLSBORO,SIERRA,GW,186,52500,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,32482,Yes,Yes,.67587757,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3582129,COLUMBINE INN,P,TAOS SKI VALLEY,TAOS,GW,30,5000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500329,EAGLE ROCK VILLAGE,P,QUESTA,TAOS,GW,35,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,37092.4,Yes,Yes,.77180964,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580031,CAPULIN RV PARK,P,CAPULIN,UNION,GW,55,100,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3518325,PECOS WATER SYSTEM,L,PECOS,SAN MIGUEL,GW,2133,600000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,35019,Yes,Yes,.72866684,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500414,MOUNTAIN HIGH RV PARK,P,ALTO,LINCOLN,GW,130,12860,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500224,LA VIDA MISSION COMMUNITY WATER SUPPLY,P,FARMINGTON,SAN JUAN,GW,42,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,29135,Yes,Yes,.60623401,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3597429,LAMA FOUNDATION,P,SAN CRISTOBAL,TAOS,GW,25,22000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3555407,WINTERHAVEN MDWC AND SWA,L,LAS CRUCES,DONA ANA,GW,163,50357,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,43882,Yes,Yes,.913086,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3534619,ROBINHOOD WATER USERS ASSOCIATION,P,CLOUDCROFT,OTERO,GW,407,93000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,53979,Yes,Yes,1.1231819,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591827,MONTICELLO CANYON DWCA,P,ELEPHANT BUTTE,SIERRA,GW,86,10000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,43669,Yes,Yes,.90865397,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502314,LINCOLN HILLS WATER CO-OP,P,ALTO,LINCOLN,GW,190,244000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,41794,Yes,Yes,.8696394,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3505126,SANTA FE WATER SYSTEM (CITY OF),L,SANTA FE,SANTA FE,SW,78247,36150000,C,Yes,20,1,7,7,0,1,0,Surface and Ground,20,40,0,0,1,60,1,72069.7,Yes,Yes,1.4996088,Non-Disadvantaged,32,8,23,0,8,1,8,0,8,.25,1,1,NM3502826,BUCKMAN REGIONAL WATER TREATMENT PLANT,0,,,,A,Yes,2,9,,Direct Impact with Alternative Sources of Water
+NM3593023,SAN ANTONIO CAMPGROUND USFS SANTA FE,F,JEMEZ,SANDOVAL,GW,150,1550,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591116,GAGE REST AREA,S,DEMING,LUNA,GW,130,365,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510019,SILVER CLOUD WATER ASSOCIATION,L,CLOUDCROFT,OTERO,GW,226,53750,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,53979,Yes,Yes,1.1231819,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501523,ANASAZI TRAILS WATER CO-OP,P,PLACITAS,SANDOVAL,GW,400,350000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,67857,Yes,Yes,1.411952,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3505829,CHAMISAL MDWCA,L,CHAMISAL,TAOS,GW,550,140000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,32113.2,Yes,Yes,.66820365,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510224,FARMINGTON WATER SYSTEM,L,FARMINGTON,SAN JUAN,SW,38000,24228667,C,Yes,0,0,4,4,0,1,0,Surface,100,0,0,0,1,100,1,63147,Yes,Yes,1.3139474,Non-Disadvantaged,5,5,0,0,5,0,5,0,5,1,1,1,,,,,,,,No,8,,,Direct Impact with No Alternative Sources of Water
+NM3501826,SOUTHWESTERN COLLEGE,P,SANTA FE,SANTA FE,GW,117,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3507929,VADITO MDWCA,L,VADITO,TAOS,GW,122,35000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,32106.3,Yes,Yes,.66806006,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3523728,SOCORRO WATER SYSTEM,L,SOCORRO,SOCORRO,GW,11578,2734000,C,Yes,5,1,0,0,0,0,0,Ground,,,,,0,,1,37313.5,Yes,Yes,.77641022,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3503421,TRUCHAS MDWCA,L,TRUCHAS,RIO ARRIBA,GW,629,150000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,30022.3,Yes,Yes,.62469673,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590228,BOSQUE DEL APACHE NATIONAL WILDLIFE REFU,F,SAN ANTONIO,SOCORRO,GWP,60,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510623,ALBUQUERQUE NORTH KOA,P,BERNALILLO,SANDOVAL,GW,80,1000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3519803,GREENFIELD MDWCA,L,HAGERMAN,CHAVES,GW,213,115000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,40598,Yes,Yes,.84475332,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591309,BURRO MOUNTAIN HOMESTEAD,P,SILVER CITY,GRANT,GW,419,48000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,43824,Yes,Yes,.91187912,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3509924,SOUTHSIDE MUTUAL DOMESTIC WATER,L,AZTEC,SAN JUAN,SWP,1523,200000,C,Yes,0,0,1,1,0,1,0,Surface,,,,,0,,1,66879.8,Yes,Yes,1.3916186,Non-Disadvantaged,,,,,,,,,,,,0,NM3509824,AZTEC DOMESTIC WATER SYSTEM,5960,,,,A,Yes,9,9,,Direct Impact with No Alternative Sources of Water
+NM3591514,TINNIES SILVER DOLLAR RESTAURANT,P,TINNIE,LINCOLN,GW,100,2500,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3533526,CUATRO VILLAS MDWCA,L,ESPANOLA,SANTA FE,GWP,420,670000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,36024.8,Yes,Yes,.74959528,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3515918,AGUA NEGRA MDWCA,L,HOLMAN,MORA,GW,242,50000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,26968,Yes,Yes,.56114358,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581126,POJOAQUE VALLEY SCHOOL DISTRICT,L,POJOAQUE,SANTA FE,GW,1500,300000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581604,PHILMONT SCOUT RANCH - CYPHERS MINE OC,P,CIMARRON,COLFAX,GW,75,1250,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3582429,LA FONDA HOTEL,P,TAOS,TAOS,GW,37,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590714,SMOKEY BEAR R S  LINCOLN  USFS,F,RUIDOSO,LINCOLN,GW,180,16000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592023,PEREAS BAR AND RESTAURANT,P,CORRALES,SANDOVAL,GW,55,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500332,CORREO WATER ASSOCIATION,L,LAGUNA,VALENCIA,GW,166,20000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,37500,Yes,Yes,.7802909,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580423,AMERICAN GYPSUM COMPANY (BERNALILLO PLAN,P,BERNALILLO,SANDOVAL,GW,100,500000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500119,WEED WATER USERS ASSOCIATION,L,WEED,OTERO,GW,73,35000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,19334,Yes,Yes,.40229717,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500917,"PILOT TRAVEL CENTERS, LLC #305",P,JAMESTOWN,MCKINLEY,GWP,4000,80000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590607,NASAJSC WHITE SANDS TEST FACILITY- FF,F,ORGAN,DONA ANA,GW,1800,1000000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592504,USFS CIMARRON CG/SHUREE PONDS,F,,COLFAX,GW,120,10000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3503501,ALTAMONTE LITTLE LEAGUE,L,ALBUQUERQUE,BERNALILLO,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501021,CHAMA WATER SYSTEM,L,CHAMA,RIO ARRIBA,SW,1573,950000,C,Yes,0,0,1,1,0,1,0,Surface,100,0,0,0,1,100,1,30585,Yes,Yes,.63640523,Severely Disadvantaged,3,2,0,1,3,0,2,1,3,1,1,1,,,,,,,,No,10,,,Direct Impact with No Alternative Sources of Water
+NM3510118,FORT UNION NATIONAL MONUMENT USNPS,F,WATROUS,MORA,GW,38,57000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501113,WATER PROCESSING LLC WATER HAULING,P,HOBBS,LEA,GWP,99,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501101,MOUNTAINSIDE UNITED METHODIST,P,CEDAR CREST,BERNALILLO,GW,150,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3507429,TALPA MDWCA,L,TAOS,TAOS,GW,700,230000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,42636,Yes,Yes,.88715953,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3599801,CEDAR CREST MDWC & SWA,L,CEDAR CREST,BERNALILLO,GW,50,110000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,67459.39999999991,Yes,Yes,1.4036788,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590316,BOWLINS AKELA TRADING POST,P,DEMING,LUNA,GW,100,172,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593629,CHEVRON MINING INC QUESTA MINE,P,QUESTA,TAOS,GW,300,605000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3525533,MILAN COMMUNITY WATER SYSTEM,L,MILAN,CIBOLA,GW,3427,1750000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,45117.5,Yes,Yes,.93879396,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500302,DATIL ELEMENTARY SCHOOL,L,DATIL,CATRON,GW,30,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501209,CALVARY CHAPEL,P,SILVER CITY,GRANT,GW,365,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3575801,TIJERAS WATER COOPERATIVE,P,TIJERAS,BERNALILLO,GW,139,106000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,75116,Yes,Yes,1.5629954,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590704,THAXTON REST AREA,S,RATON,COLFAX,GW,150,850,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3583404,PHILMONT SCOUT RANCH - ZASTRO OUTCAMP,P,,COLFAX,GW,75,3750,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3509232,BOSQUE GARDENS MDWCA,L,PERALTA,VALENCIA,GW,130,100000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,43359.1,Yes,Yes,.90220565,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500623,VISTA DE ORO DE PLACITAS WATER USERS COO,P,PLACITAS,SANDOVAL,GW,158,30000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,67857,Yes,Yes,1.411952,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3504221,MESA SHOPPING CENTER,P,ESPANOLA,RIO ARRIBA,GW,28,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3550019,DUNGAN MDWCA,L,ALAMOGORDO,OTERO,GW,39,25000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,38615,Yes,Yes,.80349153,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3524832,RIO COMMUNITIES WATER SYSTEM,P,BELEN,VALENCIA,GW,5374,1500000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3540007,ST JOHNS MHP,P,LAS CRUCES,DONA ANA,GW,490,0,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,32219,Yes,Yes,.67040515,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3594229,TALL PINES RESORT,P,RED RIVER,TAOS,GW,100,0,NC,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590828,FORT CRAIG REST AREA  WEST SIDE,S,SAN ANTONIO,SOCORRO,GW,300,3000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3558014,ALPINE VILLAGE W AND SD,P,RUIDOSO,LINCOLN,GW,294,78000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,50313,Yes,Yes,1.0469006,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501419,BREWER,P,ALAMOGORDO,OTERO,GW,200,100,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3596433,EL MORRO NATIONAL MONUMENT,F,GRANTS,CIBOLA,GW,133,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3587401,MESA DE SHARFI RESTAURANTE,P,ALBUQUERQUE,BERNALILLO,GW,120,42,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510201,SOUTH HILLS WATER COMPANY,P,ALBUQUERQUE,BERNALILLO,GW,506,150000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,35263,Yes,Yes,.73374397,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590022,OASIS STATE PARK,S,PORTALES,ROOSEVELT,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501127,DAM SITE HISTORIC DISTRICT,L,ELEPHANT BUTTE,SIERRA,GWP,10,6600,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3598526,SUNRISE SPRINGS INTEGRATIVE WELLNESS RES,P,SANTA FE,SANTA FE,GW,35,50280,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3595333,CUBERO ELEMENTARY SCHOOL,L,CUBERO,CIBOLA,GW,240,66050,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500326,"EPCOR WATER NEW MEXICO INC., EDGEWOOD",P,EDGEWOOD,SANTA FE,GW,4700,2038500,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510707,CBG WATER COMPANY,P,CHAPARRAL,DONA ANA,GW,1357,165000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,32054,Yes,Yes,.66697186,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500216,STAGECOACH RV RANCH,P,DEMING,LUNA,GW,25,2665,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,27836,Yes,Yes,.57920474,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591816,YUCCA REST AREA-STATE HWY DEPT,S,LORDSBURG,HIDALGO,GW,164,10209,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3539807,LAS CRUCES MOBILE HOME PARK,P,LAS CRUCES,DONA ANA,GW,166,0,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,31329,Yes,Yes,.65188622,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581104,PHILMONT SCOUT RANCH - BENT OUTCAMP,P,CIMARRON,COLFAX,GW,150,5000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3525332,LOS LUNAS WATER SYSTEM,L,LOS LUNAS,VALENCIA,GW,18289,4030000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,57798.1,Yes,Yes,1.2026489,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3509032,MONTEREY WATER COMPANY INC.,P,LOS LUNAS,VALENCIA,GW,1208,180000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,31752,Yes,Yes,.66068792,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592016,HIDDEN VALLEY RANCH,P,DEMING,LUNA,GW,452,12000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,27962,Yes,Yes,.58182651,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3518525,RIBERA MDWCA,L,RIBERA,SAN MIGUEL,GW,200,20000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,31134,Yes,Yes,.6478287,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581729,GUADALAJARA SOUTH,P,TAOS,TAOS,GW,50,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581004,PHILMONT SCOUT RANCH - BEAUBIEN OUTCAMP,P,,COLFAX,GW,150,10000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500104,SPRINGER CORRECTIONAL FACILITY,S,SPRINGER,COLFAX,SWP,350,439000,NTNC,Yes,0,0,1,1,0,1,0,Surface,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,NM3526604,SPRINGER WATER SYSTEM,1363,,,,A,Yes,9,9,,Direct Impact Non-Community Water System
+NM3543723,SILE MDWCA,L,PENA BLANCA,SANDOVAL,GW,154,50000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,39221.4,Yes,Yes,.81610936,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3509523,REGINA MDWCA,L,REGINA,SANDOVAL,GW,637,240000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,36286,Yes,Yes,.75503027,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510020,LIBERTY MDWCA,L,TUCUMCARI,QUAY,GWP,266,50000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,22806.5,Yes,Yes,.47455212,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3530414,ALTO MOUNTAIN VILLAGE,P,ALTO,LINCOLN,GW,172,70600,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,41794,Yes,Yes,.8696394,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510016,PEOPLES WATER COOP,P,DEMING,LUNA,GW,76,25211,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,27962,Yes,Yes,.58182651,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502207,CHUCKYS FOOD MART,P,DONA ANA,DONA ANA,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590923,CORRALES ELEMENTARY SCHOOL,L,CORRALES,SANDOVAL,GW,565,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502707,I10 BORDER CHECK,F,LAS CRUCES,DONA ANA,GW,38,1000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590616,DESERT VISTA RV VILLAGE,P,DEMING,LUNA,GW,220,210,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,27962,Yes,Yes,.58182651,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3511701,TIERRA WEST ESTATES MHP,P,ALBUQUERQUE,BERNALILLO,GW,1447,330000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,31338,Yes,Yes,.6520735,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502826,BUCKMAN REGIONAL WATER TREATMENT PLANT,L,SANTA FE,SANTA FE,SW,0,4000000,C,Yes,0,0,1,1,0,1,0,Surface,100,0,0,0,1,100,1,,No,Yes,,,1,1,0,0,1,0,1,0,1,1,1,1,,,,,,,,No,9,,,Direct Impact with No Alternative Sources of Water
+NM3502921,LOS OJOS MDWCA,L,LOS OJOS,RIO ARRIBA,GW,237,30000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,30585,Yes,Yes,.63640523,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3565508,PECOS MOBILE HOME PARK,P,CARLSBAD,EDDY,GW,86,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,62266,Yes,Yes,1.2956158,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590921,BRAZOS MDWCA,P,CHAMA,RIO ARRIBA,GW,389,92000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,30585,Yes,Yes,.63640523,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3511019,CLOUD COUNTRY WEST WATER SYSTEM,L,ALAMOGORDO,OTERO,GW,663,79000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,53979,Yes,Yes,1.1231819,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590505,CLOVIS MUNICIPAL AIRPORT,L,CLOVIS,CURRY,GW,25,233600,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590702,GILA VISITOR CENTER-NPS GICL,F,GILA,CATRON,GW,219,55000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3523202,PIE TOWN MDWCA,L,PIE TOWN,CATRON,GW,122,40000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,42480,Yes,Yes,.88391352,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3596721,STONEHOUSE LODGE,P,RUTHERON,RIO ARRIBA,GW,35,3900,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500203,MIDWAY RV PARK,P,DEXTER,CHAVES,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580514,HIGH SIERRA ESTATES WATER ASSN,P,ALTO,LINCOLN,GW,129,66000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,41794,Yes,Yes,.8696394,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3531904,VILLAGE OF ANGEL FIRE,L,ANGEL FIRE,COLFAX,GW,6045,2917500,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,41074,Yes,Yes,.85465783,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510029,VIGILS TRAILER PARK,P,TAOS,TAOS,GW,105,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,34894,Yes,Yes,.72606587,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3562101,THE RINCON WATER COOPERATIVE,L,CEDAR CREST,BERNALILLO,GW,276,32500,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,61090,Yes,Yes,1.2711459,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501009,MIMBRES ADMINISTRATIVE SITE - USFS,F,MIMBRES,GRANT,GW,30,20000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592725,CAMP BLUE HAVEN,P,LAS VEGAS,SAN MIGUEL,GW,150,10000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501725,EL CRESTON MDWCA,L,LAS VEGAS,SAN MIGUEL,SWP,50,41600,C,Yes,1,1,1,1,0,1,0,Surface and Ground,,,,,0,,1,35019,Yes,Yes,.72866684,Severely Disadvantaged,,,,,,,,,,,,0,NM3518025,LAS VEGAS (CITY OF),18044,,,,A,Yes,4,4,,Direct Impact with Alternative Sources of Water
+NM3592219,CHALET CAMPER VILLAGE,P,CLOUDCROFT,OTERO,GW,222,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3529207,LAKE SECTION WATER COMPANY,P,CHAPARRAL,DONA ANA,GW,12079,1440000,C,Yes,7,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590504,RATON PASS CAMP,P,RATON,COLFAX,GW,35,40000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3564319,WATERFALL COMMUNITY WUA,L,CLOUDCROFT,OTERO,GW,295,45000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,53979,Yes,Yes,1.1231819,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3515310,VAUGHN DURAN WATER SYSTEM,L,VAUGHN,GUADALUPE,GW,785,610000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,24085,Yes,Yes,.50115484,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3526804,ANGEL NEST APARTMENTS,P,ANGEL FIRE,COLFAX,GW,60,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,41074,Yes,Yes,.85465783,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3519625,VILLANUEVA MDWCA,L,VILLANUEVA,SAN MIGUEL,GW,268,55500,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,31134,Yes,Yes,.6478287,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3582029,EL TAOSENO,P,TAOS,TAOS,GW,250,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3509223,LA JARA WATER USERS ASSOCIATION,L,LA JARA,SANDOVAL,SW,250,187000,C,Yes,0,0,1,1,0,1,0,Surface,100,0,0,0,1,100,1,36293,Yes,Yes,.75517595,Severely Disadvantaged,2,2,0,0,2,0,2,0,2,1,1,1,,,,,,,,No,10,,,Direct Impact with No Alternative Sources of Water
+NM3501714,LA VIDA BUENO,P,RUIDOSO,LINCOLN,GW,39,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3524730,WILLARD VILLAGE OF,L,WILLARD,TORRANCE,GW,266,168000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,43625,Yes,Yes,.90773839,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3560125,BENEDICTINE MONASTERY,P,PECOS,SAN MIGUEL,GW,40,10000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,35019,Yes,Yes,.72866684,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3594614,APPLE TREE RV PARK,P,RUIDOSO DOWNS,LINCOLN,GW,150,0,NC,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592304,VIETNAM VETERANS MEMORIAL,S,ANGEL FIRE,COLFAX,GW,150,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500214,LOMA GRANDE ESTATES WATER ASSOCIATION,P,NOGAL,LINCOLN,GW,90,32255,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,42896,Yes,Yes,.89256954,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3522013,TATUM MUNICIPAL WATER SYSTEM,L,TATUM,LEA,GW,948,658000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,58287,Yes,Yes,1.2128217,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501907,MASSON FARMS OF NEW MEXICO,P,RADIUM SPRINGS,DONA ANA,GW,150,12000,NTNC,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590024,NAVAJO LAKE STATE PARK - COTTONWOOD CAMP,S,NAVAJO DAM,SAN JUAN,GU,200,43750,NC,Yes,0,0,1,0,1,0,1,Surface,0,0,100,0,1,100,1,,No,Yes,,,2,0,1,1,1,1,0,1,1,.5,1,1,,,,,,,,No,3,,,Direct Impact Non-Community Water System
+NM3594623,LA CUEVA BUSINESS OWNERS ASSOCIATION,P,JEMEZ SPRINGS,SANDOVAL,GW,250,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500223,LA PUERTA HOA,P,PLACITAS,SANDOVAL,GW,25,0,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,67857,Yes,Yes,1.411952,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3530224,LEE ACRES WATER USERS ASSOCIATION,L,BLOOMFIELD,SAN JUAN,SWP,5078,800000,C,Yes,0,0,4,4,0,1,0,Surface,,,,,0,,1,43687.8,Yes,Yes,.90904516,Disadvantaged,,,,,,,,,,,,0,NM3500624,LEE/HAMMOND WATER TREATMENT PLANT CO-OP,0,,,,A,Yes,9,9,,Direct Impact with No Alternative Sources of Water
+NM3521613,HOBBS MUNICIPAL WATER SUPPLY,L,HOBBS,LEA,GW,38936,11600000,C,Yes,29,1,0,0,0,0,0,Ground,,,,,0,,1,63712.1,Yes,Yes,1.3257059,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3599829,WHISTLE STOP,P,TAOS SKI VALLEY,TAOS,GW,100,4000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3533426,RIO EN MEDIO MDWCA,L,TESUQUE,SANTA FE,GW,130,25000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,47302,Yes,Yes,.98424852,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3595225,PECOS NATIONAL HISTORIC PARK VISITOR CNT,F,PECOS,SAN MIGUEL,GW,40,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3520808,HOPE WATER SYSTEM,L,HOPE,EDDY,GW,218,199000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,64673,Yes,Yes,1.3457,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3568819,JUNIPER MOBILE PARK,P,HIGH ROLLS,OTERO,GW,73,20000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,53979,Yes,Yes,1.1231819,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510508,NORTH PARK MDWCA,L,ARTESIA,EDDY,GW,222,0,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,64673,Yes,Yes,1.3457,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3585401,ZUZAX FILL STATION,P,TIJERAS,BERNALILLO,GW,50,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3523016,COLUMBUS WATER SYSTEM,L,COLUMBUS,LUNA,GW,1841,348500,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,27836,Yes,Yes,.57920474,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502426,GREATER CHIMAYO MDWCA,L,CHIMAYO,RIO ARRIBA,GW,695,550000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3513107,LOWER RIO GRANDE PWWA HIGH VALLEY,L,VADO,DONA ANA,GW,67,31000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500330,CASSANDRA WATER SYSTEM,P,MORIARTY,TORRANCE,GW,34,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,38533,Yes,Yes,.80178529,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591925,MIKE MATEO ELEMENTARY SCHOOL,S,LAS VEGAS,SAN MIGUEL,GW,50,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501223,DESERT SKY MOUNTAIN WATER COOPERATIVE,P,PLACITAS,SANDOVAL,GW,187,170000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,67857,Yes,Yes,1.411952,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3575129,UPPER RANCHITOS MDWCASW,L,TAOS,TAOS,GW,222,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,36764,Yes,Yes,.76497638,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590020,GLENRIO HIGHWAY REST AREA,S,TUCUMCARI,QUAY,GW,250,37800,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3527505,MELROSE WATER SYSTEM,L,MELROSE,CURRY,GW,1268,620252,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,48333,Yes,Yes,1.0057013,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3526604,SPRINGER WATER SYSTEM,L,SPRINGER,COLFAX,SW,1363,650000,C,Yes,0,0,1,1,0,1,0,Surface,100,0,0,0,1,100,1,41074,Yes,Yes,.85465783,Disadvantaged,1,1,0,0,1,0,1,0,1,1,1,1,,,,,,,,No,9,,,Direct Impact with No Alternative Sources of Water
+NM3596329,FAWN LAKES AND ELEPHANT ROCK CG USFS,F,RED RIVER,TAOS,GWP,55,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510005,DESERT RANCH MDWCA,L,CLOVIS,CURRY,GW,103,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,51520,Yes,Yes,1.0720156,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3554307,DONA ANA MDWCA,L,DONA ANA,DONA ANA,GW,16217,6098000,C,Yes,9,1,0,0,0,0,0,Ground,,,,,0,,1,54599.3,Yes,Yes,1.136089,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3507529,TAOS MUNICIPAL WATER SYSTEM,L,TAOS,TAOS,GW,5528,1750000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,37492.3,Yes,Yes,.78013068,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3539407,SUMMER WIND MOBILE HOME PARK,P,MESILLA PARK,DONA ANA,GW,476,15000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,45635,Yes,Yes,.94956201,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3576207,DOVE CANYON LLC,P,MESILLA PARK,DONA ANA,GW,448,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,45635,Yes,Yes,.94956201,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3511524,APPLE ORCHARD MDWCA,P,BLOOMFIELD,SAN JUAN,SWP,460,0,C,Yes,0,0,1,1,0,1,0,Surface,,,,,0,,1,48125,Yes,Yes,1.0013733,Non-Disadvantaged,,,,,,,,,,,,0,NM3510124,BLOOMFIELD WATER SUPPLY SYSTEM,7090,,,,A,Yes,8,8,,Direct Impact with No Alternative Sources of Water
+NM3537526,LA CIENEGA MDWCA,L,SANTA FE,SANTA FE,GW,525,60000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,93142.7,Yes,Yes,1.9380907,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501325,TENORIO TRAVELCENTER,P,,SAN MIGUEL,GW,250,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590324,CHACO CULTURE NATIONAL HISTORIC PARK,F,NAGEEZI,SAN JUAN,GW,250,120000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3598726,NAMBE HEADSTART,P,POJOAQUE,SANTA FE,GW,40,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3520408,MORNINGSIDE WATER USERS COOPERATIVE,P,ARTESIA,EDDY,GWP,364,0,C,Yes,5,1,0,0,0,0,0,Ground,,,,,0,,1,50918,Yes,Yes,1.0594894,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3522912,RODEO MDW & MSWA,L,RODEO,HIDALGO,GW,128,130000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,40909,Yes,Yes,.85122454,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502321,LINDRITH COMMUNITY WATER COOP INC,L,LINDRITH,RIO ARRIBA,GW,100,22500,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,30585,Yes,Yes,.63640523,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590621,MESA VISTA HIGH SCHOOL,L,OJO CALIENTE,TAOS,GW,400,33000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500109,ROSEDALE MDWCA,L,SILVER CITY,GRANT,GWP,256,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,49087,Yes,Yes,1.0213903,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3520001,TOMS MOBILE HOME PARK,P,ALBUQUERQUE,BERNALILLO,GW,50,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,39143,Yes,Yes,.81447804,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580401,ENCHANTED TRAILS CAMPGROUND,P,ALBUQUERQUE,BERNALILLO,GW,89,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3598514,BONITO HOLLOW RV PARK AND CAMPGROUND,P,ALTO,LINCOLN,GW,240,3080,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500604,PHILMONT SCOUT RANCH - CITO HUNTING LODG,P,CIMARRON,COLFAX,GW,50,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502807,SOMBRA ANTIGUA WINERY,P,CHAMBERINO,DONA ANA,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3572826,TRAILER RANCH SENIOR MOBILE HOME COMMUN.,P,SANTA FE,SANTA FE,GW,200,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,39493,Yes,Yes,.82176077,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3596833,BLUEWATER STATE PARK STONE RIDGE,S,BLUEWATER,CIBOLA,GW,178,20000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3535320,NARA VISA MDWCA,L,NARA VISA,QUAY,GW,59,25000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,32813,Yes,Yes,.68276495,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3538309,TYRONE MDWCA,L,TYRONE,GRANT,GW,70,18200,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,49087,Yes,Yes,1.0213903,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3582304,PHILMONT SCOUT RANCH - MINERS PARK OC,P,,COLFAX,GW,50,3750,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3535021,ALCALDE MDWCA,L,ALCALDE,RIO ARRIBA,GW,904,820000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,35297.6,Yes,Yes,.73446387,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590404,VERMEJO PARK LLC COSTILLA,P,RATON,COLFAX,GW,25,23000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3516618,WAGON MOUND WATER SYSTEM,L,WAGON MOUND,MORA,GW,300,225000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,26968,Yes,Yes,.56114358,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591108,GUADALUPE CHRISTIAN CAMP,P,CARLSBAD,EDDY,GW,50,12700,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3594001,GCC RIO GRANDE,P,TIJERAS,BERNALILLO,GW,100,201731,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3520308,ARTESIA MUNICIPAL WATER SYSTEM,L,ARTESIA,EDDY,GW,12699,5800000,C,Yes,7,1,0,0,0,0,0,Ground,,,,,0,,1,54209.7,Yes,Yes,1.1279823,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580026,CHRISTUS ST. VINCENT MEDICAL CENTER,P,SANTA FE,SANTA FE,SWP,1200,10000,NTNC,Yes,1,1,1,1,0,1,0,Surface and Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,NM3505126,SANTA FE WATER SYSTEM (CITY OF),78247,,,,A,Yes,2,2,,Direct Impact Non-Community Water System
+NM3529421,VELARDE MDWCA,L,VELARDE,RIO ARRIBA,GW,543,180000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,35040,Yes,Yes,.7291038,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501029,ARROYOS DEL NORTE ELEMENTARY SCHOOL,L,ARROYO SECO,TAOS,GW,350,40000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501007,DONA ANA RANGE CAMP-FEDERAL FACILITY,F,CHAPARRAL,DONA ANA,GW,30,350000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501024,PINE RIVER MDCA,L,NAVAJO DAM,SAN JUAN,GU,44,1200,C,Yes,0,0,1,0,1,0,1,Surface,0,0,100,0,1,100,1,48125,Yes,Yes,1.0013733,Non-Disadvantaged,1,0,0,1,1,0,0,1,1,1,1,1,,,,,,,,No,8,,,Direct Impact with No Alternative Sources of Water
+NM3548501,GREEN ACRES MOBILE HOME VILLAGE,P,ALBUQUERQUE,BERNALILLO,GW,200,3000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,50371,Yes,Yes,1.0481075,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3595214,MOUNTAIN SPRINGS RANCH RV PARK,P,CARRIZOZO,LINCOLN,GW,15,12150,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3504026,CANADA DE LOS ALAMOS MDWCA,L,SANTA FE,SANTA FE,GW,68,50000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,74513,Yes,Yes,1.5504484,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3522209,SANTA CLARA WATER SYSTEM,L,CENTRAL,GRANT,GW,1729,820000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,36481,Yes,Yes,.7590878,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500625,GONZALES RANCH MDWCA,L,GONZALES RANCH,SAN MIGUEL,GW,114,53000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,31134,Yes,Yes,.6478287,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500609,"HURLEY, TOWN OF",L,HURLEY,GRANT,GWP,1372,690000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,44279.7,Yes,Yes,.92136127,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590231,CLAYTON LAKE STATE PARK,S,CLAYTON,UNION,GW,178,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3516807,DE LA TE MOBILE MANOR,P,LAS CRUCES,DONA ANA,GW,157,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,45635,Yes,Yes,.94956201,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590314,EAGLE CREEK SPORTS COMPLEX,L,RUIDOSO,LINCOLN,GW,250,192,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3573627,"ELEPHANT BUTTE, CITY OF",L,ELEPHANT BUTTE,SIERRA,GW,999,308210,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,43669,Yes,Yes,.90865397,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3512514,CAPITAN WATER SYSTEM,L,CAPITAN,LINCOLN,GW,2312,3101400,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,42896,Yes,Yes,.89256954,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501019,MCGREGOR RANGE CAMP,F,OROGRANDE,OTERO,SWP,200,750000,NTNC,Yes,0,0,1,1,0,1,0,Surface,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,0,,,,A,Yes,,,,
+NM3527231,GRENVILLE WATER SYSTEM,L,GRENVILLE,UNION,GW,38,23000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,37936,Yes,Yes,.78936309,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3516218,MORA MDWCA,L,MORA,MORA,GW,1100,450000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,26968,Yes,Yes,.56114358,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500914,THE RIVERBEND,P,RUIDOSO DOWNS,LINCOLN,GW,75,320,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,41794,Yes,Yes,.8696394,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502629,TAOS MESA BREWING,P,,TAOS,GW,126,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510209,CASAS ADOBES MDWCA,P,MIMBRES,GRANT,GW,368,30000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,46688.7,Yes,Yes,.9714871,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500621,CANONES MDWCA,L,CANONES,RIO ARRIBA,GW,97,25000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,35585,Yes,Yes,.74044406,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500132,CYPRESS GARDENS WATER USERS ASSOCIATION,L,LOS LUNAS,VALENCIA,GW,1139,250000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,31752,Yes,Yes,.66068792,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501204,UU BAR,P,CIMARRON,COLFAX,GW,50,5400,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3507829,UPPER ARROYO HONDO MDWCA,L,ARROYO HONDO,TAOS,GW,195,30000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,37996,Yes,Yes,.79061157,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3595123,RANCHO DEL CHAPARRAL GIRL SCOUT CAMP,P,JEMEZ SPRINGS,SANDOVAL,GW,240,33000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3543623,PLACITAS WEST WATER CO-OP,P,PLACITAS,SANDOVAL,GW,126,20000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,67857,Yes,Yes,1.411952,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3583201,AMERICAN RV PARK,P,ALBUQUERQUE,BERNALILLO,GW,125,100000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500423,CEDAR CREEK WATER COOPERATIVE INC,P,PLACITAS,SANDOVAL,GW,151,0,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,67857,Yes,Yes,1.411952,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3586032,ALLSUPS 165,P,,VALENCIA,GW,450,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500807,CHAMBERINO MDWC & SA,L,CHAMBERINO,DONA ANA,GW,509,100000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,44583,Yes,Yes,.92767221,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3533914,BONITA PARK NAZARENE CONFERENCE CENTER,P,CAPITAN,LINCOLN,GW,435,56000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590924,NAVAJO LAKE STATE PARK - PINE SITE,S,NAVAJO DAM,SAN JUAN,SW,550,200000,NC,Yes,0,0,1,1,0,1,0,Surface,100,0,0,0,1,100,1,,No,Yes,,,1,1,0,0,1,0,0,0,0,0,0,1,,,,,,,,No,1,,,No Direct Impact
+NM3510218,RAINSVILLE WATER & SANITATION DISTRICT,L,RAINSVILLE,MORA,GW,247,130000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,26968,Yes,Yes,.56114358,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590230,INLOW YOUTH CAMP,P,TAJIQUE,TORRANCE,GW,300,40000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502121,LA MADERA MDWCA,L,LA MADERA,RIO ARRIBA,GW,124,0,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,35585,Yes,Yes,.74044406,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590507,FORT SELDON REST AREA-STATE HWY DEPT.,S,RADIUM SPRINGS,DONA ANA,GW,200,4000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3532032,MEADOW LAKE WATER SYSTEM,P,LOS LUNAS,VALENCIA,GW,2656,250000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,26439.9,Yes,Yes,.55015504,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3513114,RUIDOSO WATER SYSTEM,L,RUIDOSO,LINCOLN,SW,19076,17158000,C,Yes,6,1,3,3,0,1,0,Surface and Ground,30,0,0,0,1,30,1,44578.9,Yes,Yes,.92758691,Disadvantaged,24,6,18,0,6,1,6,0,6,.25,1,1,,,,,,,,No,3,,,Direct Impact with Alternative Sources of Water
+NM3500704,PHILMONT SCOUT RANCH - RICH CABINS OC,P,,COLFAX,GW,50,2200,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3515418,BUENA VISTA MDWCA,L,BUENA VISTA,MORA,GW,225,40000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,26968,Yes,Yes,.56114358,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591129,RANCHOS ELEMENTARY SCHOOL,L,RANCHOS DE TAOS,TAOS,GW,390,55000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580023,FENTON LAKE STATE PARK,S,JEMEZ SPRINGS,SANDOVAL,GW,150,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580607,SIERRA VISTA GROWERS,P,CHAMBERINO,DONA ANA,GW,25,258,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500130,MELODY RANCH WATER CO,P,MORIARTY,TORRANCE,GW,208,60000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,38533,Yes,Yes,.80178529,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501207,MOONGATE WEST,L,ORGAN,DONA ANA,GW,8213,2500000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,44499,Yes,Yes,.92592436,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3556821,OJO SARCO MDWCA,L,OJO SARCO,RIO ARRIBA,GW,212,40000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,26276.8,Yes,Yes,.54676127,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3503521,VALLECITOS MDWCA,L,VALLECITOS,RIO ARRIBA,SW,92,10000,C,Yes,0,0,1,1,0,1,0,Surface,100,0,0,0,1,100,1,35585,Yes,Yes,.74044406,Severely Disadvantaged,2,2,0,0,2,0,2,0,2,1,1,1,,,,,,,,No,10,,,Direct Impact with No Alternative Sources of Water
+NM3550001,MOUNTAIN VIEW MOBILE HOME PARK,P,ALBUQUERQUE,BERNALILLO,GW,90,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,39143,Yes,Yes,.81447804,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3526204,CIMARRON WATER SYSTEM,L,CIMARRON,COLFAX,SW,969,490000,C,Yes,0,0,1,1,0,1,0,Surface,100,0,0,0,1,100,1,41074,Yes,Yes,.85465783,Disadvantaged,1,1,0,0,1,0,1,0,1,1,1,1,,,,,,,,No,9,,,Direct Impact with No Alternative Sources of Water
+NM3590804,CIMARRON CANYON ST PARK - MAVERICK CG,S,,COLFAX,GW,100,1050,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590331,CAPULIN VOLCANO NATIONAL MONUMENT,F,CAPULIN,UNION,GW,175,98000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3524230,MORIARTY WATER SYSTEM,L,MORIARTY,TORRANCE,GW,3503,1350000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,37228.9,Yes,Yes,.77464992,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590430,QUARAI UNIT - SALINAS PUEBLO MISSIONS,F,MOUNTAINAIR,TORRANCE,GW,50,1000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3512407,UNIVERSITY ESTATES WATER SYSTEM (LCU),P,LAS CRUCES,DONA ANA,GW,4815,578480,C,Yes,6,1,1,1,0,1,0,Surface and Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3545907,PICACHO MDWCA,L,FAIRACRES,DONA ANA,GW,906,430000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,58456,Yes,Yes,1.2163383,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3565423,SIERRA LOS PINOS HOA,P,JEMEZ SPRINGS,SANDOVAL,GW,300,30000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,41510,Yes,Yes,.86373001,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3536126,VISTA REDONDA MDWCA,L,TESUQUE,SANTA FE,GW,132,93000,C,Yes,6,1,0,0,0,0,0,Ground,,,,,0,,1,50250,Yes,Yes,1.0455898,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500527,SOUTH MONTICELLO RECREATION AREA-STATE P,S,ELEPHANT BUTTE,SIERRA,GW,25,8500,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3574429,CUCHILLA DEL LLANO MDWCA,L,LLANO,TAOS,GW,400,22000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3548301,FOREST PARK PROPERTY OWNERS COOP,P,CEDAR CREST,BERNALILLO,GW,189,55000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,61983,Yes,Yes,1.2897272,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593626,SANTA FE OPERA GROUND,P,SANTA FE,SANTA FE,GW,2865,20000,NC,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3513319,ALAMOGORDO DOMESTIC WATER SYSTEM,L,ALAMOGORDO,OTERO,SW,35629,25011000,C,Yes,11,1,11,11,0,1,0,Surface and Ground,76.68000000000001,0,0,0,1,76.68,1,46495.2,Yes,Yes,.96746081,Disadvantaged,25,14,11,0,14,1,14,0,14,.56,1,1,,,,,,,,No,3,,,Direct Impact with Alternative Sources of Water
+NM3580328,NORTHERN SOCORRO COUNTY SENIOR CENTER,L,LAS NUTRIAS,SOCORRO,GW,33,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3514327,TRUTH OR CONSEQUENCES,L,TRUTH OR CONSEQUENCES,SIERRA,GW,9000,7400000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,28961.3,Yes,Yes,.60261971,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500410,HOLLYWOOD RANCH DOMESTIC WUA,L,SANTA ROSA,GUADALUPE,GWP,79,0,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,24085,Yes,Yes,.50115484,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581704,PHILMONT SCOUT RANCH - DAN BEARD OUTCAMP,P,,COLFAX,GW,75,1269,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500112,VIRDEN WATER SYSTEM,L,LORDSBURG,HIDALGO,GW,118,146000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,40909,Yes,Yes,.85122454,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592530,COUNT YOUR BLESSING,P,MORIARTY,TORRANCE,GW,70,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3520508,RIVERSIDE MDWA,L,ARTESIA,EDDY,GW,223,85000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,64673,Yes,Yes,1.3457,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3553601,SIERRA VISTA MUTUAL DOMESTIC ASSOCIATION,L,CEDAR CREST,BERNALILLO,GW,342,301000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,75116,Yes,Yes,1.5629954,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3596732,BELEN BPO ELKS LODGE 2499,P,BELEN,VALENCIA,GW,300,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3507629,TRAMPAS MDWCA,L,TRAMPAS,TAOS,GW,132,65000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,42636,Yes,Yes,.88715953,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3513214,RUIDOSO DOWNS WATER SYSTEM,L,RUIDOSO DOWNS,LINCOLN,GW,2739,2070000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,41810.3,Yes,Yes,.86997855,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502621,APODACA MDWCA,L,DIXON,RIO ARRIBA,GW,129,17000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,26250,Yes,Yes,.54620361,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502907,UNION PACIFIC STRAUSS YARD,P,SUNLAND PARK,DONA ANA,GWP,300,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501323,ARTISAN CENTER OF CORRALES,P,CORRALES,SANDOVAL,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3561817,TRANSWESTERN PIPELINE CO.,P,THOREAU,MCKINLEY,GW,36,100000,NC,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3517625,LA CUEVA MDWCA,L,PECOS,SAN MIGUEL,GW,48,25000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,35275.5,Yes,Yes,.73400402,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3519425,TECOLOTITO MDWCA,L,TECOLOTITO,SAN MIGUEL,GW,246,70000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,35758,Yes,Yes,.74404377,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3530504,PHILMONT BOY SCOUT RANCH - HEADQUARTERS,P,,COLFAX,SW,2000,1000000,C,Yes,3,1,1,1,0,1,0,Surface and Ground,85,0,0,0,1,85,1,,No,Yes,,,4,1,3,0,1,1,1,0,1,.25,1,1,,,,,,,,No,3,,,Direct Impact with Alternative Sources of Water
+NM3594626,BISHOP STONEY CAMP AND CONFERENCE CENTER,P,SANTA FE,SANTA FE,GW,50,45000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3518625,ROWE MDWCA,L,ROWE,SAN MIGUEL,GW,100,40000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,33068,Yes,Yes,.68807089,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592913,XCEL ENERGY SPS MADDOX STATION,P,HOBBS,LEA,GW,25,1600,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3562001,HAMILTON MOBILE HOME PARK,P,ALBUQUERQUE,BERNALILLO,GW,70,5000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,37754.7,Yes,Yes,.78559065,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3582104,PHILMONT SCOUT RANCH - HEAD OF DEAN OC,P,,COLFAX,GW,150,2200,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590929,QUAIL RIDGE,P,EL PRADO,TAOS,GW,30,0,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3596033,ST JOSEPHS SCHOOL,P,SAN FIDEL,CIBOLA,GW,69,85,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500321,BARRANCO MDWCA,L,ABIQUIU,RIO ARRIBA,GW,97,30000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,35585,Yes,Yes,.74044406,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3595733,ACOMITA REST AREA,S,GRANTS,CIBOLA,GW,2501,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3519325,TECOLOTE MDWCA,L,LAS VEGAS,SAN MIGUEL,GW,126,30000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,35294.6,Yes,Yes,.73440146,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581723,CORRALES MUNICIPAL COMPLEX,L,CORRALES,SANDOVAL,GW,25,5000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592121,CORONADO HIGH SCHOOL,L,GALLINA,RIO ARRIBA,GW,263,30000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3521001,QUAIL HOLLOW MDWUA,L,TIJERAS,BERNALILLO,GW,28,10500,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,62539,Yes,Yes,1.3012964,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590118,FORT UNION REST AREA SOUTH BOUND,S,WAGON MOUND,MORA,GW,999,10000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3583529,FORT BURGWIN RESEARCH CENTER,P,RANCHOS DE TAOS,TAOS,GW,138,110000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3572926,SANTA CRUZ WATER ASSOCIATION,L,SANTA CRUZ,SANTA FE,GW,343,130000,C,Yes,5,1,0,0,0,0,0,Ground,,,,,0,,1,33448.5,Yes,Yes,.69598824,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502829,MARTINEZ PLAZA,P,TAOS,TAOS,GW,330,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3566628,POLVADERA MDWCA,L,POLVADERA,SOCORRO,GW,2653,350000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,40849,Yes,Yes,.84997606,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510609,PINOS ALTOS MDWCA,L,PINOS ALTOS,GRANT,GWP,320,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,46698,Yes,Yes,.97168064,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3597523,TETILLA PEAK RECREATION AREA,F,COCHITI LAKE,SANDOVAL,GW,25,25000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500828,SOCORRO COUNTY WATER HAULER,L,SOCORRO,SOCORRO,GWP,100,6000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591219,SACRAMENTO MOUNTAIN RETREAT,P,MAYHILL,OTERO,GW,100,8000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3552803,ROSWELL CORRECTIONAL CENTER,S,HAGERMAN,CHAVES,GW,280,100000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,40598,Yes,Yes,.84475332,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510509,WHISKEY CREEK PROPERTIES,P,SILVER CITY,GRANT,GW,99,17900,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,49087,Yes,Yes,1.0213903,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3599232,ALLSUPS 137,P,,VALENCIA,GW,395,40,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581623,HOMESTEAD VILLAGE,P,PLACITAS,SANDOVAL,GW,50,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,67857,Yes,Yes,1.411952,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592028,WALKING SANDS REST AREA,S,SAN ACACIA,SOCORRO,GW,500,10000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590030,BOWLIN FLYING C RANCH,P,CLINES CORNERS,TORRANCE,GW,600,34000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591021,ESCALANTE HIGH SCHOOL,S,TIERRA AMARILLA,RIO ARRIBA,GW,275,69000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592223,BATTLESHIP PICNIC GROUND USFS SNF,F,JEMEZ SPRINGS,SANDOVAL,GW,200,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3509029,LA LOMITA TRAILER PARK,P,TAOS,TAOS,GW,83,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,36764,Yes,Yes,.76497638,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3530827,ELEPHANT BUTTE WATER SYSTEM,L,ELEPHANT BUTTE,SIERRA,GW,2937,400175,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,43669,Yes,Yes,.90865397,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591726,POJOAQUE MIDDLE SCHOOL,L,POJOAQUE,SANTA FE,GW,567,290000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3536221,EL RITO CANYON MDWCA,L,EL RITO,RIO ARRIBA,GW,300,120000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3565419,CHIPPEWAY PARK WATER ASSOCIATION,L,LA LUZ,OTERO,GW,173,48000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,22680.4,Yes,Yes,.47192827,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3521114,SAFE HAVEN RV PARK,P,RUIDOSO,LINCOLN,GW,59,5000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,44578.9,Yes,Yes,.92758691,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3505226,SUNLIT HILLS WATER SYSTEM,P,SANTA FE,SANTA FE,GW,1018,211000,C,Yes,11,1,0,0,0,0,0,Ground,,,,,0,,1,81983.39999999991,Yes,Yes,1.7058907,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3599532,C AND J RESTAURANT,P,BELEN,VALENCIA,GW,50,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3574729,LOWER DES MONTES MDWCA,L,ARROYO HONDO,TAOS,GW,319,20000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,37996,Yes,Yes,.79061157,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591601,ISLETA CHEVRON,P,ALBUQUERQUE,BERNALILLO,GW,25,160,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3539607,VILLA DEL SOL MOBILE HOME PARK,P,LAS CRUCES,DONA ANA,GW,528,53000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,45635,Yes,Yes,.94956201,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3566026,CHUPADERO MDWCA,L,TESUQUE,SANTA FE,GW,131,20000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,50250,Yes,Yes,1.0455898,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3596032,PERALTA MEMORIAL UNITED METHODIST CHURCH,P,PERALTA,VALENCIA,GW,300,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3513819,MAYHILL WATER SUPPLY COMPANY,P,MAYHILL,OTERO,GW,143,16000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,53954.9,Yes,Yes,1.1226804,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3567424,ENTERPRISE PRODUCTS COMPANY CHACO PLANT,P,BLOOMFIELD,SAN JUAN,SW,28,84000,NTNC,Yes,0,0,1,1,0,1,0,Surface,100,0,0,0,1,100,1,,No,Yes,,,6,1,5,0,1,1,1,0,1,.16666667,1,1,,,,,,,,No,3,,,Direct Impact Non-Community Water System
+NM3510120,HILLS VILLAGE WATER SYSTEM,P,TUCUMCARI,QUAY,GWP,126,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,21969,Yes,Yes,.4571256,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3506621,OJO CALIENTE MDWCA,L,OJO CALIENTE,TAOS,GW,226,50000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,32766.1,Yes,Yes,.68178904,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500624,LEE/HAMMOND WATER TREATMENT PLANT CO-OP,P,BLOOMFIELD,SAN JUAN,SW,0,500000,C,Yes,0,0,2,2,0,1,0,Surface,100,0,0,0,1,100,1,,No,Yes,,,2,2,0,0,2,0,2,0,2,1,1,1,,,,,,,,No,9,,,Direct Impact with No Alternative Sources of Water
+NM3599201,SANDIA PEAK SKI AREA,P,CEDAR CREST,BERNALILLO,GW,1200,125000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3505929,COSTILLA MDWCA,L,COSTILLA,TAOS,GW,244,65000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,33307.6,Yes,Yes,.69305646,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501225,LOWER COLONIAS MDWCA,L,PECOS,SAN MIGUEL,GW,40,5000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,35019,Yes,Yes,.72866684,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3583329,AGUA PIEDRA CAMP GROUND USFS CARSON,F,,TAOS,GW,124,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590308,GUADALUPE ADMIN. SITE - LINCOLN - USFS,F,CARLSBAD,EDDY,GW,50,23060,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3503821,CHAMA WEST WATER USERS ASSOCIATION,L,CHAMA,RIO ARRIBA,GW,80,44000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,30585,Yes,Yes,.63640523,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3524630,TORREON MDWCA,L,TORREON,TORRANCE,GW,284,60000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,35757,Yes,Yes,.74402297,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500120,RUSSELLS ENDEE TRUCK AND TRAVEL CTR 2,P,GLENRIO,QUAY,GW,475,30000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3504626,GLORIETA CAMPS,P,GLORIETA,SANTA FE,GW,2060,1000000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,74513,Yes,Yes,1.5504484,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3568007,WHITE SANDS MISSILE RANGE (MAIN POST)-FF,F,WHITE SANDS MISSILE RANG,DONA ANA,GW,4300,3700000,C,Yes,7,1,0,0,0,0,0,Ground,,,,,0,,1,52946,Yes,Yes,1.1016876,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3503301,EAST MOUNTAIN WATER HAULING,P,TIJERAS,BERNALILLO,GWP,124,22700,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590727,BUREAU OF RECLAMATION,F,TRUTH OR CONSEQUENCES,SIERRA,GW,25,308000,NC,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593003,WILD WILLYS RV PARK,P,ROSWELL,CHAVES,GW,106,75,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,63984,Yes,Yes,1.3313636,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500202,QUEMADO MUTUAL WATER & SWA,L,QUEMADO,CATRON,GW,304,150000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,42480,Yes,Yes,.88391352,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3524330,MOUNTAINAIR WATER SYSTEM,L,MOUNTAINAIR,TORRANCE,GW,1796,430000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,43625,Yes,Yes,.90773839,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3562201,SANDIA PEAK UTILITY,P,ALBUQUERQUE,BERNALILLO,GW,6079,2100000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,108709,Yes,Yes,2.2619905,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502729,PIZANOS RESTAURANT,P,EL PRADO,TAOS,GW,150,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3531001,WESTERN TERRACE,P,ALBUQUERQUE,BERNALILLO,GW,76,22000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,35263,Yes,Yes,.73374397,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3598826,LITTLE EARTH SCHOOL,P,SANTA FE,SANTA FE,GW,40,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590521,OJO CALIENTE MINERAL SPRINGS,P,OJO CALIENTE,TAOS,GW,200,10000,NTNC,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593226,BISHOPS LODGE,P,SANTA FE,SANTA FE,GW,176,370000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593121,CHIMAYO ELEMENTARY SCHOOL,L,CHIMAYO,RIO ARRIBA,GW,250,1000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590204,EAGLE NEST REINTEGRATION CENTER,S,EAGLE NEST,COLFAX,GW,30,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580221,COYOTE ADMIN SITE USFS SNF,F,COYOTE,RIO ARRIBA,GW,42,40000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3512914,LINCOLN MDWCA,L,LINCOLN,LINCOLN,GW,155,188000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,41794,Yes,Yes,.8696394,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3553405,CLOVIS WEST LLC,P,CLOVIS,CURRY,GW,50,3000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,48468,Yes,Yes,1.0085104,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580033,EL MALPAIS RANGER STATION (BLM),F,GRANTS,CIBOLA,GW,150,6000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500702,GLENWOOD ADMINISTRATIVE SITE - USFS,F,GLENWOOD,CATRON,GW,40,20000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502901,SANDIA SPEEDWAY,P,ALBUQUERQUE,BERNALILLO,GW,100,20000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502114,HONDO VALLEY ZIA CENTER,L,HONDO,LINCOLN,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500228,LA PROMESA ELEMENTARY SCHOOL,P,LAS NUTRIAS,SOCORRO,GW,256,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593829,MEDLEY,P,EL PRADO,TAOS,GW,80,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3535123,ALGODONES WUA,L,ALGODONES,SANDOVAL,GW,411,21700,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,49286,Yes,Yes,1.0255312,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3518925,SAN MIGUEL DEL VADO MDWCA,L,SAN MIGUEL,SAN MIGUEL,GW,79,20000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,31134,Yes,Yes,.6478287,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3596229,COLUMBINE CAMPGROUND USFS CARSON,F,QUESTA,TAOS,GW,40,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3577107,HOLLY GARDEN MHP,P,LAS CRUCES,DONA ANA,GW,297,1000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,47376.2,Yes,Yes,.98579246,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501526,CHILDREN'S GARDEN MONTESSORI SCHOOL,P,SANTA FE,SANTA FE,GW,60,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3525933,SEBOYETA WATER SYSTEM,L,SEBOYETA,CIBOLA,GW,209,50000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,51175,Yes,Yes,1.064837,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3560007,MESILLA WATER SYSTEM,L,MESILLA,DONA ANA,GW,2153,579000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,47458,Yes,Yes,.98749453,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3573725,BIG MESA WATER MDWCA,L,CONCHAS DAM,SAN MIGUEL,SW,265,325000,C,Yes,0,0,1,1,0,1,0,Surface,100,0,0,0,1,100,1,35758,Yes,Yes,.74404377,Severely Disadvantaged,1,1,0,0,1,0,0,0,0,0,0,1,,,,,,,,No,1,,,No Direct Impact
+NM3590516,BUTTERFIELD TRAIL REST AREA,S,DEMING,LUNA,GW,95,85,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3526811,MOSQUERO WATER SYSTEM,L,MOSQUERO,HARDING,GW,293,105000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,30875,Yes,Yes,.64243948,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590925,JACKS CREEK CAMPGROUND USFS SNF,F,PECOS,SAN MIGUEL,GW,250,20000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3574929,SAN CRISTOBAL MDWCA,L,SAN CRISTOBAL,TAOS,GW,165,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,37993.2,Yes,Yes,.79055327,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501214,R AND R RV PARK,P,RUIDOSO,LINCOLN,GW,38,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3561317,SAGEBRUSH WATER CO-OP,P,MENTMORE,MCKINLEY,GW,64,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,38640,Yes,Yes,.80401176,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501607,CEDAR HILLS CHURCH OF THE CROSS,P,LAS CRUCES,DONA ANA,GW,80,60,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3575530,HOMESTEAD WATER COMPANY,P,MORIARTY,TORRANCE,GW,200,80000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,37227,Yes,Yes,.7746104,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590526,EL RANCHO SENIOR CITIZENS CENTER,L,POJOAQUE,SANTA FE,GW,45,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592307,HOLY CROSS RETREAT,P,MESILLA PARK,DONA ANA,GW,35,5000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590209,FREEPORT MCMORAN TYRONE INC.,P,TYRONE,GRANT,GW,350,258800,NTNC,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592214,HIGH COUNTRY LODGE,P,ALTO,LINCOLN,GW,194,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3526033,BIBO MUTUAL DOMESTIC WATER ASSOC,L,BIBO,CIBOLA,GW,215,50000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,51154.8,Yes,Yes,1.0644166,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3594523,CAMP SHAVER YMCA,P,JEMEZ SPRINGS,SANDOVAL,GW,125,1300,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591014,RIVER RANCH RV PARK,P,RUIDOSO DOWNS,LINCOLN,GW,30,3172,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3513519,CLOUDCROFT WATER SYSTEM,L,CLOUDCROFT,OTERO,GW,2889,975000,C,Yes,19,1,0,0,0,0,0,Ground,,,,,0,,1,53979,Yes,Yes,1.1231819,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500123,LA MESA WATER COOP,P,PLACITAS,SANDOVAL,GW,650,300000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,67857,Yes,Yes,1.411952,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3518825,SAN JOSE MDWCA,L,SAN JOSE,SAN MIGUEL,GW,200,54000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,31134,Yes,Yes,.6478287,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3596023,INDIGO CROW RESTAURANT,P,CORRALES,SANDOVAL,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580305,MELROSE BOMBING RANGE,F,MELROSE,CURRY,GW,60,42000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591416,ROCK HOUND STATE PARK,S,DEMING,LUNA,GW,67,3780,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593319,THREE RIVERS PETROGLYPH SITE,F,RUIDOSO,OTERO,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500526,RANCHITOS DE GALISTEO WUA,L,GALISTEO,SANTA FE,GW,94,50000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,55038,Yes,Yes,1.1452173,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3503001,NORTH EAST CHURCH OF CHRIST,P,ALBUQUERQUE,BERNALILLO,GW,250,2000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3511507,HACIENDA ACRES WATER SYSTEM (LCU),P,LAS CRUCES,DONA ANA,GW,2859,267000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3533329,VILLAGE OF TAOS SKI VALLEY,L,TAOS SKI VALLEY,TAOS,GW,1025,500000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,37996,Yes,Yes,.79061157,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3595032,RIO COMMUNITIES INDUSTRIAL PARK,P,LOS LUNAS,VALENCIA,GW,400,145000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501821,ENSENADA MDWCA,L,TIERRA AMARILLA,RIO ARRIBA,GW,300,80000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,30585,Yes,Yes,.63640523,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3506429,LLANO SAN JUAN MDWCA,L,LLANO,TAOS,GW,84,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,42636,Yes,Yes,.88715953,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581504,PHILMONT SCOUT RANCH - CRATER LAKE OC,P,,COLFAX,GW,35,3450,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580105,ALLSUPS 45,P,CLOVIS,CURRY,GW,250,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500404,CARISBROOK PROPERTY OWNERS ASSOCIATION,P,RATON,COLFAX,SWP,54,10000,C,Yes,0,0,1,1,0,1,0,Surface,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,NM3526704,CITY OF RATON/RATON WATER WORKS,9733,,,,A,Yes,10,10,,Direct Impact with No Alternative Sources of Water
+NM3511707,LAS CRUCES MUNICIPAL WATER SYSTEM,L,LAS CRUCES,DONA ANA,GW,102308,27400000,C,Yes,25,1,0,0,0,0,0,Ground,,,,,0,,1,48980.9,Yes,Yes,1.0191827,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3525733,SAN MATEO MDWCA,L,SAN MATEO,CIBOLA,GW,192,99500,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,51175,Yes,Yes,1.064837,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3523009,ARENAS VALLEY MDWCA,L,ARENAS VALLEY,GRANT,GWP,1146,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,43568.6,Yes,Yes,.90656483,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510221,RIO ARRIBA COUNTY VELARDE TREATMENT FAC.,S,,RIO ARRIBA,GW,50,15000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3598014,FLYING J RANCH,P,RUIDOSO,LINCOLN,GW,250,1400,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3553321,ENCHANTED MESA MOBILE HOME PARK,P,ESPANOLA,SANTA FE,GW,145,0,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,44115,Yes,Yes,.91793418,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590009,CLIFF SCHOOL,L,CLIFF,GRANT,GW,300,33000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580523,PLACITAS ELEMENTARY SCHOOL,L,PLACITAS,SANDOVAL,GW,185,8000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3598613,CONOCOPHILLIPS  MALJAMAR,P,LOVINGTON,LEA,GW,35,210000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3583104,PHILMONT SCOUT RANCH - SAWMILL OUTCAMP,P,CIMARRON,COLFAX,GW,50,6750,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3513419,BOLES ACRES WATER SYSTEM,P,ALAMOGORDO,OTERO,GW,718,0,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,46222.2,Yes,Yes,.96178031,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500131,NORTHEAST NM DETENTION FACILITY,L,CLAYTON,UNION,GW,703,20000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591308,MOSAIC POTASH CARLSBAD INC,P,CARLSBAD,EDDY,GW,408,0,NTNC,Yes,12,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3516718,WATROUS MDWCA,L,WATROUS,MORA,GW,66,15000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,26968,Yes,Yes,.56114358,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3594226,BLACK CANYON CAMPGROUND USFS SNF,F,SANTA FE,SANTA FE,GW,50,2400,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510519,SILVER SPRINGS WATER SYSTEM,P,CLOUDCROFT,OTERO,GW,46,9000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,53979,Yes,Yes,1.1231819,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510701,ALBUQUERQUE WATER SYSTEM,L,ALBUQUERQUE,BERNALILLO,SW,659736,92894000,C,Yes,70,1,4,4,0,1,0,Surface and Ground,50,0,0,0,1,50,1,56252.4,Yes,Yes,1.1704863,Non-Disadvantaged,119,5,114,0,5,1,5,0,5,.042016808,1,1,,,,,,,,No,2,,,Direct Impact with Alternative Sources of Water
+NM3582204,PHILMONT SCOUT RANCH - INDIAN WRITINGS,P,,COLFAX,GW,75,2500,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3511021,DELANCEY STREET FOUNDATION,P,ALCALDE,RIO ARRIBA,GW,83,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3528522,PORTALES WATER SYSTEM,L,PORTALES,ROOSEVELT,GW,14067,9250000,C,Yes,45,1,0,0,0,0,0,Ground,,,,,0,,1,40582.3,Yes,Yes,.84442663,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3582423,CORRALES MULTI-PURPOSE RECREATIONAL CNT,L,CORRALES,SANDOVAL,GW,205,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580832,CATTLEMENS LIVESTOCK AUCTION,P,BELEN,VALENCIA,GW,100,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592008,BLACK RIVER CENTER FOR LEARNING,P,CARLSBAD,EDDY,GW,50,5000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3515029,EL PRADO WATER & SANITATION DISTRICT,L,EL PRADO,TAOS,GW,1076,500000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,36779.5,Yes,Yes,.7652989,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500115,LOS ALAMOS MUNICIPAL WATER SYSTEM,L,LOS ALAMOS,LOS ALAMOS,GW,25000,38680000,C,Yes,10,1,0,0,0,0,0,Ground,,,,,0,,1,113665,Yes,Yes,2.3651137,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3508923,BERNALILLO WATER SYSTEM,L,BERNALILLO,SANDOVAL,GW,8915,3536000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,49807.8,Yes,Yes,1.0363886,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500628,UNM SEVILLETA FIELD STATION,S,SOCORRO,SOCORRO,GW,32,50000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3522532,EL SHADDAI WATER CO OP,P,LOS LUNAS,VALENCIA,GW,87,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,26398,Yes,Yes,.54928315,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590110,PAJARITO REST AREA - EAST BOUND,S,SANTA ROSA,GUADALUPE,GW,450,4400,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500417,SAGEBRUSH BAR & LIQUOR,P,GALLUP,MCKINLEY,GW,100,125,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3582601,VETERANS ADMINISTRATION HCS NEW MEXICO,F,ALBUQUERQUE,BERNALILLO,GW,2000,400000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3528020,TUCUMCARI WATER SYSTEM,L,TUCUMCARI,QUAY,GW,7124,7092855,C,Yes,10,1,0,0,0,0,0,Ground,,,,,0,,1,27080.3,Yes,Yes,.56348032,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3554207,LEASBURG MDWCA,L,RADIUM SPRINGS,DONA ANA,GW,903,331000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,48160.5,Yes,Yes,1.002112,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3568919,ALAMO HEIGHTS WUA,P,ALAMOGORDO,OTERO,GW,50,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,65577,Yes,Yes,1.3645103,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3505529,ARROYO SECO MDWCA,L,ARROYO SECO,TAOS,GW,444,92000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,37993.5,Yes,Yes,.79055953,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501427,TRUTH OR CONSEQUENCES MUNICIPAL AIRPORT,P,TRUTH OR CONSEQUENCES,SIERRA,GW,40,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590318,MORA INN AND RV PARK,P,CLEVELAND,MORA,GW,75,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3508317,GALLUP WATER SYSTEM,L,GALLUP,MCKINLEY,GW,23530,22686000,C,Yes,19,1,0,0,0,0,0,Ground,,,,,0,,1,39398.5,Yes,Yes,.81979442,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3596017,EL SEGUNDO SITE,P,GRANTS,MCKINLEY,GW,238,410000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3598008,WIPP WATER SUPPLY,F,CARLSBAD,EDDY,GWP,650,360000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501326,MUNICIPAL RECREATION COMPLEX,L,SANTA FE,SANTA FE,GW,1500,6000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501901,"PAAKWEREE VILLAGE WATER CO-OP ASSOC, INC",P,ALBUQUERQUE,BERNALILLO,GW,126,1000000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,35263,Yes,Yes,.73374397,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510423,COCHITI ELEMENTARY SCHOOL,L,COCHITI LAKE,SANDOVAL,GW,260,35000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502307,STAHMANNS COUNTRY STORE,P,SAN MIGUEL,DONA ANA,GW,90,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591023,HUMMINGBIRD MUSIC CAMP,P,JEMEZ SPRINGS,SANDOVAL,GW,150,15000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500129,BMG TRAILER PARK,P,RANCHOS DE TAOS,TAOS,GW,30,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,42636,Yes,Yes,.88715953,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3562819,CANYON HILLS AREA WUA,P,ALAMOGORDO,OTERO,GW,53,22000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,42937.9,Yes,Yes,.89344138,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590317,MANUELITO REST AREA,S,GALLUP,MCKINLEY,GW,2501,38000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3517025,EL ANCON MDWCA,L,RIBERA,SAN MIGUEL,GW,112,43000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,31134,Yes,Yes,.6478287,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592829,AMALIA  COSTILLA SENIOR CITIZENS CENTER,S,,TAOS,GW,30,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3515818,GUADALUPITA MDWCA,L,GUADALUPITA,MORA,GW,82,45000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,26968,Yes,Yes,.56114358,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3533814,SUN VALLEY WATER AND SANITATION DISTRICT,P,ALTO,LINCOLN,GW,560,120000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,41794,Yes,Yes,.8696394,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500728,EMRTC WATER SYSTEM,S,SOCORRO,SOCORRO,GWP,335,100000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500232,HI MESA ESTATES WATER COOP,P,LOS LUNAS,VALENCIA,GW,206,80000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,26398,Yes,Yes,.54928315,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592204,CAMP ELLIOT BARKER,P,ANGEL FIRE,COLFAX,GW,100,10000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3530608,ARTESIA RURAL WATER COOPERATIVE,P,ARTESIA,EDDY,GW,1941,750000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,62050.7,Yes,Yes,1.2911359,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3513014,NOGAL MDWCA,L,NOGAL,LINCOLN,GW,88,38128,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,38925.3,Yes,Yes,.80994821,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501221,CORDOVA MDWCA,L,CORDOVA,RIO ARRIBA,GW,325,36000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,31136,Yes,Yes,.6478703,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3560217,"WESTERN REFINING SW, GALLUP REFINERY",P,GALLUP,MCKINLEY,GW,350,42000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510207,EL PATIO MHP #2,P,LAS CRUCES,DONA ANA,GW,37,350,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,32219,Yes,Yes,.67040515,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3527405,GRADY WATER SYSTEM,L,GRADY,CURRY,GW,207,200000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,76635,Yes,Yes,1.5946025,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3546019,PINEY WOODS WATER USERS ASSOCIATION,P,HIGH ROLLS,OTERO,GW,280,64400,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,53979,Yes,Yes,1.1231819,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501529,WEST RIM MDWUA,L,TAOS,TAOS,GW,113,19000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,30712,Yes,Yes,.63904786,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3512614,CARRIZOZO WATER SYSTEM,L,CARRIZOZO,LINCOLN,GW,1488,1300000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,35170,Yes,Yes,.73180884,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502226,CAJA DEL ORO ROAD PUBLIC WATER SYSTEM,L,SANTA FE,SANTA FE,GW,179,6000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3504426,GALISTEO MDWCA,L,GALISTEO,SANTA FE,GW,215,54500,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,55038,Yes,Yes,1.1452173,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593307,WESTERN SKY'S RV PARK,P,VADO,DONA ANA,GW,25,520,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3528707,NEW MEXICO STATE UNIVERSITY,S,LAS CRUCES,DONA ANA,GW,24302,9000000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3508817,THOREAU WATER & SANITATION DISTRICT,L,THOREAU,MCKINLEY,GW,1370,500000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,19522,Yes,Yes,.40620902,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593213,XCEL ENERGY SPS CUNNINGHAM STATION,P,HOBBS,LEA,GW,54,21000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500117,WHITE CLIFFS MDWUA,L,GALLUP,MCKINLEY,GW,303,21000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,44286,Yes,Yes,.92149234,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3564119,NATIONAL SOLAR OBSERVATORY,F,SUNSPOT,OTERO,GW,56,47000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,19334,Yes,Yes,.40229717,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3599429,TAOS SPA AND TENNIS CLUB,P,TAOS,TAOS,GW,300,0,NC,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580232,RIO DEL ORO WATER SYSTEM,P,LOS LUNAS,VALENCIA,GW,3146,1500000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,38918.3,Yes,Yes,.80980253,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3541707,VISTA REAL MHP,P,LAS CRUCES,DONA ANA,GW,131,2000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,58456,Yes,Yes,1.2163383,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501732,DOLLAR GENERAL - VEGUITA,P,VEGUITA,SOCORRO,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3520005,LONGHORN ESTATES WATER SYSTEM,P,CLOVIS,CURRY,GW,264,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,76635,Yes,Yes,1.5946025,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590719,CAMP TALL PINES,P,MAYHILL,OTERO,GW,48,19500,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590628,STALLION RANGE CENTER,F,SAN ANTONIO,SOCORRO,GW,50,826960,NTNC,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3584701,ELENA GALLEGOS PICNIC AREA,L,ALBUQUERQUE,BERNALILLO,GW,200,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502221,RUTHERON MUTUAL WATER ASSOCIATION,L,RUTHERON,RIO ARRIBA,GU,90,20000,C,Yes,0,0,1,0,1,0,1,Surface,0,0,100,0,1,100,1,30585,Yes,Yes,.63640523,Severely Disadvantaged,1,0,0,1,1,0,0,1,1,1,1,1,,,,,,,,No,10,,,Direct Impact with No Alternative Sources of Water
+NM3500617,SPEEDYS BLACK HAT STORE,P,GALLUP,MCKINLEY,GW,800,30000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581429,TAOS COUNTY ECONOMIC DEVELOPMENT CENTER,P,TAOS,TAOS,GW,300,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3550504,VERMEJO PARK  -  HEADQUARTERS,P,RATON,COLFAX,GW,140,134000,C,Yes,5,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580914,TALL PINES WATER ASSOCIATION,P,RUIDOSO,LINCOLN,GW,101,14840,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,50313,Yes,Yes,1.0469006,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3548801,BAKERS MOBILE HOME PARK,P,ALBUQUERQUE,BERNALILLO,GW,160,3805,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,37640,Yes,Yes,.78320396,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593426,HYDE MEMORIAL STATE PARK,S,SANTA FE,SANTA FE,GWP,75,52800,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502407,LOWER RIO GRANDE PWWA SOUTH VALLEY,L,VADO,DONA ANA,GW,10640,2817080,C,Yes,8,1,0,0,0,0,0,Ground,,,,,0,,1,34325.4,Yes,Yes,.71423459,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501027,SPACEPORT AMERICA,P,TRUTH OR CONSEQUENCES,SIERRA,GW,25,1300000,NTNC,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501521,CHRIST IN THE DESERT MONASTERY,P,ABIQUIU,RIO ARRIBA,GW,30,10500,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,30585,Yes,Yes,.63640523,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581304,PHILMONT SCOUT RANCH - CLARKS FORK OC,P,,COLFAX,GW,150,2500,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501626,LA TIENDA AT ELDORADO,P,SANTA FE,SANTA FE,GW,400,10000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3526504,MIAMI WATER USERS ASSOCIATION,L,MIAMI,COLFAX,SW,135,195000,C,Yes,0,0,1,1,0,1,0,Surface,100,0,0,0,1,100,1,41074,Yes,Yes,.85465783,Disadvantaged,1,1,0,0,1,0,1,0,1,1,1,1,,,,,,,,No,9,,,Direct Impact with No Alternative Sources of Water
+NM3500219,KARR CANYON ESTATES,L,HIGH ROLLS,OTERO,GW,102,20000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,19334,Yes,Yes,.40229717,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502926,LA BAJADA MDWCA,L,SANTA FE,SANTA FE,GW,40,6800,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,97279,Yes,Yes,2.0241578,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501814,COOK CANYON RANCH,P,RUIDOSO DOWNS,LINCOLN,GW,450,19650,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3556109,RIO DE ARENAS,P,SILVER CITY,GRANT,GW,195,7500,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,36481,Yes,Yes,.7590878,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3536724,NAVAJO DAM DOMESTIC WATER CONSUMERS INC,L,NAVAJO DAM,SAN JUAN,SW,538,88000,C,Yes,0,0,2,2,0,1,0,Surface,100,0,0,0,1,100,1,57077.6,Yes,Yes,1.1876569,Non-Disadvantaged,2,2,0,0,2,0,2,0,2,1,1,1,,,,,,,,No,8,,,Direct Impact with No Alternative Sources of Water
+NM3540307,COVERED WAGON MOBILE HOME MANOR,P,LAS CRUCES,DONA ANA,GW,105,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,48980.9,Yes,Yes,1.0191827,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3533126,LAMY MUTUAL DOMESTIC WATER ASSOCIATION,L,LAMY,SANTA FE,GW,132,75000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,82782.39999999991,Yes,Yes,1.7225161,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501825,CHAPELLE MDWCA,P,SERAFINA,SAN MIGUEL,GW,60,12000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,35758,Yes,Yes,.74404377,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3594426,HARRYS ROADHOUSE,P,SANTA FE,SANTA FE,GWP,200,10000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3582101,AMERICAN GYPSUM COMPANY ABQ PLANT,P,ALBUQUERQUE,BERNALILLO,GW,150,100000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501030,ABO RUINS SALINAS PUEBLO MISSIONS,F,MOUNTAINAIR,TORRANCE,GW,30,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501429,RIO GRANDE GORGE REST AREA,S,TAOS,TAOS,GW,25,1000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3509824,AZTEC DOMESTIC WATER SYSTEM,L,AZTEC,SAN JUAN,SW,5960,7057000,C,Yes,0,0,6,6,0,1,0,Surface,100,0,0,0,1,100,1,44699.7,Yes,Yes,.9301005,Disadvantaged,7,7,0,0,7,0,7,0,7,1,1,1,,,,,,,,No,9,,,Direct Impact with No Alternative Sources of Water
+NM3590928,SANTA FE DINER AND TRUCK STOP,P,SAN ANTONIO,SOCORRO,GW,100,0,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3515110,SANGRE DE CRISTO REGIONAL MDWCA,L,ANTON CHICO,GUADALUPE,GW,346,300000,C,Yes,5,1,0,0,0,0,0,Ground,,,,,0,,1,24085,Yes,Yes,.50115484,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3561101,TRANQUILLO PINES WATER USERS COOP,P,TIJERAS,BERNALILLO,GW,670,200000,C,Yes,5,1,0,0,0,0,0,Ground,,,,,0,,1,62468.5,Yes,Yes,1.2998294,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580621,BPOE 1747 RECREATION AREA,P,NAVAJO DAM,RIO ARRIBA,GW,357,3000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592305,PLATEAU TELECOMMUNICATIONS INC.,P,CLOVIS,CURRY,GW,225,0,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592807,COACHLIGHT INN & RV,P,LAS CRUCES,DONA ANA,GW,89,2000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592831,SIERRA GRANDE HIGHWAY REST AREA,S,DES MOINES,UNION,GW,75,1500,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501229,MONTE BELLO RV PARK,P,EL PRADO,TAOS,GW,10,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500121,CHAMITA MDWCA,L,CHAMITA,RIO ARRIBA,GW,1026,225000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,32389,Yes,Yes,.67394245,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3594826,LONE BUTTE GENERAL STORE,P,CERRILLOS,SANTA FE,GW,150,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3582804,PHILMONT SCOUT RANCH - RAYDO OUTCAMP,P,CIMARRON,COLFAX,GW,50,5000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581014,THREE RIVERS CAMPGROUND  LINCOLN  USFS,F,CARRIZOZO,LINCOLN,GW,175,2500,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591010,SANTA ROSA LAKE,F,SANTA ROSA,GUADALUPE,GWP,150,70000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3594726,RANCHEROS DE SANTA FE CAMPING PARK,P,SANTA FE,SANTA FE,GW,75,10000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580329,IMERYS PERLITE,P,TRES PIEDRAS,TAOS,GW,30,25000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3505429,LOWER ARROYO HONDO MDWCA,L,ARROYO HONDO,TAOS,GW,180,45000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,30778.5,Yes,Yes,.64043152,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3523402,RESERVE WATER WORKS,L,RESERVE,CATRON,GW,590,550000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,42480,Yes,Yes,.88391352,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580623,VILLAGE PIZZA,P,CORRALES,SANDOVAL,GW,45,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3564420,RAD WATER USERS COOP,P,TUCUMCARI,QUAY,GWP,754,0,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,32813,Yes,Yes,.68276495,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3517532,MOUNTAIN VIEW MHP,P,BOSQUE FARMS,VALENCIA,GW,25,3200,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,26398,Yes,Yes,.54928315,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3598426,SANTA FE TENNIS AND SWIM CLUB,P,SANTA FE,SANTA FE,GW,50,2000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500309,TYRONE TOWNSITE,L,TYRONE,GRANT,GWP,772,200000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,43824,Yes,Yes,.91187912,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591721,GHOST RANCH CONFERENCE CENTER,P,ABIQUIU,RIO ARRIBA,GW,150,46000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3524530,TAJIQUE MDWCA,L,TAJIQUE,TORRANCE,GW,181,266000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,35757,Yes,Yes,.74402297,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3573928,SAN ANTONIO MDWCA,L,SAN ANTONIO,SOCORRO,GW,1446,463000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,35899.8,Yes,Yes,.74699432,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3557513,RANCHO DAL PASO LLC DBA ADOBE VILLAGE,P,HOBBS,LEA,GW,87,2500,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,67565,Yes,Yes,1.4058762,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500521,CANJILON WATER SYSTEM,L,CANJILON,RIO ARRIBA,GW,469,100000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,30585,Yes,Yes,.63640523,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500613,INTREPID POTASH  NORTH,P,HOBBS,LEA,GWP,40,500000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593519,OLIVER LEE STATE PARK,S,ALAMOGORDO,OTERO,GW,40,600,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3523930,ENCINO WATER SYSTEM,L,ENCINO,TORRANCE,GWP,196,250000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,43625,Yes,Yes,.90773839,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500913,COWBOY JUNCTION CHURCH,P,HOBBS,LEA,GW,950,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590123,JEMEZ VALLEY PUBLIC SCHOOLS,P,JEMEZ SPRINGS,SANDOVAL,GW,350,20000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502421,AGUA SANA WUA,L,HERNANDEZ,RIO ARRIBA,GW,1514,500000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,34401.4,Yes,Yes,.71581596,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591213,LEA COUNTY HOBBS AIRPORT,L,HOBBS,LEA,GW,100,450000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3574529,VALLE ESCONDIDO HOMEOWNERS ASSOCIATION,P,TAOS,TAOS,GW,354,50000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,42636,Yes,Yes,.88715953,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580804,PHILMONT SCOUT RANCH - APACHE SPRINGS OC,P,CIMARRON,COLFAX,GW,75,4200,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3594933,BOWLINS BLUEWATER DAIRY QUEEN STORE,P,BLUEWATER,CIBOLA,GW,200,20000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501014,EAGLE CREEK SHELL CONVENIENCE STORE,P,ALTO,LINCOLN,GW,800,4000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3507229,RIO LUCIO MDWCA,L,PENASCO,TAOS,GW,342,40000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,32102,Yes,Yes,.6679706,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500832,VALENCIA GIANT 6033,P,LOS LUNAS,VALENCIA,GW,200,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3552903,BERRENDO COOPERATIVE WUA,P,ROSWELL,CHAVES,GW,5126,1767000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,49186.2,Yes,Yes,1.0234545,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510324,LOWER VALLEY WATER USERS ASSOCIATION,L,KIRTLAND,SAN JUAN,SW,8647,2000000,C,Yes,0,0,4,4,0,1,0,Surface,100,0,0,0,1,100,1,57145.1,Yes,Yes,1.1890614,Non-Disadvantaged,5,5,0,0,5,0,5,0,5,1,1,1,,,,,,,,No,8,,,Direct Impact with No Alternative Sources of Water
+NM3593221,HERON LAKE STATE PARK (SURFACE WATER),S,RUTHERON,RIO ARRIBA,SW,150,100000,NC,Yes,0,0,1,1,0,1,0,Surface,100,0,0,0,1,100,1,,No,Yes,,,1,1,0,0,1,0,1,0,1,1,1,1,,,,,,,,No,9,,,Direct Impact Non-Community Water System
+NM3500323,OVERLOOK WATER CO-OP INC,P,PLACITAS,SANDOVAL,GW,115,34000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,67857,Yes,Yes,1.411952,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3575430,ECHO VALLEY WATER COMPANY,P,MORIARTY,TORRANCE,GW,442,190000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,35759.3,Yes,Yes,.74407083,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3583126,CHI CENTER,P,SANTA FE,SANTA FE,GW,60,3000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510014,CIRCLE B CAMPGROUND,P,RUIDOSO DOWNS,LINCOLN,GW,250,3000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500508,ELLIPSE GLOBAL,P,CARLSBAD,EDDY,GW,449,50000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3594029,WILD RIVERS HEADQUARTERS (BLM),F,CERRO,TAOS,GW,48,30000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581404,PHILMONT SCOUT RANCH - CLEAR CREEK OC,P,,COLFAX,GW,75,1250,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501104,EAGLE NEST LAKE STATE PARK,S,EAGLE NEST,COLFAX,GW,100,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500501,VENTURA ESTATES HOA,P,ALBUQUERQUE,BERNALILLO,GW,100,48000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,109127,Yes,Yes,2.2706881,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501232,HIGHLAND MEADOWS ESTATES MDWCA,L,LOS LUNAS,VALENCIA,GW,43,30000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,37500,Yes,Yes,.7802909,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3526920,LOGAN WATER SYSTEM,L,LOGAN,QUAY,GW,2840,616000,C,Yes,5,1,0,0,0,0,0,Ground,,,,,0,,1,32813,Yes,Yes,.68276495,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501321,COYOTE MDWCA,L,COYOTE,RIO ARRIBA,GW,45,12000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,32424.7,Yes,Yes,.6746853,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500305,SOUTHWEST CHEESE,P,CLOVIS,CURRY,GW,380,1250000,NTNC,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3558514,ALTO LAKES WATER AND SANITATION DISTRICT,P,ALTO,LINCOLN,GW,3585,510000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,41794,Yes,Yes,.8696394,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3595729,SKI TIP RESTAURANT,P,RED RIVER,TAOS,GW,50,4000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3516518,SOUTH HOLMAN MDWCA,L,HOLMAN,MORA,GW,35,24000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,26968,Yes,Yes,.56114358,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590207,LAS CRUCES KOA,P,LAS CRUCES,DONA ANA,GW,120,2300,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500701,FOX HILLS WATER USERS ASSOC,P,SANDIA PARK,BERNALILLO,GW,69,20000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,95194,Yes,Yes,1.9807737,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580714,VARNADORES LITTLE CREEK RV PARK,P,ALTO,LINCOLN,GW,130,500,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3509623,RIO RANCHO WATER & WW SERVICES,L,RIO RANCHO,SANDOVAL,GW,98085,45845000,C,Yes,13,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3521913,MESCALERO RIDGE WATER CO-OP,L,MALJAMAR,LEA,GW,72,21000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,58287,Yes,Yes,1.2128217,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3511426,SOLACITO MDWCA,L,ESPANOLA,SANTA FE,GW,29,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,36218,Yes,Yes,.75361532,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3587001,MOUNTAIN CHRISTIAN CHURCH,P,CEDAR CREST,BERNALILLO,GW,140,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3537113,MONUMENT MDWCA,L,MONUMENT,LEA,GW,279,120000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,70000,Yes,Yes,1.456543,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581423,HANNAH AND NATE'S MARKET CAFE,P,CORRALES,SANDOVAL,GW,300,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591819,ASPENDALE CAMP,P,ALAMOGORDO,OTERO,GW,150,263400,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501921,ESPANOLA WATER SYSTEM,L,ESPANOLA,RIO ARRIBA,GW,12012,2400000,C,Yes,6,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500503,ROSWELL LANDFILL WATER SYSTEM,P,ROSWELL,CHAVES,GW,35,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592507,ANTHONY COUNTRY CLUB,P,ANTHONY,DONA ANA,GW,60,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502721,LUMBERTON MDWCA,L,LUMBERTON,RIO ARRIBA,SW,223,35000,C,Yes,0,0,2,2,0,1,0,Surface,100,0,0,0,1,100,1,30585,Yes,Yes,.63640523,Severely Disadvantaged,3,2,0,1,3,0,2,1,3,1,1,1,,,,,,,,No,10,,,Direct Impact with No Alternative Sources of Water
+NM3592526,CAMP FRANK RAND,P,CHIMAYO,SANTA FE,GW,300,150000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590206,LAKE SUMNER STATE PARK 2,S,FORT SUMNER,DE BACA,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3596521,CORKINS LODGE,P,CHAMA,RIO ARRIBA,GW,60,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3582704,PHILMONT SCOUT RANCH - PUEBLANO OUTCAMP,P,,COLFAX,GW,100,1250,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3573828,NEW MEXICO BOYS AND GIRLS RANCH,P,LAS NUTRIAS,SOCORRO,GW,60,40000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,42181,Yes,Yes,.87769198,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500707,LA UNION MW&SA,L,ANTHONY,DONA ANA,GW,987,275000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,47255.5,Yes,Yes,.98328096,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3504326,GLORIETA EAST WATER SUPPLY,L,GLORIETA,SANTA FE,GW,59,53000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3512207,RINCON WATER CONSUMERS CO-OP,P,RINCON,DONA ANA,GW,580,236722,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,21667,Yes,Yes,.45084167,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500204,FRENCH MDWCA/SWA,L,SPRINGER,COLFAX,SWP,150,46000,C,Yes,0,0,1,1,0,1,0,Surface,,,,,0,,1,41074,Yes,Yes,.85465783,Disadvantaged,,,,,,,,,,,,0,NM3526604,SPRINGER WATER SYSTEM,1363,,,,A,Yes,9,9,,Direct Impact with No Alternative Sources of Water
+NM3500525,GABALDON MDWCA,L,LAS VEGAS,SAN MIGUEL,GW,47,25000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,35019,Yes,Yes,.72866684,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590121,ABIQUIU ELEMENTARY SCHOOL,S,ABIQUIU,RIO ARRIBA,GW,125,6000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500318,LEDOUX MDWCA,L,LEDOUX,MORA,GW,168,33000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,26968,Yes,Yes,.56114358,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501923,LAS PLACITAS PRESBYTERIAN CHURCH,P,PLACITAS,SANDOVAL,GW,180,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3563319,ENCHANTED VALLEY WUA,L,ALAMOGORDO,OTERO,GW,44,18000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,47650.1,Yes,Yes,.99149173,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580013,CONOCOPHILLIPS  BUCKEYE,P,LOVINGTON,LEA,GW,40,40,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502021,GALLINA WATER SYSTEM,L,GALLINA,RIO ARRIBA,GW,75,25000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,34093.3,Yes,Yes,.70940512,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593325,LISBOA SPRINGS FISH HATCHERY,S,PECOS,SAN MIGUEL,GW,34,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3537219,PINON MDWCA,L,PINON,OTERO,GW,100,113000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,19500.9,Yes,Yes,.40577,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3547701,JOY JUNCTION,P,ALBUQUERQUE,BERNALILLO,GW,150,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590010,PAJARITO REST AREA - WEST BOUND,S,SANTA ROSA,GUADALUPE,GW,475,4000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3598108,QUEEN CAFE AND RV,P,CARLSBAD,EDDY,GW,61,8120,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590608,INTREPID POTASH  EAST,P,CARLSBAD,EDDY,GW,211,1500,NTNC,Yes,12,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500921,CEBOLLA MDWCA,L,CEBOLLA,RIO ARRIBA,GW,350,85000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,30585,Yes,Yes,.63640523,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502614,RUIDOSO MOTORCOACH RANCH,P,ALTO,LINCOLN,GW,35,10000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3599526,GABRIELS,P,SANTA FE,SANTA FE,GW,150,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3503621,VALLEY ESTATES WATER & SEWER ASSOCIATION,L,ESPANOLA,RIO ARRIBA,GW,194,30000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,26258.1,Yes,Yes,.54637218,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3584801,CAROLINO CANYON,L,TIJERAS,BERNALILLO,GW,50,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580302,ALMA STORE AND GRILL,P,,CATRON,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590330,MANZANO MOUNTAIN STATE PARK,S,TAJIQUE,TORRANCE,GW,125,3000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510333,BLUEWATER ACRES WUA,L,THOREAU,CIBOLA,GW,307,105000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,51175,Yes,Yes,1.064837,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590709,CITY OF ROCKS STATE PARK,S,FAYWOOD,GRANT,GW,149,6000,NC,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591330,ZIA RV PARK,P,MORIARTY,TORRANCE,GW,500,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580629,SUBWAY,P,TAOS,TAOS,GW,100,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3556312,"NEW MEXICO TECH, PLAYAS FACILITY",P,PLAYAS,HIDALGO,GW,20,200000,NC,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,40909,Yes,Yes,.85122454,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500924,HYDRO PURE TECHNOLOGY INC.,P,AZTEC,SAN JUAN,SWP,25,13550,C,Yes,0,0,1,1,0,1,0,Surface,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,NM3509824,AZTEC DOMESTIC WATER SYSTEM,5960,,,,A,Yes,9,9,,Direct Impact with No Alternative Sources of Water
+NM3500418,NORTH CLEVELAND MDWCA,L,CLEVELAND,MORA,GW,82,50000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,26968,Yes,Yes,.56114358,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590018,FORT UNION REST AREA NORTH BOUND,S,WATROUS,MORA,GW,125,3000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580707,VINTON CONGREGATION OF JEHOVAH WITNESS,P,ANTHONY,DONA ANA,GW,100,80,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502514,PINON HILLS RV PARK,P,RUIDOSO,LINCOLN,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3529107,LAS ALTURAS ESTATES (LCU),P,LAS CRUCES,DONA ANA,GW,612,175000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3527031,CLAYTON MUNICIPAL SUPPLY,L,CLAYTON,UNION,GW,3250,1850000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,37936,Yes,Yes,.78936309,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3527920,SAN JON WATER SUPPLY,L,SAN JON,QUAY,GWP,453,723000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,32813,Yes,Yes,.68276495,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501823,SAN LUIS CABEZON MDWCA,L,SAN YSIDRO,SANDOVAL,GW,200,120000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,36293,Yes,Yes,.75517595,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3598614,SIERRA BLANCA REGIONAL AIRPORT,L,RUIDOSO,LINCOLN,GW,76,41350,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3521014,CDS RAINMAKERS UTIL LLC  RANCHO RUIDOSO,P,ALTO,LINCOLN,GW,993,500000,C,Yes,5,1,0,0,0,0,0,Ground,,,,,0,,1,41909.3,Yes,Yes,.87203854,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500333,POTCO WATER SYSTEM,P,MILAN,CIBOLA,GWP,100,11640,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590023,COCHITI LAKE RECREATION AREA,F,COCHITI LAKE,SANDOVAL,GW,156,10000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3539307,ALAMEDA ACRES MHP,P,LAS CRUCES,DONA ANA,GW,285,4000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,32219,Yes,Yes,.67040515,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3553205,DESERT VILLAGE RV & MOBILE HOME PARK,P,CLOVIS,CURRY,GW,230,9800,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,48468,Yes,Yes,1.0085104,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580326,EL RANCHO DE LOS GOLONDRINAS,P,LA CIENEGA,SANTA FE,GW,4500,16000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500205,TRAVELERS WORLD CAMPGROUND,P,CLOVIS,CURRY,GW,45,3000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3564019,EILEEN ACRES,P,ALAMOGORDO,OTERO,GW,219,30800,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,47591,Yes,Yes,.99026197,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3597629,BASKIN ROBBINS TAOS,P,TAOS,TAOS,GW,100,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500532,SENIOR LIVING SYSTEMS INC.,P,LOS LUNAS,VALENCIA,GW,50,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,56660,Yes,Yes,1.1789675,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500113,MORWEST CORPORATION,P,ARTESIA,LEA,GW,0,540000,C,Yes,7,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3524030,ESTANCIA WATER SYSTEM,L,ESTANCIA,TORRANCE,GW,1795,642000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,35757,Yes,Yes,.74402297,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3533223,PONDEROSA MDWCA,L,PONDEROSA,SANDOVAL,GU,350,96000,C,Yes,0,0,1,0,1,0,1,Surface,100,0,0,0,1,100,1,43857.1,Yes,Yes,.91256791,Disadvantaged,2,1,0,1,2,0,1,1,2,1,1,1,,,,,,,,No,9,,,Direct Impact with No Alternative Sources of Water
+NM3597114,BPOE ELKS LODGE,P,RUIDOSO,LINCOLN,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580102,HOMESTEAD LANDOWNERS ASSOCIATION,P,DATIL,CATRON,GW,168,12000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,42480,Yes,Yes,.88391352,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590128,FORT CRAIG REST AREA  EAST SIDE,S,SAN ANTONIO,SOCORRO,GW,300,3000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590208,SITTING BULL FALLS AREA  LINCOLN  USFS,F,CARLSBAD,EDDY,GW,25,6225,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3572007,MOONGATE WATER SYSTEM,L,ORGAN,DONA ANA,GW,8574,5067000,C,Yes,8,1,0,0,0,0,0,Ground,,,,,0,,1,37758.9,Yes,Yes,.78567803,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3549301,LEISURE MOUNTAIN MHP,P,TIJERAS,BERNALILLO,GW,172,6000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,87898,Yes,Yes,1.8289602,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580027,CABALLO LAKESIDE CAMPGROUND-STATE PARKS,S,CABALLO,SIERRA,GW,25,10000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3527605,TEXICO WATER SYSTEM,L,TEXICO,CURRY,GW,1229,279000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,48468,Yes,Yes,1.0085104,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3541407,SILVER SPUR MOBILE HOME COURTS,P,MESILLA PARK,DONA ANA,GW,145,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,45635,Yes,Yes,.94956201,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3521713,JAL WATER SUPPLY SYSTEM,L,JAL,LEA,GW,3072,2275000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,56337,Yes,Yes,1.1722466,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500708,R AND P RV PARK,P,ARTESIA,EDDY,GW,238,3000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502026,SIERRA,P,SANTA FE,SANTA FE,GW,39,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3504021,EL RITO REGIONAL WATER & WASTE WATER ASN,L,EL RITO,RIO ARRIBA,GW,1200,120000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,35585,Yes,Yes,.74044406,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510429,LAS COLONIAS MHP,P,EL PRADO,TAOS,GW,49,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,36764,Yes,Yes,.76497638,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3552728,LA JOYA MDWCA,L,LAJOYA,SOCORRO,GW,238,30000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,42181,Yes,Yes,.87769198,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580133,EL MALPAIS NATIONAL MONUMENT,F,GRANTS,CIBOLA,GW,50,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580807,AGUIRRE SPRINGS-BLM,F,LAS CRUCES,DONA ANA,GW,25,80,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590005,NED HOUK PARK AREA 11,L,CLOVIS,CURRY,GW,50,12000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500209,TROUT MOUNTAIN WATER ASSOCIATION,P,SILVER CITY,GRANT,GW,56,13780,NC,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,46698,Yes,Yes,.97168064,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3588301,TURQUOISE TRAIL CENTER  WATER SYSTEM,P,CEDAR CREST,BERNALILLO,GW,170,3000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3566221,LA ASOCIACION DE AGUA DE LOS BRAZOS,L,LOS OJOS,RIO ARRIBA,GWP,32,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,30585,Yes,Yes,.63640523,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580428,ESCONDIDA LAKE,L,LEMITAR,SOCORRO,GW,26,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590129,AUSTING HAUS,P,TAOS SKI VALLEY,TAOS,GW,60,1500,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500821,CAPULIN MDWCA,L,CAPULIN,RIO ARRIBA,GW,203,32000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,32433.3,Yes,Yes,.67486423,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500421,CANON PLAZA MDWCA,L,VALLECITOS,RIO ARRIBA,GW,60,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,35585,Yes,Yes,.74044406,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3508517,GAMERCO WATER & SANITATION,L,GAMERCO,MCKINLEY,GWP,1552,300000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,37042,Yes,Yes,.77076095,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3508029,VALDEZ MDWCA,L,VALDEZ,TAOS,GW,100,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,37996,Yes,Yes,.79061157,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3503921,HOPEWELL LAKE CAMPGROUND USFS CARSON,F,TAOS,RIO ARRIBA,GW,30,5000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3527305,EPCOR WATER NEW MEXICO INC  CLOVIS,P,CLOVIS,CURRY,GW,42976,11550000,C,Yes,81,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510403,FAMBROUGH MDWCA,L,HAGERMAN,CHAVES,GW,557,200000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,41327,Yes,Yes,.85992217,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3595104,SUGARITE - LAKE ALICE CAMPGROUND,S,RATON,COLFAX,GW,75,8000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590130,GRAN QUIVIRA - SALINAS PUEBLO MISSIONS,F,MOUNTAINAIR,TORRANCE,GW,50,55000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3577407,TALAVERA MDWCA,L,LAS CRUCES,DONA ANA,GW,173,60075,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,95882,Yes,Yes,1.9950894,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3524932,BELEN WATER SYSTEM,L,BELEN,VALENCIA,GW,8102,5250000,C,Yes,6,1,0,0,0,0,0,Ground,,,,,0,,1,50710,Yes,Yes,1.0551614,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3527131,DES MOINES WATER SYSTEM,L,DES MOINES,UNION,GW,210,212000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,37936,Yes,Yes,.78936309,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3551026,LA VISTA HOMEOWNERS ASSOCIATION,P,SANTA FE,SANTA FE,GW,50,10000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,102070,Yes,Yes,2.1238477,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3573501,DESERT PALMS MOBILE HOME PARK,P,ALBUQUERQUE,BERNALILLO,GW,270,20000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,50875,Yes,Yes,1.0585947,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590916,PETRO #385,P,DEMING,LUNA,GW,25,212070,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593932,DENNIS CHAVEZ ELEMENTARY,L,BELEN,VALENCIA,GW,372,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3525833,SAN RAFAEL WATER & SANITATION DISTRICT,L,SAN RAFAEL,CIBOLA,GW,963,280000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,51175,Yes,Yes,1.064837,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510732,BOSQUE FARMS WATER SUPPLY SYSTEM,L,BOSQUE FARMS,VALENCIA,GW,4168,1500000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,50183.7,Yes,Yes,1.0442102,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3503901,LOVES TRAVEL STOP,L,ALBUQUERQUE,BERNALILLO,GW,280,230000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3555008,COTTONWOOD WATER MDWCA,L,ARTESIA,EDDY,GW,1685,710000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,63342.9,Yes,Yes,1.3180237,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3520024,NORTHSTAR MDWCA,L,AZTEC,SAN JUAN,SW,3602,994000,C,Yes,0,0,2,2,0,1,0,Surface,100,0,0,0,1,100,1,55611.4,Yes,Yes,1.1571485,Non-Disadvantaged,3,2,1,0,2,1,2,0,2,.66666669,1,1,,,,,,,,No,2,,,Direct Impact with Alternative Sources of Water
+NM3509123,JEMEZ SPRINGS DWUA,L,JEMEZ SPRINGS,SANDOVAL,GW,1157,699000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,41510,Yes,Yes,.86373001,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3552206,VALLEY MDWCA,L,FORT SUMNER,DE BACA,GWP,556,0,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,31028,Yes,Yes,.64562309,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3513619,HIGH ROLLS COMMUNITY WATER USERS COOP,L,HIGH ROLLS MOUNTAIN PARK,OTERO,GW,340,130000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,53928,Yes,Yes,1.1221207,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510117,BLUEWATER LAKE MDWCA,L,BLUEWATER,MCKINLEY,GW,135,103000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,19522,Yes,Yes,.40620902,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501309,HACHITA MDWCA,L,HACHITA,GRANT,GW,100,36000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,44412,Yes,Yes,.92411411,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591402,EAGLE GUEST RANCH SW,P,DATIL,CATRON,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501819,OLD APPLE BARN,P,HIGH ROLLS MOUNTAIN PARK,OTERO,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3567701,KIRTLAND AIR FORCE BASE,F,ALBUQUERQUE,BERNALILLO,GW,22500,5523000,C,Yes,6,1,0,0,0,0,0,Ground,,,,,0,,1,70375.2,Yes,Yes,1.4643501,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501126,LA MARIPOSA MONTESSORI SCHOOL,L,SANTA FE,SANTA FE,GW,96,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3583204,PHILMONT SCOUT RANCH - URACCA OUTCAMP,P,,COLFAX,GW,50,3650,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500221,ABIQUIU MDWCA,L,ABIQUIU,RIO ARRIBA,GW,420,29000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,35585,Yes,Yes,.74044406,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591109,LAKE ROBERTS CAMPGROUND - GILA - USFS,F,MIMBRES,GRANT,GW,68,18000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3594713,LEA COUNTY ELECTRIC COOPERATIVE INC,P,LOVINGTON,LEA,GW,50,65000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590328,VERY LARGE ARRAY VLA,F,MAGDALENA,SOCORRO,GW,45,75000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590827,ELEPHANT BUTTE STATE PARK,S,ELEPHANT BUTTE,SIERRA,GW,50,110000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500626,LAS CAMPANAS WATER SYSTEM,P,SANTA FE,SANTA FE,SWP,1495,1250000,C,Yes,0,0,1,1,0,1,0,Surface,,,,,0,,1,97328.39999999991,Yes,Yes,2.0251858,Non-Disadvantaged,,,,,,,,,,,,0,NM3505126,SANTA FE WATER SYSTEM (CITY OF),78247,,,,A,Yes,2,2,,Direct Impact with Alternative Sources of Water
+NM3500923,ORCHARD ESTATES FLMDWC & SW,L,CORRALES,SANDOVAL,GW,40,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,84355,Yes,Yes,1.7552383,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3521513,EUNICE WATER SUPPLY SYSTEM,L,EUNICE,LEA,GW,4303,3550500,C,Yes,7,1,0,0,0,0,0,Ground,,,,,0,,1,69188,Yes,Yes,1.4396471,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501801,"THE PLAZA AT SANDIA PARK, LLC",P,,BERNALILLO,GW,75,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3582523,CASA SAN YSIDRO,L,CORRALES,SANDOVAL,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3511101,LOST HORIZON COOP ASSOCIATION,P,ALBUQUERQUE,BERNALILLO,SWP,78,105000,C,Yes,0,0,1,1,0,1,0,Surface,,,,,0,,1,76347,Yes,Yes,1.5886098,Non-Disadvantaged,,,,,,,,,,,,0,NM3510701,ALBUQUERQUE WATER SYSTEM,659736,,,,A,Yes,2,2,,Direct Impact with Alternative Sources of Water
+NM3580314,MOUNTAIN VIEW CHRISTIAN YOUTH CAMP,P,ALTO,LINCOLN,GW,150,2565,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591521,ABIQUIU DAM,F,ABIQUIU,RIO ARRIBA,GW,100,14500,NC,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3522309,HANOVER MDWCA,L,HANOVER,GRANT,GW,212,130000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,42738.2,Yes,Yes,.8892861,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580704,PHILMONT SCOUT RANCH - ABREU OUTCAMP,P,CIMARRON,COLFAX,GW,100,4000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500429,TAOS COUNTRY CLUB,P,RANCHOS DE TAOS,TAOS,GW,100,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3548201,TIERRA MONTE WATER USERS ASSOCIATION,L,ALBUQUERQUE,BERNALILLO,GW,78,21700,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,97762,Yes,Yes,2.0342081,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593726,FOUR SEASONS RESORT RANCHO ENCANTADO,P,TESUQUE,SANTA FE,GW,120,100000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3547010,RIO PECOS VILLA MDWCA,L,SANTA ROSA,GUADALUPE,GWP,35,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,24085,Yes,Yes,.50115484,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3559717,D & S TRAILER RANCH,P,GALLUP,MCKINLEY,GW,139,7000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,38640,Yes,Yes,.80401176,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592925,PECOS DAIRY QUEEN,P,PECOS,SAN MIGUEL,GW,300,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3567905,CANNON AIR FORCE BASE WATER SYSTEM,F,CANNON AFB,CURRY,GW,7832,1042000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,51364.3,Yes,Yes,1.0687759,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591914,SKI APACHE,P,RUIDOSO,LINCOLN,GW,350,48000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502414,ALONG THE RIVER RV CAMP,P,NOGAL,LINCOLN,GW,120,6000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3531623,PENA BLANCA WATER & SANITATION DISTRICT,L,PENA BLANCA,SANDOVAL,GW,448,70000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,39668.2,Yes,Yes,.82540625,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3509723,SAN YSIDRO WATER SUPPLY SYSTEM,L,SAN YSIDRO,SANDOVAL,GW,198,240000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,41510,Yes,Yes,.86373001,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3574519,CIDER MILL FARMS MDWCA,L,HIGH ROLLS,OTERO,GW,40,55000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,53979,Yes,Yes,1.1231819,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500601,TIJERAS (VILLAGE OF),L,TIJERAS,BERNALILLO,GW,541,258000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,77444.3,Yes,Yes,1.6114422,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580028,MANUEL E SANCHEZ PARISH HALL,P,LAS NUTRIAS,SOCORRO,GW,75,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3535618,SAN ANTONIO DE CLEVELAND MDWCA,L,CLEVELAND,MORA,GW,269,55000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,26968,Yes,Yes,.56114358,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580409,HEIGHTS WATER USERS ASSOCIATION,P,,GRANT,GW,27,3000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,46698,Yes,Yes,.97168064,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510107,ORGAN VIEW ESTATES,P,FAIRACRES,DONA ANA,GW,97,6000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,58456,Yes,Yes,1.2163383,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592513,HOBBS COUNTRY CLUB,P,HOBBS,LEA,GW,95,300,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591027,CABALLO RIVERSIDE CAMP GROUND-STATE PARK,S,CABALLO,SIERRA,GW,25,10000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3598114,APPLE BLOSSOM AND WHITE ANGEL MESA WUA,P,RUIDOSO DOWNS,LINCOLN,GW,46,200,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,41794,Yes,Yes,.8696394,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3519125,SAN JUAN MDWCA,L,SAN JOSE,SAN MIGUEL,GW,136,55000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,35019,Yes,Yes,.72866684,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501514,CROCKETT CANYON RV,P,RUIDOSO,LINCOLN,GW,100,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510219,PETE RAGAN MEMORIAL WUA,P,MAYHILL,OTERO,GW,81,11400,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,53979,Yes,Yes,1.1231819,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501117,JEM TRADING,P,VANDERWAGEN,MCKINLEY,GW,25,500,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3523502,RANCHO GRANDE WATER ASSOCIATION INC,P,RESERVE,CATRON,GW,195,65000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,42480,Yes,Yes,.88391352,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500101,BEARCAT HOMEOWNERS ASSOCIATION,P,TIJERAS,BERNALILLO,GW,60,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,62539,Yes,Yes,1.3012964,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3596029,RIO VALLEY ENTERPRISES,P,TAOS,TAOS,GW,65,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3575026,SHALOM MOBILE HOME PARK,P,SANTA FE,SANTA FE,GW,42,1000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,48449,Yes,Yes,1.0081151,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3503801,U-PULL AND PAY,L,ALBUQUERQUE,BERNALILLO,GW,35,0,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510012,ANIMAS SCHOOL SYSTEM,P,ANIMAS,HIDALGO,GW,230,11600,NTNC,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3520103,CUMBERLAND COOPERATIVE WUA,P,ROSWELL,CHAVES,GW,712,104000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,37761.4,Yes,Yes,.78573006,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502001,ABUELITA'S,P,ALBUQUERQUE,BERNALILLO,GW,400,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3596517,KAMP KIWANIS,P,GALLUP,MCKINLEY,GW,150,91000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502229,LA VIDA FELIZ CONDO ASSOCIATION,P,EL PRADO,TAOS,GW,26,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3516925,EAST PECOS MDWCA,L,PECOS,SAN MIGUEL,GW,450,90000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,35019,Yes,Yes,.72866684,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3562222,ROOSEVELT COUNTY WUA,P,PORTALES,ROOSEVELT,GWP,4672,0,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,48112.7,Yes,Yes,1.0011173,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590006,LAKE SUMNER STATE PARK 1,S,FORT SUMNER,DE BACA,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3508717,RAMAH WATER & SANITATION DISTRICT,L,RAMAH,MCKINLEY,GW,500,156000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,66175.2,Yes,Yes,1.3769575,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501114,HALLS RV PARK,P,RUIDOSO,LINCOLN,GW,50,0,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3596013,LOVINGTON COUNTRY CLUB,P,LOVINGTON,LEA,GW,60,300,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3571119,TWIN FORKS MDWCA,L,MAYHILL,OTERO,GW,1250,117000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,53979,Yes,Yes,1.1231819,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502501,LOS PADILLAS AQUATIC CENTER,L,ALBUQUERQUE,BERNALILLO,GW,213,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3549101,CHAMISA MOBILE HOME PARK,P,ALBUQUERQUE,BERNALILLO,GW,58,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,50371,Yes,Yes,1.0481075,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3547501,BARCELONA MOBILE HOME PARK,P,ALBUQUERQUE,BERNALILLO,GW,429,25000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,47895,Yes,Yes,.99658751,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500432,LOMA ESCONDIDA WATER ASSOCIATION,P,BELEN,VALENCIA,GW,89,25000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,57465,Yes,Yes,1.1957178,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3504126,EL VADITO DE LOS CERRILLOS WATER ASSOC,L,CERRILLOS,SANTA FE,GW,461,200000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,53266.4,Yes,Yes,1.1083543,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590625,VILLANUEVA STATE PARK,S,VILLANUEVA,SAN MIGUEL,GW,126,10000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3595426,BICENTENNIAL REST AREA,S,SANTA FE,SANTA FE,GW,330,6000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3503029,RIO GRANDE ACE HARDWARE,P,TAOS,TAOS,GW,50,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501425,PENDARIES RV RESORT,P,ROCIADA,SAN MIGUEL,GWP,320,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3506329,LLANO QUEMADO MDWCA,L,RANCHOS DE TAOS,TAOS,GW,800,4128000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,42636,Yes,Yes,.88715953,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3595907,SCENIC VIEW REST AREA-STATE HWY DEPT,S,FAIRACRES,DONA ANA,GW,250,5000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510220,HOUSE WATER SYSTEM,L,HOUSE,QUAY,GW,108,76000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,32813,Yes,Yes,.68276495,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3595307,GISD SNP ADMINISTRATION OFFICES,L,ANTHONY,DONA ANA,GW,280,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3514019,TULAROSA WATER SYSTEM,L,TULAROSA,OTERO,SW,3996,3000000,C,Yes,0,0,3,3,0,1,0,Surface,100,0,0,0,1,100,1,47738,Yes,Yes,.9933207,Disadvantaged,5,3,2,0,3,1,3,0,3,.60000002,1,1,,,,,,,,No,3,,,Direct Impact with Alternative Sources of Water
+NM3590708,INTREPID POTASH  WEST,P,CARLSBAD,EDDY,GW,71,527000,NTNC,Yes,12,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3587801,VAPOR INC. COMMUNITY STORE,P,RIO PUERCO,BERNALILLO,GW,50,75,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3504526,GREATER GLORIETA REGIONAL MDC,L,GLORIETA,SANTA FE,GW,153,62000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,66702.7,Yes,Yes,1.3879336,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590226,EL SANTUARIO CHURCH,P,CHIMAYO,SANTA FE,GW,2000,0,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580904,PHILMONT SCOUT RANCH - BALDY OUTCAMP,P,CIMARRON,COLFAX,GW,100,20000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3594129,SANTA BARBARA CAMPGROUND USFS CARSON,F,PENASCO,TAOS,GW,62,6000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500430,SUNSET ACRES WATER COMPANY,P,MORIARTY,TORRANCE,GW,247,200000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,38533,Yes,Yes,.80178529,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3550905,TURQUOISE ESTATES WATER COOP,P,CLOVIS,CURRY,GW,168,10000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,48468,Yes,Yes,1.0085104,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3569826,ASI LA MAR TRAILER PARK,P,SANTA FE,SANTA FE,GW,61,6000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,48449,Yes,Yes,1.0081151,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510026,CANONCITO AT APACHE CANYON,L,SANTA FE,SANTA FE,GW,250,32000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,74513,Yes,Yes,1.5504484,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510524,MORNINGSTAR WATER SUPPLY SYSTEM,P,FARMINGTON,SAN JUAN,SWP,6423,4770000,C,Yes,0,0,1,1,0,1,0,Surface,,,,,0,,1,66711.7,Yes,Yes,1.3881209,Non-Disadvantaged,,,,,,,,,,,,0,NM3510224,FARMINGTON WATER SYSTEM,38000,,,,A,Yes,8,8,,Direct Impact with No Alternative Sources of Water
+NM3598414,LONE TREE BIBLE RANCH,P,CAPITAN,LINCOLN,GW,140,24000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3572307,VALVERDE MOBILE HOME PARK,P,DONA ANA,DONA ANA,GW,169,1100,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,60711,Yes,Yes,1.2632598,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500904,VAL VERDE 5 PROPERTY OWNERS ASSOCIATION,P,ANGEL FIRE,COLFAX,GW,100,20000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,41074,Yes,Yes,.85465783,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592514,SEEPING SPRINGS CAMPGROUND,P,RUIDOSO DOWNS,LINCOLN,GW,75,0,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501033,GRANTS KOA,P,GRANTS,CIBOLA,GW,180,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3575330,CLINES CORNERS WATER SYSTEM,L,CLINES CORNERS,TORRANCE,GW,450,241000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,37227,Yes,Yes,.7746104,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581801,VILLA SANTA MARIA,P,CEDAR CREST,BERNALILLO,GW,60,34000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3503126,SANTA FE COUNTY PUBLIC WORKS/UTILITIES,L,SANTA FE,SANTA FE,GW,100,60000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,82415.39999999991,Yes,Yes,1.7148796,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3509023,CUBA WATER SYSTEM,L,CUBA,SANDOVAL,GW,1500,925000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,36293,Yes,Yes,.75517595,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3520608,CARLSBAD MUNICIPAL WATER SYSTEM,L,CARLSBAD,EDDY,GW,33006,22350000,C,Yes,33,1,0,0,0,0,0,Ground,,,,,0,,1,69578.10000000001,Yes,Yes,1.4477642,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3546223,NORTH RANCHOS DE PLACITAS W&SD,L,PLACITAS,SANDOVAL,GW,592,0,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,67857,Yes,Yes,1.411952,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581901,TOM & JERRY PLAZA,P,CEDAR CREST,BERNALILLO,GW,38,4000,NTNC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502607,BIAD CHILI LTD CO,P,MESILLA PARK,DONA ANA,GW,25,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591707,ADMIRAL BEVERAGE CORPORATION,P,LAS CRUCES,DONA ANA,GW,140,6000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500324,ROSA JOINT VENTURES WATER SYSTEM,P,AZTEC,SAN JUAN,GW,456,55000,C,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,48125,Yes,Yes,1.0013733,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3537326,ELDORADO AREA WATER AND SANITATION DIST.,L,SANTA FE,SANTA FE,GW,7350,2475000,C,Yes,10,1,0,0,0,0,0,Ground,,,,,0,,1,73193.3,Yes,Yes,1.5229884,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3524130,MANZANO MDWCA,L,TAJIQUE,TORRANCE,GW,62,30000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,35757,Yes,Yes,.74402297,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3509423,RANCHOS DE PLACITAS SANITATION DISTRICT,L,PLACITAS,SANDOVAL,GW,264,50000,C,Yes,3,1,0,0,0,0,0,Ground,,,,,0,,1,67857,Yes,Yes,1.411952,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3504826,MADRID WATER,L,,SANTA FE,GW,315,30000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,55038,Yes,Yes,1.1452173,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500319,WHITE SANDS NATIONAL MONUMENT,F,WHITE SANDS MISSILE RANG,OTERO,GWP,1397,100000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3595017,TRI-STATE GENERATING STATION,P,PREWITT,MCKINLEY,SW,125,880000,NTNC,Yes,6,1,1,1,0,1,0,Surface and Ground,100,0,0,0,1,100,1,,No,Yes,,,9,1,8,0,1,1,1,0,1,.11111111,1,1,,,,,,,,No,3,,,Direct Impact Non-Community Water System
+NM3513919,OROGRANDE MDWCA,L,OROGRANDE,OTERO,GWP,105,110000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,46413.6,Yes,Yes,.96576291,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3569626,VILLAGE MOBILE HOME PARK,P,SANTA FE,SANTA FE,GW,99,360,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,39493,Yes,Yes,.82176077,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3510114,LAZY DAYS RV PARK,P,RUIDOSO DOWNS,LINCOLN,GW,200,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,41794,Yes,Yes,.8696394,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502401,"GREEN RIDGE MDWCA, INC.",L,TIJERAS,BERNALILLO,GW,154,54000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,62539,Yes,Yes,1.3012964,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3515518,CLEVELAND MDWCA,L,CLEVELAND,MORA,GW,270,10000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,26968,Yes,Yes,.56114358,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3532517,BLOCK A WELL CO-OP,P,GALLUP,MCKINLEY,GW,92,5000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,38640,Yes,Yes,.80401176,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502323,PLACITAS COMMUNITY LIBRARY,L,PLACITAS,SANDOVAL,GW,50,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3563814,ENCHANTED FOREST WATER CORPORATION,P,ALTO,LINCOLN,GW,288,60000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,41794,Yes,Yes,.8696394,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501327,SOUTHWEST TINY HOMES AND RV PARK,P,CABALLO,SIERRA,GW,43,0,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,32482,Yes,Yes,.67587757,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3508217,COAL BASIN DWUA,L,GALLUP,MCKINLEY,GW,115,40000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,38640,Yes,Yes,.80401176,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3587701,MONTESSA PARK,L,ALBUQUERQUE,BERNALILLO,GW,200,25000,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3551801,VALLE GRANDE MOBILE HOME PARK,P,ALBUQUERQUE,BERNALILLO,GW,124,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,51029,Yes,Yes,1.061799,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500607,SAN PABLO MDWCA,L,LAS CRUCES,DONA ANA,GWP,570,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,52940,Yes,Yes,1.1015626,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3571026,JUNIPER HILLS MHP,P,SANTA FE,SANTA FE,GW,56,5000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,36218,Yes,Yes,.75361532,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3506829,QUESTA WATER SYSTEM,L,QUESTA,TAOS,GW,2337,630000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,35903.7,Yes,Yes,.7470755,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3515010,SANTA ROSA WATER SUPPLY,L,SANTA ROSA,GUADALUPE,GW,2663,1450000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,24085,Yes,Yes,.50115484,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502507,CAMINO REAL REGIONAL UTILITY AUTHORITY,L,SUNLAND PARK,DONA ANA,GW,17826,4801000,C,Yes,10,1,0,0,0,0,0,Ground,,,,,0,,1,47123.8,Yes,Yes,.98054057,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591009,BOWLINS CONTINENTAL DIVIDE TRADING POST,P,LORDSBURG,HIDALGO,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3533021,LYBROOK MDWCA,L,NAGEEZI,RIO ARRIBA,GW,175,100000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,33950,Yes,Yes,.70642334,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3545618,AGUA PURA MDWCA,L,CHACON,MORA,GW,357,50000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,26968,Yes,Yes,.56114358,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3532717,YAH TA HEY W & SD,L,YATAHEY,MCKINLEY,GW,508,156000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,29347,Yes,Yes,.61064523,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590710,ANTON CHICO REST AREA  EAST BOUND,S,SANTA ROSA,GUADALUPE,GW,450,5000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590416,BOWLINS BUTTERFIELD STATION,P,DEMING,LUNA,GW,25,160,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500901,VISTA BONITA WATER COOP,P,ALBUQUERQUE,BERNALILLO,GW,38,18000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,95194,Yes,Yes,1.9807737,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592114,SOUTH FORK CAMPGROUND LINCOLN  USFS,F,RUIDOSO,LINCOLN,GW,180,20000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3528616,DEMING MUNICIPAL WATER SYSTEM,L,DEMING,LUNA,GW,14793,4000000,C,Yes,9,1,0,0,0,0,0,Ground,,,,,0,,1,27859.1,Yes,Yes,.57968539,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3527706,FORT SUMNER MUNICIPAL WATER SYSTEM,L,FORT SUMNER,DE BACA,GW,1668,1000000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,31028,Yes,Yes,.64562309,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592308,BRANTLEY LAKE STATE PARK,S,CARLSBAD,EDDY,GWP,160,30000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3590429,ANANSI CHARTER SCHOOL,P,EL PRADO,TAOS,GW,95,0,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3509323,LAS ACEQUIAS DE PLACITAS,L,PLACITAS,SANDOVAL,GW,596,78800,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,67857,Yes,Yes,1.411952,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3581101,SANDIA OUTDOOR RECREATION CENTER - APS,L,CEDAR CREST,BERNALILLO,GW,100,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3594332,GIL SANCHEZ ELEMENTARY,L,BELEN,VALENCIA,GW,295,1200,NTNC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3580202,QUEMADO LAKE WATER ASSOCIATION,P,QUEMADO,CATRON,GW,391,81000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,42480,Yes,Yes,.88391352,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3582904,PHILMONT SCOUT RANCH - ROCKY MOUNTAIN OC,P,,COLFAX,GW,75,10000,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3519225,SOUTH SAN YSIDRO MDWCA,L,SAN YSIDRO,SAN MIGUEL,GW,35,20000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,35019,Yes,Yes,.72866684,Severely Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591214,RUIDOSO DOWNS RACETRACK,P,RUIDOSO DOWNS,LINCOLN,GW,3200,400000,NTNC,Yes,4,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3592729,SIPAPU LODGE AND CAFE,P,VADITO,TAOS,GU,250,0,NC,Yes,0,0,1,0,1,0,1,Surface,0,0,100,0,1,100,1,,No,Yes,,,2,0,1,1,1,1,0,1,1,.5,1,1,,,,,,,,No,3,,,Direct Impact Non-Community Water System
+NM3591823,SANDIA BAR,P,CORRALES,SANDOVAL,GW,25,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500825,UNITED WORLD COLLEGE,P,MONTEZUMA,SAN MIGUEL,SWP,350,1000000,NTNC,Yes,0,0,1,1,0,1,0,Surface,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,NM3518025,LAS VEGAS (CITY OF),18044,,,,A,Yes,4,4,,Direct Impact Non-Community Water System
+NM3573126,CIELO LINDO,P,POJOAQUE,SANTA FE,GW,38,500,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,52260,Yes,Yes,1.0874134,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3577532,SANTA SOCORRO TRAILER PARK,P,LOS LUNAS,VALENCIA,GW,41,0,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,56660,Yes,Yes,1.1789675,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3591525,LAS VEGAS KOA,P,LAS VEGAS,SAN MIGUEL,GW,350,5000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500902,SPRING CANYON RANCH,P,QUEMADO,CATRON,GW,78,111000,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,42480,Yes,Yes,.88391352,Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500427,MONTICELLO RV PARK,P,ELEPHANT BUTTE,SIERRA,GW,25,352,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3500208,CARLSBAD KOA,P,LAKEWOOD,EDDY,GW,277,5052,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3556212,GLEN ACRES WATER COOP,P,LORDSBURG,HIDALGO,GWP,180,220000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3593526,SANTA FE SKI BASIN,P,SANTA FE,SANTA FE,GW,1500,50000,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3566924,WEST HAMMOND MDWCA,L,BLOOMFIELD,SAN JUAN,SWP,3739,798000,C,Yes,0,0,3,3,0,1,0,Surface,,,,,0,,1,56989.2,Yes,Yes,1.1858175,Non-Disadvantaged,,,,,,,,,,,,0,NM3500624,LEE/HAMMOND WATER TREATMENT PLANT CO-OP,0,,,,A,Yes,9,9,,Direct Impact with No Alternative Sources of Water
+NM3592117,BROKEN ARROW BIBLE RANCH,P,GALLUP,MCKINLEY,GW,300,0,NC,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3525633,MOQUINO WATER SYSTEM,L,SEBOYETA,CIBOLA,GW,49,20000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,51175,Yes,Yes,1.064837,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3582829,TRES RITOS BOY SCOUT CAMP,S,,TAOS,GW,100,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3531207,SAN ANDRES ESTATES WATER SYSTEM (LCU),P,LAS CRUCES,DONA ANA,GW,707,0,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3594926,SAN MARCOS RESTAURANT,P,SANTA FE,SANTA FE,GW,40,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3501201,VISTA DE MANANA,P,CEDAR CREST,BERNALILLO,GWP,63,20000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,87898,Yes,Yes,1.8289602,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3540407,SONTERA ACRES MOBILE MANOR,P,MESILLA PARK,DONA ANA,GW,163,472,C,Yes,2,1,0,0,0,0,0,Ground,,,,,0,,1,52940,Yes,Yes,1.1015626,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3502223,VILLAGE PLAZA,P,CORRALES,SANDOVAL,GW,100,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3571426,LONE STAR TRAILER RANCH,P,SANTA FE,SANTA FE,GW,77,3000,C,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,48454,Yes,Yes,1.0082191,Non-Disadvantaged,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3582123,FRONTIER MART INC,P,CORRALES,SANDOVAL,GW,350,0,NC,Yes,1,1,0,0,0,0,0,Ground,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,,,,,,,,No,1,,,No Direct Impact
+NM3544926,HYDE PARK ESTATES WATER USERS ASSOC,P,SANTA FE,SANTA FE,SWP,178,50000,C,Yes,0,0,1,1,0,1,0,Surface,,,,,0,,1,104402,Yes,Yes,2.1723714,Non-Disadvantaged,,,,,,,,,,,,0,NM3505126,SANTA FE WATER SYSTEM (CITY OF),78247,NM3502826,BUCKMAN REGIONAL WATER TREATMENT PLANT,0,A,Yes,2,2,9,Direct Impact with Alternative Sources of Water
+NM3500926,SANTA FE COUNTY WEST SECTOR,L,SANTA FE,SANTA FE,SWP,2690,0,C,Yes,0,0,4,4,0,1,0,Surface,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,NM3502826,BUCKMAN REGIONAL WATER TREATMENT PLANT,0,NM3505126,SANTA FE WATER SYSTEM (CITY OF),78247,A,Yes,2,9,2,Direct Impact with Alternative Sources of Water
+NM3500826,SANTA FE COUNTY SOUTH SECTOR,L,SANTA FE,SANTA FE,SWP,7000,1500000,C,Yes,0,0,4,4,0,1,0,Surface,,,,,0,,1,,No,Yes,,,,,,,,,,,,,,0,NM3502826,BUCKMAN REGIONAL WATER TREATMENT PLANT,0,NM3505126,SANTA FE WATER SYSTEM (CITY OF),78247,A,Yes,2,9,2,Direct Impact with Alternative Sources of Water
+NM3510024,FLORA VISTA MUTUAL DOMESTIC,L,FARMINGTON,SAN JUAN,SWP,3788,819000,C,Yes,3,1,2,2,0,1,0,Surface and Ground,,,,,0,,1,54401.7,Yes,Yes,1.1319773,Non-Disadvantaged,,,,,,,,,,,,0,NM3509824,AZTEC DOMESTIC WATER SYSTEM,5960,NM3510224,FARMINGTON WATER SYSTEM,38000,A,Yes,8,9,8,Direct Impact with No Alternative Sources of Water
