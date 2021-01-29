@@ -1,5 +1,4 @@
 
-cd "/Users/tamali/NMStory/stata/"
 clear all
 set more off
 **** Convert files to Stata Format
@@ -39,14 +38,49 @@ set more off
 	keep number0 surf_wtr_ratio surf_wtr_pur_ratio grnd_wtr_udi_ratio grnd_wtr_udi_purch surface_pws
 	gen surface_ratio_if_spws=surf_wtr_ratio+surf_wtr_pur_ratio+grnd_wtr_udi_ratio+grnd_wtr_udi_purch
 	save data/source_ratio_surface_pws.dta, replace
+
+	* Importing surface purcahse data for PWS with prin water source SW and SWP
+	import excel "rawdata/PurchaserData SW 11-17-20.xlsx", sheet("PurchaserData") firstrow case(lower) clear
+	drop if pwsid==""
+	gen clean_no=strtrim(pwsid)
+	drop pwsid
+	rename clean_no number0
+	drop watersystemname
+		
+		
+	gen clean_no=strtrim(sellerpwsid)
+	drop sellerpwsid
+	rename clean_no seller_number0_	
+	rename sellerwatersystemname seller_system_name_
+	rename sellerpop seller_pop_
+	rename purchaserfacilityactivitystat surfacepurchaser_status
 	
+	order number0 surfacepurchaser_status  seller_number0 seller_system_name seller_pop
+	keep number0 surfacepurchaser_status  seller_number0 seller_system_name seller_pop
+	sort number0
+
 	
+	bysort number0: gen seller_num=_n
+	reshape wide seller_number0_ seller_system_name_ seller_pop_, i(number0) j(seller_num) 
+	
+	* SWP system NM3544926 buys from another SWP water system, NM3500826 . Hence, we substitute SWP system NM3544926' sellers for the sellers used by NM3500826.
+	replace seller_number0_1="NM3505126" if number0=="NM3544926"
+	replace seller_number0_2="NM3502826" if number0=="NM3544926"
+	replace seller_system_name_1="SANTA FE WATER SYSTEM (CITY OF)" if number0=="NM3544926"
+	replace seller_system_name_2="BUCKMAN REGIONAL WATER TREATMENT PLANT" if number0=="NM3544926"
+	replace seller_pop_1=78247 if number0=="NM3544926"
+	replace seller_pop_2=0 if number0=="NM3544926"
+
+	replace seller_number0_1="" if number0=="NM3501019"
+	replace seller_system_name_1="" if number0=="NM3501019"
+	save data/surface_purchaser_info_surface_pws.dta, replace	
+
 *** Reshape drinking water system files and aggregate variables to have only one entry per pws
 
 
     *Aggregating active surface water systems information to have one entry per surface water system
 		use rawdata/active_surface_water_systems.dta, clear
-
+		gen has_nmdwb_data="Yes"
 		* Creating an indicator to select only one observation per system
 		bysort number0: gen unique_pws=_n==1
 
@@ -70,13 +104,13 @@ set more off
 		gen has_gu_facilities_ind=1 if num_gu_facilities>=1 &  num_sw_facilities<.
 		replace has_gu_facilities_ind=0 if num_gu_facilities==0 
 		keep if unique_pws==1
-		keep number0 system_nam owner_type d_prin_cit d_prin_cnt d_fed_prim d_populati d_ttl_stor d_pws_fed_ num_sw_gu_facilities num_sw_facilities num_gu_facilities has_sw_facilities_ind has_gu_facilities_ind
+		keep has_nmdwb_data number0 system_nam owner_type d_prin_cit d_prin_cnt d_fed_prim d_populati d_ttl_stor d_pws_fed_ num_sw_gu_facilities num_sw_facilities num_gu_facilities has_sw_facilities_ind has_gu_facilities_ind
 		sort number0
 		save data/systems_surface.dta, replace
 
 	*Aggregating active ground water systems information to have one entry per surface water system
 		use rawdata/active_ground_water_systems.dta, clear
-
+		gen has_nmdwb_data="Yes"
 		* Creating an indicator to select only one observation per system
 		bysort number0: gen unique_pws=_n==1
 
@@ -98,7 +132,7 @@ set more off
 		gen has_gw_facilities_ind=1 if num_gw_facilities>=1 &  num_gw_facilities<.
 		replace has_gw_facilities_ind=0 if num_gw_facilities==0 
 		keep if unique_pws==1
-		keep number0 system_nam owner_type d_prin_cit d_prin_cnt d_fed_prim d_populati d_ttl_stor d_pws_fed_ num_gw_facilities has_gw_facilities_ind
+		keep has_nmdwb_data number0 system_nam owner_type d_prin_cit d_prin_cnt d_fed_prim d_populati d_ttl_stor d_pws_fed_ num_gw_facilities has_gw_facilities_ind
 		sort number0
 		save data/systems_ground.dta, replace
 
@@ -128,6 +162,7 @@ set more off
 	merge 1:1 number0 using data/source_ratio_surface_pws.dta
 	replace surface_pws=0 if surface_pws==.
 	gen has_source_ratio_surface_pws=(_merge!=2)
+	replace has_nmdwb_data="No" if _merge==2 & has_nmdwb_data==""
 	drop _merge
 	save data/pws.dta, replace
 	
@@ -150,7 +185,7 @@ set more off
 
 	gen has_drinking_water_data="Yes" if _merge==3 | _merge==1
 	replace has_drinking_water_data="No" if _merge==2 
-
+	replace has_nmdwb_data="No" if _merge==2 & has_nmdwb_data==""
 	drop _merge
 	gen ratio_pws_mhi_over_state_mhi=mhi_2010/48059
 
@@ -211,7 +246,14 @@ set more off
 	drop _merge
 	save data/pws.dta,replace
 	
-
+	
+*** Merging surface purchaser data
+	use data/pws.dta, clear
+	merge 1:1 number0 using data/surface_purchaser_info_surface_pws.dta
+	gen has_surfacepurchase_data="Yes" if _merge==3
+	replace has_surfacepurchase_data="No" if _merge==1
+	drop _merge
+	save data/pws.dta,replace
 
 	
 	
